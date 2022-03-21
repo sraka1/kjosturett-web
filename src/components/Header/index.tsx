@@ -8,6 +8,11 @@ import s from './Header.scss';
 import logo from '../../logo.svg';
 
 class Header extends PureComponent {
+	public setState: any;
+	public props: any;
+	public page: any;
+	public isTop: any;
+	public isOpen: any;
   state = {
     isTop: true,
     isOpen: false
@@ -31,7 +36,7 @@ class Header extends PureComponent {
       isTop: scroll < 120
     });
   };
-  toggle(state) {
+  toggle(state?) {
     const force = state == null;
     this.setState(({ isOpen }) => ({
       isOpen: force ? !isOpen : state

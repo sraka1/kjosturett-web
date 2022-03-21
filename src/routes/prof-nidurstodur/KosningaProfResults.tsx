@@ -31,6 +31,17 @@ function pluralize(count, singular, plural, zero = '') {
 }
 
 class KosningaprofResults extends PureComponent {
+	public setState: any;
+	public props: any;
+	public isEmbedded: any;
+	public ogImage: any;
+	public url: any;
+	public questions: any;
+	public answers: any;
+	public parties: any;
+	public kjordaemiFilter: any;
+	public topFilter: any;
+	public candidateCount: any;
   state = {
     open: {},
     kjordaemiFilter: '',
@@ -46,7 +57,7 @@ class KosningaprofResults extends PureComponent {
     }));
   }
 
-  renderLink(href, title, extraProps) {
+  renderLink(href, title, extraProps?) {
     const { isEmbedded } = this.props;
     return (
       <Link href={(isEmbedded ? '/embed' : '') + href} {...extraProps}>

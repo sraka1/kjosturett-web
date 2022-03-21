@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "browserslist": [
     ">1%",
@@ -12,6 +12,9 @@
     "not ie < 9"
   ],
   "dependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.41",
     "aws-sdk": "^2.991.0",
     "babel-polyfill": "^6.23.0",
     "bluebird": "^3.7.2",
@@ -31,7 +34,7 @@
     "multer": "^1.4.3",
     "multer-s3": "^2.9.0",
     "node-fetch": "^1.7.3",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.1",
     "normalize.css": "^7.0.0",
     "pretty-error": "^2.1.1",
     "prop-types": "^15.7.2",
@@ -52,7 +55,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "request": "^2.88.2",
-    "sass-loader": "^6.0.7",
+    "sass-loader": "^12.6.0",
     "serialize-javascript": "^1.9.1",
     "source-map-support": "^0.4.15",
     "twilio": "^3.67.2",

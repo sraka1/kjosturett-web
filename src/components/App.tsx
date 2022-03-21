@@ -45,6 +45,7 @@ const ContextType = {
  *   );
  */
 class App extends React.PureComponent {
+	public props: any;
   static propTypes = {
     context: PropTypes.shape(ContextType).isRequired,
     children: PropTypes.element.isRequired,

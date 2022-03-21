@@ -8,14 +8,15 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './NotFound.css';
 
-class NotFound extends React.Component {
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-  };
+interface NotFoundProps {
+  title: string;
+}
+
+class NotFound extends React.Component<NotFoundProps> {
+	public props: any;
 
   render() {
     return (

@@ -1,13 +1,16 @@
 /* global google */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
 
-class Autocomplete extends React.PureComponent {
-  static propTypes = {
-    onChange: PropTypes.func,
-  };
+interface AutocompleteProps {
+  onChange?(...args: unknown[]): unknown;
+}
 
+class Autocomplete extends React.PureComponent<AutocompleteProps> {
+	public changeListener: any;
+	public setState: any;
+	public props: any;
+	public input: any;
   state = {
     autocomplete: null,
   };

@@ -1,4 +1,3 @@
-"use strict";
 /**
  * React Starter Kit (https://www.reactstarterkit.com/)
  *
@@ -7,14 +6,20 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
-exports.__esModule = true;
+
 // import React from 'react';
 // import NotFound from './NotFound';
 //
 // const title = 'Page Not Found';
+
 function action() {
-    return {
-        redirect: '/'
-    };
+  return {
+    redirect: '/',
+    // chunks: ['not-found'],
+    // title,
+    // component: <NotFound title={title} />,
+    // status: 404
+  };
 }
-exports["default"] = action;
+
+export default action;

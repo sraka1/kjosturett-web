@@ -19,6 +19,14 @@ const distanceValueMap = {
 };
 
 class CompareParties extends PureComponent {
+	public props: any;
+	public setState: any;
+	public questions: any;
+	public parties: any;
+	public filterParties: any;
+	public replyDistance: any;
+	public score: any;
+	public url: any;
   state = {
     selected: [],
     isEditing: false

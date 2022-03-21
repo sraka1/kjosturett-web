@@ -1,7 +1,6 @@
 // @flow
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import cx from 'classnames';
 import Scroll from 'react-scroll';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
@@ -9,18 +8,22 @@ import { Collapse } from 'react-collapse';
 import history from '../../history';
 import styles from './Collapsable.scss';
 
-class Collapsable extends React.Component {
-  static propTypes = {
-    openByDefault: PropTypes.bool,
-    items: PropTypes.arrayOf(
-      PropTypes.shape({
-        key: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        content: PropTypes.string.isRequired,
-        image: PropTypes.string,
-      }),
-    ),
-  };
+interface CollapsableProps {
+  openByDefault?: boolean;
+  items?: {
+    key: string,
+    title: string,
+    content: string,
+    image?: string
+  }[];
+}
+
+class Collapsable extends React.Component<CollapsableProps> {
+	public props: any;
+	public setState: any;
+	public rootEl_: any;
+	public items: any;
+	public open: any;
   static defaultProps = {
     openByDefault: false,
     items: [],

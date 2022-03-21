@@ -1,28 +1,36 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import serialize from 'serialize-javascript';
 import config from '../config';
 
+interface HtmlProps {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
+  styles?: {
+    id: string,
+    cssText: string
+  }[];
+  scripts?: string[];
+  app?: object;
+  children: string // eslint-disable-line;
+}
+
 /* eslint-disable react/no-danger */
 
-class Html extends React.Component {
-  static propTypes = {
-    title: PropTypes.string,
-    description: PropTypes.string,
-    ogImage: PropTypes.string,
-    ogImageWidth: PropTypes.number,
-    ogImageHeight: PropTypes.number,
-    styles: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        cssText: PropTypes.string.isRequired
-      }).isRequired
-    ),
-    scripts: PropTypes.arrayOf(PropTypes.string.isRequired),
-    app: PropTypes.object, // eslint-disable-line
-    children: PropTypes.string.isRequired
-  };
-
+class Html extends React.Component<HtmlProps> {
+	public props: any;
+	public title: any;
+	public description: any;
+	public path: any;
+	public styles: any;
+	public scripts: any;
+	public app: any;
+	public children: any;
+	public ogImage: any;
+	public ogImageWidth: any;
+	public ogImageHeight: any;
   static defaultProps = {
     styles: [],
     scripts: []

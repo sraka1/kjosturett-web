@@ -18,6 +18,11 @@ const areYouSure =
 const defaultAnswer = '3';
 
 class UploadCandidateImage extends PureComponent {
+	public props: any;
+	public token: any;
+	public uploadSuccess: any;
+	public uploadFailure: any;
+
   render() {
     const { token, uploadSuccess, uploadFailure } = this.props;
 
@@ -53,17 +58,26 @@ class UploadCandidateImage extends PureComponent {
   }
 }
 
-class Kosningaprof extends PureComponent {
+interface KosningaprofProps {
+  questions: {
+    id: number,
+    question: string
+  }[];
+}
+
+class Kosningaprof extends PureComponent<KosningaprofProps> {
+	public props: any;
+	public setState: any;
+	public context: any;
+	public token: any;
+	public answers: any;
+	public questions: any;
+	public uploadSuccess: any;
+	public uploadFailure: any;
+	public started: any;
+	public finished: any;
   static contextTypes = {
     fetch: PropTypes.func.isRequired
-  };
-  static propTypes = {
-    questions: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        question: PropTypes.string.isRequired
-      })
-    ).isRequired
   };
   state = {
     started: false,

@@ -67,6 +67,14 @@ const getItineryInfo = ({ duration, distance, type, from, to }) => {
 };
 
 class Itinery extends PureComponent {
+	public props: any;
+	public duration: any;
+	public distance: any;
+	public text: any;
+	public icon: any;
+	public link: any;
+	public linkText: any;
+
   render() {
     const { duration, distance } = this.props;
 
@@ -91,6 +99,27 @@ class Itinery extends PureComponent {
 }
 
 class Kjorskra extends PureComponent {
+	public context: any;
+	public autocomplete: any;
+	public setState: any;
+	public props: any;
+	public duration: any;
+	public legs: any;
+	public kennitala: any;
+	public nafn: any;
+	public kjorstadur: any;
+	public kjordeild: any;
+	public kjordaemi: any;
+	public mapOptions: any;
+	public nidurstada: any;
+	public data: any;
+	public isFetching: any;
+	public fetchError: any;
+	public currentAddress: any;
+	public walking: any;
+	public driving: any;
+	public bicycling: any;
+	public bussing: any;
   static contextTypes = {
     fetch: PropTypes.func.isRequired
   };
@@ -322,12 +351,12 @@ class Kjorskra extends PureComponent {
   onAutocompleteMounted = ref => {
     this.autocomplete = ref;
   };
-  onInputChange(type, e) {
+  onInputChange(type, e?) {
     this.setState({
       [type]: e.target.value
     });
   }
-  async submit(event) {
+  async submit(event?) {
     if (event && event.preventDefault) {
       event.preventDefault();
     }

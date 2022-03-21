@@ -7,6 +7,15 @@ import Container from '../Container';
 import logo from '../../logo.svg';
 
 class Layout extends Component {
+	public props: any;
+	public page: any;
+	public title: any;
+	public altTitle: any;
+	public children: any;
+	public color: any;
+	public isEmbed: any;
+	public showHeader: any;
+
   render() {
     const {
       page,

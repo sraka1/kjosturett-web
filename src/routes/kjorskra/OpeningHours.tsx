@@ -1,13 +1,16 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 import Countdown from 'react-countdown-now';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './OpeningHours.scss';
 
-class OpeningHours extends PureComponent {
-  static propTypes = {
-    sveitafelag: PropTypes.string.isRequired
-  };
+interface OpeningHoursProps {
+  sveitafelag: string;
+}
+
+class OpeningHours extends PureComponent<OpeningHoursProps> {
+	public props: any;
+	public sveitafelag: any;
+
   render() {
     const { sveitafelag } = this.props;
     const now = new Date();

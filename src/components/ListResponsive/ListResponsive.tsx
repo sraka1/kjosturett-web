@@ -13,12 +13,17 @@ const linkItem = PropTypes.shape({
   href: PropTypes.string.isRequired,
 });
 
-class ListResponsive extends React.Component {
-  static propTypes = {
-    current: PropTypes.string,
-    mobileTitle: PropTypes.string,
-    links: PropTypes.arrayOf(linkItem).isRequired,
-  };
+interface ListResponsiveProps {
+  current?: string;
+  mobileTitle?: string;
+  links: unknown[];
+}
+
+class ListResponsive extends React.Component<ListResponsiveProps> {
+	public props: any;
+	public current: any;
+	public links: any;
+	public mobileTitle: any;
   static defaultProps = {
     current: null,
     mobileTitle: null,

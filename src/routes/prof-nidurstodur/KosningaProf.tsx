@@ -24,26 +24,38 @@ const marks = {
   5: 'Mjög sammála',
 };
 
-class Kosningaprof extends PureComponent {
+interface KosningaprofProps {
+  answers: {
+    default: string,
+    textMap: object
+  };
+  questions: {
+    id: number,
+    question: string
+  }[];
+  isEmbedded?: boolean;
+  title?: string;
+}
+
+class Kosningaprof extends PureComponent<KosningaprofProps> {
+	public state: any;
+	public positions: any;
+	public props: any;
+	public setState: any;
+	public context: any;
+	public questionsEl: any;
+	public isEmbedded: any;
+	public answers: any;
+	public currentQuestionIndex: any;
+	public questions: any;
+	public showReset: any;
+	public question: any;
+	public id: any;
   static contextTypes = {
     fetch: PropTypes.func.isRequired,
   };
   static defaultProps = {
     title: 'Kjóstu rétt',
-  };
-  static propTypes = {
-    answers: PropTypes.shape({
-      default: PropTypes.string.isRequired,
-      textMap: PropTypes.object.isRequired,
-    }).isRequired,
-    questions: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        question: PropTypes.string.isRequired,
-      })
-    ).isRequired,
-    isEmbedded: PropTypes.bool,
-    title: PropTypes.string,
   };
   constructor(props) {
     super(props);
@@ -145,7 +157,7 @@ class Kosningaprof extends PureComponent {
     );
   }
 
-  renderQuestion(question, id, extraStyle) {
+  renderQuestion(question, id, extraStyle?) {
     const { answers, currentQuestionIndex } = this.state;
     const { isEmbedded, questions } = this.props;
     const isLastQuestion = currentQuestionIndex === questions.length - 1;

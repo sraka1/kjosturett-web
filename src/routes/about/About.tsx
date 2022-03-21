@@ -16,7 +16,7 @@ class About extends PureComponent {
           eru þær settar fram óbreyttar. Verkefnið er unnið í góðgerðarstarfi af
           Íslendingum og er öll vinnan aðgengileg á{' '}
           <a
-            href="https://github.com/kristjanmik/kjosturett-web"
+            href="https://github.com/sraka1/koga-voliti-web"
             target="_blank"
           >
             Github

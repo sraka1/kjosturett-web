@@ -6,6 +6,11 @@ import { getAssetUrl } from '../../utils';
 import s from './MalefniSingle.scss';
 
 class MalefniSingle extends PureComponent {
+	public props: any;
+	public parties: any;
+	public categories: any;
+	public selectedCategory: any;
+
   render() {
     const { parties, categories, selectedCategory } = this.props;
 

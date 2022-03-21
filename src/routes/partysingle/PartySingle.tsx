@@ -8,6 +8,10 @@ import { getAssetUrl } from '../../utils';
 import s from './PartySingle.scss';
 
 class PartySingle extends PureComponent {
+	public props: any;
+	public party: any;
+	public categories: any;
+
   render() {
     const { party, categories } = this.props;
 
