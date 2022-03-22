@@ -6,13 +6,13 @@ import answers from '../../../data/poll/answers.json';
 
 export default ({ url }) => ({
   chunks: ['prof'],
-  title: `Kosningapróf Kjóstu rétt`,
+  title: `Vprašalnik VoliPrav`,
   description:
     'Hvaða flokkar og frambjóðendur eru þér algjörlega sammála? Þú getur þreytt prófið og komist að áreiðanlegri niðurstöðu.',
   path: url,
   ogImage: 'https://assets.kjosturett.is/og_prof.png',
   component: (
-    <Layout page="kosningaprof" title="Kosningapróf">
+    <Layout page="kosningaprof" title="Vprašalnik">
       <KosningaProf answers={answers} questions={questions} />
     </Layout>
   ),

@@ -186,7 +186,7 @@ class KosningaprofResults extends PureComponent {
                   }}
                 />
                 <img
-                  src={getAssetUrl('party-icons', party.url)}
+                  src={getAssetUrl(false, 'party-icons', party.url)}
                   className={s.partyLogo}
                 />
                 <div className={s.partyName}>{party.name}</div>

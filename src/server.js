@@ -34,11 +34,11 @@ if (process.env.REDIS_URL) {
             rejectUnauthorized: false,
           },
         }
-      : {}
+      : {},
   );
 } else {
   console.error(
-    'WARNING YOU ARE RUNNING THIS PROJECT WITHOUT PERMANENTLY STORING REPLY DATA'
+    'WARNING YOU ARE RUNNING THIS PROJECT WITHOUT PERMANENTLY STORING REPLY DATA',
   );
 }
 
@@ -52,25 +52,25 @@ if (process.env.NODE_ENV === 'production') {
   });
   upload = multer({
     storage: multerS3({
-      s3: s3,
+      s3,
       bucket: process.env.S3_BUCKET,
       acl: 'public-read',
-      key: async function(req, file, cb) {
+      async key(req, file, cb) {
         if (!['image/png', 'image/jpg', 'image/jpeg'].includes(file.mimetype))
           return cb(new Error('Wrong filetype'));
 
         const token = req.query.token;
         if (!uuid.validate(token))
           throw Error(
-            'Rangt auðkenni. Hafðu samband við kjosturett@kjosturett.is ef þetta er röng villa.'
+            'Rangt auðkenni. Hafðu samband við kjosturett@kjosturett.is ef þetta er röng villa.',
           );
         const ssn = await redis.get(`candidate-token:${token}`);
 
         if (!ssn)
           return cb(
             new Error(
-              'Rangur hlekkur. Hafðu samband við kjosturett@kjosturett.is ef þetta er röng villa.'
-            )
+              'Rangur hlekkur. Hafðu samband við kjosturett@kjosturett.is ef þetta er röng villa.',
+            ),
           );
 
         cb(null, `candidates/${ssn}.jpg`);
@@ -174,7 +174,7 @@ app.get('*', async (req, res, next) => {
       setRuntimeVariable({
         name: 'initialNow',
         value: Date.now(),
-      })
+      }),
     );
 
     // Global (context) variables that can be easily accessed from any React component
@@ -209,7 +209,7 @@ app.get('*', async (req, res, next) => {
     data.children = ReactDOM.renderToString(
       <App context={context} store={store}>
         {route.component}
-      </App>
+      </App>,
     );
     data.styles = [{ id: 'css', cssText: [...css].join('') }];
     data.scripts = [assets.vendor.js];
@@ -247,7 +247,7 @@ app.use((err, req, res, next) => {
       styles={[{ id: 'css', cssText: errorPageStyle._getCss() }]} // eslint-disable-line no-underscore-dangle
     >
       {ReactDOM.renderToString(<ErrorPageWithoutStyle error={err} />)}
-    </Html>
+    </Html>,
   );
   res.status(err.status || 500);
   res.send(`<!doctype html>${html}`);

@@ -10,7 +10,7 @@ const Container = ({ name, leader, leaderTitle, url }) => (
     <div className={styles.imgWrap}>
       <img
         className={styles.img}
-        src={getAssetUrl('formenn', url)}
+        src={getAssetUrl(true, 'leaders', url)}
         alt={`${name}'s ${leaderTitle}: ${leader}`}
       />
     </div>

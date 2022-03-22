@@ -28,7 +28,7 @@ class MalefniSingle extends PureComponent {
               content:
                 party.statement ||
                 'Ekkert svar hefur borist við þessum málaflokki',
-              image: getAssetUrl('party-icons', party.url),
+              image: getAssetUrl(false, 'party-icons', party.url),
             }))
           }
         />

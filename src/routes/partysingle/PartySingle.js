@@ -17,7 +17,7 @@ class PartySingle extends PureComponent {
           <PartyProfile {...party} />
           <img
             className={s.logo}
-            src={getAssetUrl('party-icons', party.url)}
+            src={getAssetUrl(false, 'party-icons', party.url)}
             alt="Logo"
           />
         </div>
@@ -30,7 +30,7 @@ class PartySingle extends PureComponent {
                 title: name,
                 content:
                   statement ||
-                  `${party.name} hefur ekki skilað inn umfjöllun um ${name.toLowerCase()}.`,
+                  `Stranka ${party.name} ni podala izjave v zvezi s tematiko ${name}.`,
               }))
             }
           />

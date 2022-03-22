@@ -24,7 +24,7 @@ const Container = ({
     >
       <span className={s.imgWrap}>
         <img
-          src={getAssetUrl('party-icons', url)}
+          src={getAssetUrl(false, 'party-icons', url)}
           className={s.image}
           alt={`${name}'s logo`}
         />

@@ -1,66 +1,66 @@
 [
   {
-    "name": "Atvinnumál",
-    "url": "atvinnumal"
-  },
-  {
-    "name": "Byggðarmál",
-    "url": "byggdarmal"
-  },
-  {
-    "name": "Evrópumál",
-    "url": "evropumal"
-  },
-  {
-    "name": "Heilbrigðismál",
-    "url": "heilbrigdismal"
-  },
-  {
-    "name": "Húsnæðismál",
-    "url": "husnaedismal"
-  },
-  {
-    "name": "Jafnréttismál",
-    "url": "jafnrettismal"
-  },
-  {
-    "name": "Menntamál",
-    "url": "menntamal"
-  },
-  {
-    "name": "Loftslagsmál",
-    "url": "loftslagsmal"
-  },
-  {
-    "name": "Samgöngumál",
-    "url": "samgongumal"
-  },
-  {
-    "name": "Sjávarútvegsmál",
-    "url": "sjavarutvegsmal"
-  },
-  {
-    "name": "Skattamál",
+    "name": "Davki",
     "url": "skattamal"
   },
   {
-    "name": "Sóttvarnarmál",
-    "url": "sottvarnarmal"
+    "name": "Enakopravnost spolov",
+    "url": "jafnrettismal"
   },
   {
-    "name": "Stjórnarskrármál",
+    "name": "Epidemiologija",
     "url": "stjornarskrarmal"
   },
   {
-    "name": "Umhverfismál",
-    "url": "umhverfismal"
+    "name": "Evropska integracija",
+    "url": "evropumal"
   },
   {
-    "name": "Útlendingamál",
+    "name": "Gospodarstvo",
+    "url": "sjavarutvegsmal"
+  },
+  {
+    "name": "Infrastruktura",
+    "url": "samgongumal"
+  },
+  {
+    "name": "Migracije",
     "url": "utlendingamal"
   },
   {
-    "name": "Velferðarmál",
+    "name": "Obramba",
+    "url": "sottvarnarmal"
+  },
+  {
+    "name": "Podnebne spremembe",
+    "url": "loftslagsmal"
+  },
+  {
+    "name": "Pokrajine",
+    "url": "byggdarmal"
+  },
+  {
+    "name": "Socialno varstvo",
     "url": "velferdarmal"
+  },
+  {
+    "name": "Stanovanjska problematika",
+    "url": "husnaedismal"
+  },
+  {
+    "name": "Šolstvo",
+    "url": "menntamal"
+  },
+  {
+    "name": "Varstvo okolja",
+    "url": "umhverfismal"
+  },
+  {
+    "name": "Zaposlitve",
+    "url": "atvinnumal"
+  },
+  {
+    "name": "Zdravstvo",
+    "url": "heilbrigdismal"
   }
 ]

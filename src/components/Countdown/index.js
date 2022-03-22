@@ -5,15 +5,15 @@ import s from './Countdown.scss';
 
 const Countdown = () => (
   <CountdownNow
-    date={new Date('Saturday, September 25, 2021 8:00:00 AM')}
+    date={new Date('Sunday, April 24, 2022 7:00:00 AM')}
     renderer={({ days, completed }) => {
       if (completed) {
         // Render a completed state
-        return <div>Alþingiskosningarnar 2021</div>;
+        return <div>Državnozborske volitve 2022</div>;
       }
       let out = '';
       if (days > 0) {
-        out = `${days + 1} dagar í kosningar`;
+        out = `${days + 1} dni do volitev`;
       }
 
       return <span>{out}</span>;

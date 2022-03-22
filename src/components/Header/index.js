@@ -47,7 +47,7 @@ class Header extends PureComponent {
         key="/"
         className={cx(s.politics, page === 'flokkar' ? s.active : null)}
       >
-        Stjórnmálaflokkar
+        Stranke
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
@@ -55,7 +55,7 @@ class Header extends PureComponent {
         key="/malefni/atvinnumal"
         className={cx(page === 'malefni' ? s.active : null)}
       >
-        Málefni
+        Programske tematike
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
@@ -63,7 +63,7 @@ class Header extends PureComponent {
         key="/kjorskra"
         className={cx(page === 'kjorskra' ? s.active : null)}
       >
-        Kjörstaðir
+        Zemljevid volišč
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
@@ -71,7 +71,7 @@ class Header extends PureComponent {
         key="/kosningaprof"
         className={cx(page === 'kosningaprof' ? s.active : null)}
       >
-        Kosningapróf
+        Vprašalnik
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
@@ -79,7 +79,7 @@ class Header extends PureComponent {
         key="/flokkar/bera-saman"
         className={cx(page === 'bera-saman' ? s.active : null)}
       >
-        Samanburður
+        Primerjalnik
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
@@ -87,7 +87,7 @@ class Header extends PureComponent {
         href="/fyrri-kosningar"
         key="fyrri-kosningar"
       >
-        Fyrri kosningar
+        Prejšnje volitve
       </Link>
     ];
   }

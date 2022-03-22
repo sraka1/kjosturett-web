@@ -19,7 +19,7 @@ export default ({ params, url }) => {
   return {
     chunks: ['partysingle'],
     title: `${party.name} - Kjóstu Rétt`,
-    description: `Upplýsingar um stefnumál ${party.nameDeflected} á mannamáli fyrir Alþingiskosningarnar 2021`,
+    description: `Strnjena programska izhodišča ${party.name} za volitve 2022.`,
     path: url,
     component: (
       <Layout

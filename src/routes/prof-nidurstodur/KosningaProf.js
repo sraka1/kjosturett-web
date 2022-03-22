@@ -19,9 +19,9 @@ const initialAnswers = questions =>
   }, {});
 
 const marks = {
-  1: 'Mjög ósammála',
-  3: 'Hlutlaus',
-  5: 'Mjög sammála',
+  1: 'Se ne strinjam',
+  3: 'Nisem odločen',
+  5: 'Se strinjam',
 };
 
 class Kosningaprof extends PureComponent {
@@ -69,7 +69,7 @@ class Kosningaprof extends PureComponent {
   }
   onReset() {
     // eslint-disable-next-line
-    if (window.confirm('Ertu viss um að þú byrja upp á nýtt?')) {
+    if (window.confirm('Ste prepričani, da želite začeti znova?')) {
       const answers = initialAnswers(this.props.questions);
       this.clearState();
       this.setState({
@@ -265,17 +265,16 @@ class Kosningaprof extends PureComponent {
     return (
       <div className={s.lead}>
         <p>
-          Taktu kosningarpróf <strong>Kjóstu rétt</strong> til þess að sjá hvaða
-          flokkur passar best við þínar skoðanir. Því fleiri spurningum sem þú
-          svarar, því nákvæmari niðurstöður færðu.
+          Izpolnite vprašalnik <strong>Voli Prav</strong> v pomoč pri izbiri
+          stranke, ki je najbliže vašim pogledom. Več vprašanj, kot odgovorite,
+          bolj natačni bodo rezultati.
         </p>
         {showReset && (
           <p>
-            Þú getur tekið upp þráðinn frá því síðast og klárað prófið, eða{' '}
+            Lahko nadaljujete z izbirami od prej, ali pa{' '}
             <button className={s.reset} onClick={this.onReset}>
-              byrjað
-            </button>{' '}
-            upp á nýtt.
+              začnete znova.
+            </button>
           </p>
         )}
         {isEmbedded && (

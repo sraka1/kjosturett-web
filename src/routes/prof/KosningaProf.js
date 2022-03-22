@@ -6,15 +6,15 @@ import { encodeAnswersToken } from '../../utils';
 import s from './KosningaProf.scss';
 
 const answerMap = {
-  1: 'Mjög ósammála',
-  2: 'Frekar ósammála',
-  3: 'Hlutlaus',
-  4: 'Frekar sammála',
-  5: 'Mjög sammála',
-  6: 'Vil ekki svara'
+  1: 'Se sploh ne strinjam',
+  2: 'Se deloma ne strinjam',
+  3: 'Nevtralen',
+  4: 'Se deloma strinjam',
+  5: 'Se močno strinjam',
+  6: 'Ne želim odgovoriti'
 };
 const areYouSure =
-  'Ertu viss um að þú viljir yfirgefa síðuna núna? Öll svörin munu týnast.';
+  'Ste prepričani, da želite zapustiti stran? Vaši odgovori bodo izgubljeni.';
 const defaultAnswer = '3';
 
 class UploadCandidateImage extends PureComponent {
