@@ -48,7 +48,7 @@ We have various data sources. Described below are data sources that are availabl
 
 ### Where do I vote?
 
-You can query the kjorskra endpoint at https://kjorskra.kjosturett.is/leita/{{VALID-KENNITALA}}. This endpoint can take up to 2-4 seconds to load since we are using a very slow screen scraper. The second request to this endpoint with the same kennitala is cached heavily for one month. _If .success is false, the kennitala is most likely invalid_
+You can query the kjorskra endpoint at https://kjorskra.voliprav.si/leita/{{VALID-KENNITALA}}. This endpoint can take up to 2-4 seconds to load since we are using a very slow screen scraper. The second request to this endpoint with the same kennitala is cached heavily for one month. _If .success is false, the kennitala is most likely invalid_
 
 ```json
 {

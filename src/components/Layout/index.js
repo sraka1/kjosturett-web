@@ -22,8 +22,8 @@ class Layout extends Component {
       return (
         <div className={s.root}>
           <header>
-            <a href="https://kjosturett.is/" target="_blank">
-              <img className={s.logo} src={logo} alt="Kjóstu rétt" />
+            <a href="https://voliprav.si/" target="_blank">
+              <img className={s.logo} src={logo} alt="Voli prav" />
             </a>
           </header>
           <main className={s.main}>

@@ -346,7 +346,7 @@ class Kjorskra extends PureComponent {
     let data;
 
     try {
-      let url = `https://kjosturett.is/kjorskra-lookup/${cleanKennitala(
+      let url = `https://voliprav.si/kjorskra-lookup/${cleanKennitala(
         kennitala
       )}`;
 

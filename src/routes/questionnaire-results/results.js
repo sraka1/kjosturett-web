@@ -39,19 +39,19 @@ export default ({ params, url }) => {
 
   return {
     chunks: ['prof-nidurstodur'],
-    title: `Kjóstu Rétt - Kosningapróf`,
+    title: `Voli prav - Vprašalnik`,
     path: url,
     ogImage,
     ogImageWidth: 1200,
     ogImageHeight: 630,
     component: (
-      <Layout page="prof-nidurstodur" title="Kosningapróf / Niðurstöður">
+      <Layout page="prof-nidurstodur" title="Vprašalnik / Niðurstöður">
         <KosningaProfResults
           answers={answers}
           questions={questions}
           candidates={candidates}
           parties={parties}
-          url={`https://kjosturett.is/kosningaprof/${encodeURIComponent(
+          url={`https://voliprav.si/vprasalnik/${encodeURIComponent(
             params.nidurstodur
           )}`}
           ogImage={ogImage}

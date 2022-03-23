@@ -1,5 +1,5 @@
 import React from 'react';
-import KosningaProfResults from '../../prof-nidurstodur/KosningaProfResults';
+import KosningaProfResults from '../../questionnaire-results/KosningaProfResults';
 import questionsBase from '../../../../data/poll/questions.json';
 import answers from '../../../../data/poll/answers.json';
 import candidateReplies from '../../../../data/build/replies-candidates2.json';
@@ -30,8 +30,8 @@ export default ({ params, url }) => {
   }));
 
   return {
-    chunks: ['embed-prof'],
-    title: `Kjóstu Rétt - Kosningapróf`,
+    chunks: ['embed-questionnaire'],
+    title: `Voli prav - Vprašalnik`,
     path: url,
     component: (
       <Layout isEmbed>
@@ -41,7 +41,7 @@ export default ({ params, url }) => {
           questions={questions}
           candidates={candidates}
           parties={parties}
-          url={`https://kjosturett.is/embed/kosningaprof/${encodeURIComponent(
+          url={`https://voliprav.si/embed/vprasalnik/${encodeURIComponent(
             params.nidurstodur
           )}`}
         />

@@ -62,14 +62,14 @@ if (process.env.NODE_ENV === 'production') {
         const token = req.query.token;
         if (!uuid.validate(token))
           throw Error(
-            'Rangt auðkenni. Hafðu samband við kjosturett@kjosturett.is ef þetta er röng villa.',
+            'Rangt auðkenni. Hafðu samband við kjosturett@voliprav.si ef þetta er röng villa.',
           );
         const ssn = await redis.get(`candidate-token:${token}`);
 
         if (!ssn)
           return cb(
             new Error(
-              'Rangur hlekkur. Hafðu samband við kjosturett@kjosturett.is ef þetta er röng villa.',
+              'Rangur hlekkur. Hafðu samband við kjosturett@voliprav.si ef þetta er röng villa.',
             ),
           );
 
@@ -102,7 +102,7 @@ if (__DEV__) {
 
 app.get('/og-image-kjorskra/:coordinates', (req, res) => {
   const { coordinates } = req.params;
-  const url = `https://kjosturett-is.imgix.net/og_kjorskra3.png?markalign=right%2Cmiddle&mark=https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fstaticmap%3Fcenter%3D${coordinates}%26zoom%3D14%26size%3D600x630%26maptype%3Droadmap%26markers%3Dicon%3Ahttps%3A%2F%2Fimgix.kjosturett.is%2Fmap_marker3.png%7C${coordinates}`;
+  const url = `https://kjosturett-is.imgix.net/og_kjorskra3.png?markalign=right%2Cmiddle&mark=https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fstaticmap%3Fcenter%3D${coordinates}%26zoom%3D14%26size%3D600x630%26maptype%3Droadmap%26markers%3Dicon%3Ahttps%3A%2F%2Fimgix.voliprav.si%2Fmap_marker3.png%7C${coordinates}`;
   res.redirect(301, url);
 });
 

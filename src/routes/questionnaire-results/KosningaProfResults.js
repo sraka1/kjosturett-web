@@ -63,8 +63,8 @@ class KosningaprofResults extends PureComponent {
           <p style={{ textAlign: 'center' }}>
             Þú getur nálgast ýtarefni um flokkana og frambjóðendur á{' '}
             <strong>
-              <a href="https://kjosturett.is/" target="_blank">
-                www.kjosturett.is
+              <a href="https://voliprav.si/" target="_blank">
+                www.voliprav.si
               </a>
             </strong>
           </p>
@@ -77,13 +77,13 @@ class KosningaprofResults extends PureComponent {
     return (
       <div>
         <p className={s.lead}>
-          Niðurstöður úr kosningaprófi <strong>Kjóstu rétt</strong>. Þú getur
+          Niðurstöður úr kosningaprófi <strong>Voli prav</strong>. Þú getur
           lesið {this.renderLink('/malefni/atvinnumal', 'stefnumál flokkana')} í
           þeim málefnum sem þér þykir mikilvæg.
         </p>
 
         <p className={s.buttons}>
-          {this.renderLink('/kosningaprof', 'Taka kosningaprófið', {
+          {this.renderLink('/vprasalnik', 'Taka kosningaprófið', {
             className: s.takeTest,
           })}
         </p>
@@ -105,7 +105,7 @@ class KosningaprofResults extends PureComponent {
             className={s.shareButton}
             style={{ background: '#1da0f2', marginLeft: '15px' }}
             href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-              'Mínar niðurstöður úr kosningaprófi Kjóstu rétt: '
+              'Mínar niðurstöður úr kosningaprófi Voli prav: '
             )}&url=${encodeURIComponent(url)}&hashtags=kosningar`}
             target="_blank"
           >
@@ -162,7 +162,7 @@ class KosningaprofResults extends PureComponent {
 
         {isEmbedded && (
           <p className={s.nonLead}>
-            {this.renderLink('/kosningaprof', 'Taka prófið aftur')}
+            {this.renderLink('/vprasalnik', 'Taka prófið aftur')}
           </p>
         )}
 

@@ -1,6 +1,6 @@
 // @flow
 
-// const URL = 'https://assets.kjosturett.is';
+// const URL = 'https://assets.voliprav.si';
 const URL = 'http://localhost:3000';
 
 exports.getAssetUrl = (isJpg = false, ...assets) => {

@@ -19,7 +19,7 @@ export default ({ params, url }) => {
 
   return {
     chunks: ['malefnisingle'],
-    title: `${category.name} - Kjóstu Rétt`,
+    title: `${category.name} - Voli prav`,
     path: url,
     description: `Svör stjórnmálaflokkanna í ${category.name.toLowerCase()}um fyrir Alþingiskosningarnar 2021`,
     component: (

@@ -14,7 +14,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/bjort-framtid.png"
+        src="https://assets.voliprav.si/party-icons/bjort-framtid.png"
       />
     </span>
     <span
@@ -50,7 +50,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/framsoknarflokkurinn.png"
+        src="https://assets.voliprav.si/party-icons/framsoknarflokkurinn.png"
       />
     </span>
     <span
@@ -86,7 +86,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/vidreisn.png"
+        src="https://assets.voliprav.si/party-icons/vidreisn.png"
       />
     </span>
     <span
@@ -122,7 +122,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/sjalfstaedisflokkurinn.png"
+        src="https://assets.voliprav.si/party-icons/sjalfstaedisflokkurinn.png"
       />
     </span>
     <span
@@ -158,7 +158,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/flokkur-folksins.png"
+        src="https://assets.voliprav.si/party-icons/flokkur-folksins.png"
       />
     </span>
     <span
@@ -194,7 +194,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/midflokkurinn.png"
+        src="https://assets.voliprav.si/party-icons/midflokkurinn.png"
       />
     </span>
     <span
@@ -230,7 +230,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/piratar.png"
+        src="https://assets.voliprav.si/party-icons/piratar.png"
       />
     </span>
     <span
@@ -266,7 +266,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/althydufylkingin.png"
+        src="https://assets.voliprav.si/party-icons/althydufylkingin.png"
       />
     </span>
     <span
@@ -302,7 +302,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/samfylkingin.png"
+        src="https://assets.voliprav.si/party-icons/samfylkingin.png"
       />
     </span>
     <span
@@ -338,7 +338,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/dogun.png"
+        src="https://assets.voliprav.si/party-icons/dogun.png"
       />
     </span>
     <span
@@ -374,7 +374,7 @@ exports[`Frontpage renders frontpage correctly 1`] = `
     >
       <img
         className="image"
-        src="https://assets.kjosturett.is/party-icons/vinstri-graen.png"
+        src="https://assets.voliprav.si/party-icons/vinstri-graen.png"
       />
     </span>
     <span

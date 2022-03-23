@@ -9,7 +9,7 @@ export default ({ params, url, query }) => {
 
   return {
     chunks: ['prof'],
-    title: `Kjóstu Rétt - Kosningapróf`,
+    title: `Voli prav - Vprašalnik`,
     path: url,
     component: (
       <Layout page="prof" showHeader={false}>

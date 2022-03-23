@@ -18,7 +18,7 @@ export default ({ params, url }) => {
 
   return {
     chunks: ['partysingle'],
-    title: `${party.name} - Kjóstu Rétt`,
+    title: `${party.name} - Voli prav`,
     description: `Strnjena programska izhodišča ${party.name} za volitve 2022.`,
     path: url,
     component: (

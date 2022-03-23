@@ -29,7 +29,7 @@ class Kosningaprof extends PureComponent {
     fetch: PropTypes.func.isRequired,
   };
   static defaultProps = {
-    title: 'Kjóstu rétt',
+    title: 'Voli prav',
   };
   static propTypes = {
     answers: PropTypes.shape({

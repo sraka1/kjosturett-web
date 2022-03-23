@@ -30,8 +30,8 @@ class Html extends React.Component {
 
   render() {
     const {
-      title = 'Kjóstu Rétt 2021',
-      description = 'Upplýsingar um stjórnmálaflokka og kosningarmálefni þeirra gerð aðgengileg almenningi.',
+      title = 'Voli prav 2022',
+      description = 'Informacije o političnih strankah in njihovih stališčih predstavljene javnosti.',
       path = '/',
       styles,
       scripts,
@@ -58,11 +58,11 @@ class Html extends React.Component {
           <meta name="description" content={description} />
           <meta
             name="keywords"
-            content="kosningar,alþingi 2021,alþingiskosningar,frambjóðendur,málefni,björt framtíð,framsóknarflokkurinn,píratar,samfylkingin,sjálfstæðisflokkurinn,viðreisn,vinstri græn,flokkur fólksins,alþýðufylkingin"
+            content="volitve,volitve 2022,parlamentarne,voli,voliti,koga voliti,program,program stranke,sds,lmš,sd,konkretno,nsi,pirati,levica"
           />
           <meta property="og:title" content={title} />
-          <meta property="og:site_name" content="Kjóstu rétt 2021" />
-          <meta property="og:url" content={`https://kjosturett.is${path}`} />
+          <meta property="og:site_name" content="Voli prav 2022" />
+          <meta property="og:url" content={`https://voliprav.si${path}`} />
           <meta property="og:description" content={description} />
           <meta property="og:type" content="website" />
 
@@ -97,12 +97,12 @@ class Html extends React.Component {
           {!ogImage && (
             <meta
               property="og:image"
-              content="https://kjosturett.is/og_2021.png"
+              content="https://voliprav.si/og_2021.png"
             />
           )}
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Kjóstu Rétt 2021" />
+          <meta name="twitter:title" content="Voli prav 2022" />
           <meta name="twitter:description" content={description} />
 
           <link

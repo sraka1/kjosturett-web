@@ -21,26 +21,26 @@ const routes = {
     },
     {
       path: '/4e94afa38918c6f2dcc12fd8a04d3972',
-      load: () => import(/* webpackChunkName: 'prof' */ './prof'),
+      load: () => import(/* webpackChunkName: 'prof' */ './questionnaire'),
     },
     {
       path: '/embed',
       children: [
         {
-          path: '/kosningaprof',
+          path: '/vprasalnik',
           children: [
             {
               path: '',
               load: () =>
                 import(
-                  /* webpackChunkName: 'embed-prof' */ './embed/kosningaprof'
+                  /* webpackChunkName: 'embed-prof' */ './embed/questionnaire'
                 ),
             },
             {
-              path: '/:nidurstodur',
+              path: '/:results',
               load: () =>
                 import(
-                  /* webpackChunkName: 'embed-prof' */ './embed/kosningaprof/results'
+                  /* webpackChunkName: 'embed-prof' */ './embed/questionnaire/results'
                 ),
             },
           ],
@@ -49,23 +49,23 @@ const routes = {
     },
     {
       path: '/svar',
-      load: () => import(/* webpackChunkName: 'prof' */ './prof')
+      load: () => import(/* webpackChunkName: 'questionnaire' */ './questionnaire'),
     },
     {
-      path: '/kosningaprof',
+      path: '/vprasalnik',
       children: [
         {
           path: '',
           load: () =>
             import(
-              /* webpackChunkName: 'prof-nidurstodur' */ './prof-nidurstodur'
+              /* webpackChunkName: 'questionnaire-results' */ './questionnaire-results'
             ),
         },
         {
           path: '/:nidurstodur',
           load: () =>
             import(
-              /* webpackChunkName: 'prof-nidurstodur' */ './prof-nidurstodur/results'
+              /* webpackChunkName: 'questionnaire-results' */ './questionnaire-results/results'
             ),
         },
       ],
@@ -133,7 +133,7 @@ const routes = {
     const route = await next();
 
     // Provide default values for title, description etc.
-    route.title = route.title || 'Kjóstu rétt';
+    route.title = route.title || 'Voli prav';
     route.description = route.description || '';
 
     return route;

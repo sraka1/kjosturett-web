@@ -27,7 +27,7 @@ export default ({ params, url }) => {
       ] = nidurstada;
 
       if (coordinates) {
-        ogImage = `https://kjosturett.is/og-image-kjorskra/${coordinates
+        ogImage = `https://voliprav.si/og-image-kjorskra/${coordinates
           .split(',')
           .join('%2C')}`;
       }
@@ -46,7 +46,7 @@ export default ({ params, url }) => {
     : 'Hvar á ég að kjósa?';
   return {
     chunks: ['kjorskra'],
-    title: `${title} - Kjóstu Rétt`,
+    title: `${title} - Voli prav`,
     path: url,
     ogImage,
     description:

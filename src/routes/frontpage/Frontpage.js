@@ -18,7 +18,7 @@ class FrontPage extends PureComponent {
           <div className={s.voteCTA}>
             <p>Kæri kjósandi, til hamingju með daginn!</p>
             <div className={s.ctaButtons}>
-              <Link href="/kosningaprof" className={s.button}>
+              <Link href="/vprasalnik" className={s.button}>
                 1. Taktu kosningaprófið
               </Link>
               <div className={s.arrow}>→</div>
