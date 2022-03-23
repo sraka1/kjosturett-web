@@ -265,7 +265,7 @@ class Kosningaprof extends PureComponent {
     return (
       <div className={s.lead}>
         <p>
-          Vprašalnik <strong>Voliprav</strong> vam je v pomoč pri izbiri
+          Vprašalnik <strong>Voli prav</strong> vam je v pomoč pri izbiri
           stranke, ki je najbliže vašim pogledom. Več vprašanj, kot odgovorite,
           bolj natačni bodo rezultati.
         </p>

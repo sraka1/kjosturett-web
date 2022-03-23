@@ -85,7 +85,7 @@ export default ({ url, params }) => {
   const score = match(minReplies, maxReplies);
   const percentage = `${score.toFixed(0)}%`;
 
-  let title = 'Hversu líkir eru flokkarnir?';
+  let title = 'Primerjalnik - Voli prav';
   let description =
     'Nú getur þú borið saman flokkana í ýmsum málum. Hvaða stjórnarmeirihlutar eru líklegir? Prófaðu þig áfram!';
 
@@ -121,7 +121,7 @@ export default ({ url, params }) => {
     description,
     path: url,
     component: (
-      <Layout page="bera-saman" title="Hversu líkir eru flokkarnir?">
+      <Layout page="bera-saman" title="Primerjalnik">
         <CompareParties
           parties={parties}
           questions={questions}
