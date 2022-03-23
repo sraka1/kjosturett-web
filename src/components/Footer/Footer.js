@@ -15,16 +15,16 @@ const Footer = () => (
           <img className={styles.logo} src={logo} alt="Logo" />
         </Link>
         <nav className={styles.nav}>
-          <Link className={styles.link} href={'/verkefnid'}>
-            Um verkefnið
+          <Link className={styles.link} href={'/o-nas'}>
+            O nas
           </Link>
-          <Link className={styles.link} href={'/fyrri-kosningar'}>
-            Fyrri kosningar
+          <Link className={styles.link} href={'/prejsnje-volitve'}>
+            Prešnje volitve
           </Link>
           <Link
             className={styles.link}
             target="_blank"
-            href="https://github.com/kristjanmik/kjosturett-web"
+            href="https://github.com/sraka1/kjosturett-web"
           >
             GitHub
           </Link>

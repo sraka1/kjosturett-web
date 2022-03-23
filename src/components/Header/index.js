@@ -59,9 +59,11 @@ class Header extends PureComponent {
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
-        href="/kjorskra"
-        key="/kjorskra"
-        className={cx(page === 'kjorskra' ? s.active : null)}
+        href="https://www.dvk-rs.si/volisca/#/"
+        target="_blank"
+        // href="/kjorskra"
+        // key="/kjorskra"
+        // className={cx(page === 'kjorskra' ? s.active : null)}
       >
         Zemljevid volišč
       </Link>,
@@ -83,9 +85,9 @@ class Header extends PureComponent {
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
-        className={cx(page === 'fyrri-kosningar' ? s.active : null)}
-        href="/fyrri-kosningar"
-        key="fyrri-kosningar"
+        className={cx(page === 'prejsnje-volitve' ? s.active : null)}
+        href="/prejsnje-volitve"
+        key="prejsnje-volitve"
       >
         Prejšnje volitve
       </Link>

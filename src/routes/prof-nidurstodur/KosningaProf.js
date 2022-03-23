@@ -251,7 +251,7 @@ class Kosningaprof extends PureComponent {
         {questions.map(({ question, id }) => this.renderQuestion(question, id))}
         {hasData && (
           <p style={{ textAlign: 'center' }}>
-            <button onClick={this.onSend}>Reikna niðurstöður</button>
+            <button onClick={this.onSend}>Izračunaj rezultat</button>
           </p>
         )}
       </div>
@@ -265,7 +265,7 @@ class Kosningaprof extends PureComponent {
     return (
       <div className={s.lead}>
         <p>
-          Izpolnite vprašalnik <strong>Voli Prav</strong> v pomoč pri izbiri
+          Vprašalnik <strong>Voliprav</strong> vam je v pomoč pri izbiri
           stranke, ki je najbliže vašim pogledom. Več vprašanj, kot odgovorite,
           bolj natačni bodo rezultati.
         </p>

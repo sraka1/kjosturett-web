@@ -71,16 +71,18 @@ const routes = {
       ],
     },
     {
-      path: '/fyrri-kosningar',
+      path: '/prejsnje-volitve',
       load: () =>
-        import(/* webpackChunkName: 'fyrri-kosningar' */ './fyrri-kosningar'),
+        import(
+          /* webpackChunkName: 'previous-elections' */ './previous-elections'
+        ),
     },
     {
       path: '/malefni',
       load: () => import(/* webpackChunkName: 'malefni' */ './malefni'),
     },
     {
-      path: '/verkefnid',
+      path: '/o-nas',
       load: () => import(/* webpackChunkName: 'about' */ './about'),
     },
     {
