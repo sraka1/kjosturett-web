@@ -78,7 +78,7 @@ class KosningaprofResults extends PureComponent {
       <div>
         <p className={s.lead}>
           Niðurstöður úr kosningaprófi <strong>Voli prav</strong>. Þú getur
-          lesið {this.renderLink('/malefni/atvinnumal', 'stefnumál flokkana')} í
+          lesið {this.renderLink('/tematike/atvinnumal', 'stefnumál flokkana')} í
           þeim málefnum sem þér þykir mikilvæg.
         </p>
 

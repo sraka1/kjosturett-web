@@ -12,11 +12,11 @@ class MalefniSingle extends PureComponent {
     return (
       <div className={s.root}>
         <ListResponsive
-          mobileTitle="Málefni:"
-          current={`/malefni/${selectedCategory}`}
+          mobileTitle="Tematike:"
+          current={`/tematike/${selectedCategory}`}
           links={categories.map(category => ({
             title: category.name,
-            href: `/malefni/${category.url}`,
+            href: `/tematike/${category.url}`,
           }))}
         />
         <Collapsable

@@ -15,7 +15,7 @@ class About extends PureComponent {
           strank samih in so predstavljene nespremenjene. Projekt prostovoljno
           podpira skupina prostovoljcev, vsa koda pa je dostopna na{' '}
           <a
-            href="https://github.com/sraka1/kjosturett-web"
+            href="https://github.com/sraka1/voliprav-web"
             target="_blank"
           >
             GitHubu

@@ -51,9 +51,9 @@ class Header extends PureComponent {
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
-        href="/malefni/atvinnumal"
-        key="/malefni/atvinnumal"
-        className={cx(page === 'malefni' ? s.active : null)}
+        href="/tematike/atvinnumal"
+        key="/tematike/atvinnumal"
+        className={cx(page === 'tematike' ? s.active : null)}
       >
         Programske tematike
       </Link>,

@@ -11,7 +11,7 @@ class Malefni extends PureComponent {
         <div className={s.categories}>
           {categories.map(category => (
             <a
-              href={`/malefni/${category.url}`}
+              href={`/tematike/${category.url}`}
               className={s.category}
               key={category.url}
             >

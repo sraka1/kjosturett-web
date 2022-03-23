@@ -37,7 +37,7 @@ class CompareParties extends PureComponent {
       return (
         <div className={s.root}>
           <h1 className={s.heading}>
-            Veldu stjórnmálaflokka til að bera saman
+            Izberite stranke, ki jih želite primerjati.
           </h1>
           <div className={s.chooseContainer}>
             <PartyGrid>
@@ -81,7 +81,7 @@ class CompareParties extends PureComponent {
                   history.replace(`/flokkar/bera-saman/`);
                 }}
               >
-                Hreinsa val
+                Počisti izbiro
               </button>
               <button
                 className={s.edit}
@@ -92,7 +92,7 @@ class CompareParties extends PureComponent {
                   );
                 }}
               >
-                Bera Saman
+                Primerjaj
               </button>
             </div>
           )}

@@ -78,7 +78,7 @@ const routes = {
         ),
     },
     {
-      path: '/malefni',
+      path: '/tematike',
       load: () => import(/* webpackChunkName: 'malefni' */ './malefni'),
     },
     {
@@ -94,7 +94,7 @@ const routes = {
       load: () => import(/* webpackChunkName: 'kjorskra' */ './kjorskra'),
     },
     {
-      path: '/malefni/:malefni',
+      path: '/tematike/:malefni',
       load: () =>
         import(/* webpackChunkName: 'malefnisingle' */ './malefnisingle'),
     },

@@ -4,9 +4,9 @@ import Layout from '../../components/Layout';
 
 export default () => ({
   chunks: ['malefni'],
-  title: 'Málefnaflokkar - Voli prav',
+  title: 'Programske tematike - Voli prav',
   component: (
-    <Layout page="malefni">
+    <Layout page="tematike">
       <Malefni />
     </Layout>
   ),

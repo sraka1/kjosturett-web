@@ -24,7 +24,7 @@ const Footer = () => (
           <Link
             className={styles.link}
             target="_blank"
-            href="https://github.com/sraka1/kjosturett-web"
+            href="https://github.com/sraka1/voliprav-web"
           >
             GitHub
           </Link>
