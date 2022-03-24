@@ -531,37 +531,46 @@ if (process.env.REDIS_URL) {
   console.error('WARNING YOU ARE RUNNING THIS PROJECT WITHOUT PERMANENTLY STORING REPLY DATA');
 }
 
-let s3;
-let upload;
+// let s3;
+// let upload;
 
-if (true) {
-  s3 = new __WEBPACK_IMPORTED_MODULE_3_aws_sdk___default.a.S3({
-    accessKeyId: process.env.S3_ACCESS_KEY,
-    secretAccessKey: process.env.S3_SECRET_KEY
-  });
-  upload = __WEBPACK_IMPORTED_MODULE_1_multer___default()({
-    storage: __WEBPACK_IMPORTED_MODULE_2_multer_s3___default()({
-      s3,
-      bucket: process.env.S3_BUCKET,
-      acl: 'public-read',
-      key(req, file, cb) {
-        return _asyncToGenerator(function* () {
-          if (!['image/png', 'image/jpg', 'image/jpeg'].includes(file.mimetype)) return cb(new Error('Wrong filetype'));
+/*
+  if (process.env.NODE_ENV === 'production') {
+    s3 = new aws.S3({
+      accessKeyId: process.env.S3_ACCESS_KEY,
+      secretAccessKey: process.env.S3_SECRET_KEY,
+    });
+    upload = multer({
+      storage: multerS3({
+        s3,
+        bucket: process.env.S3_BUCKET,
+        acl: 'public-read',
+        async key(req, file, cb) {
+          if (!['image/png', 'image/jpg', 'image/jpeg'].includes(file.mimetype))
+            return cb(new Error('Wrong filetype'));
 
           const token = req.query.token;
-          if (!__WEBPACK_IMPORTED_MODULE_11_uuid__["validate"](token)) throw Error('Rangt auðkenni. Hafðu samband við kjosturett@voliprav.si ef þetta er röng villa.');
-          const ssn = yield redis.get(`candidate-token:${token}`);
+          if (!uuid.validate(token))
+            throw Error(
+              'Rangt auðkenni. Hafðu samband við kjosturett@voliprav.si ef þetta er röng villa.',
+            );
+          const ssn = await redis.get(`candidate-token:${token}`);
 
-          if (!ssn) return cb(new Error('Rangur hlekkur. Hafðu samband við kjosturett@voliprav.si ef þetta er röng villa.'));
+          if (!ssn)
+            return cb(
+              new Error(
+                'Rangur hlekkur. Hafðu samband við kjosturett@voliprav.si ef þetta er röng villa.',
+              ),
+            );
 
           cb(null, `candidates/${ssn}.jpg`);
-        })();
-      }
-    })
-  });
-} else {
-  upload = multer({ dest: 'uploads/' });
-}
+        },
+      }),
+    });
+  } else {
+    upload = multer({ dest: 'uploads/' });
+  }
+*/
 
 const app = __WEBPACK_IMPORTED_MODULE_4_express___default()();
 
@@ -595,14 +604,17 @@ app.get('/kjorskra-lookup/:kennitala', (req, res, next) => {
 /**
  * Used to candidate profile upload
  */
+/*
 app.post('/candidate/avatar', upload.single('avatar'), (req, res) => {
-  if (!req.query.token) return res.json({
-    success: false,
-    error: 'Failed to upload photo, missing token'
-  });
+  if (!req.query.token)
+    return res.json({
+      success: false,
+      error: 'Failed to upload photo, missing token',
+    });
 
   res.redirect(`/svar?token=${req.query.token}&upload=success`);
 });
+*/
 
 // Used to gather replies from candidates and parties
 app.post('/konnun/replies', (() => {
