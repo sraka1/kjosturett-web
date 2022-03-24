@@ -3,7 +3,7 @@
 // const URL = 'https://assets.voliprav.si';
 // const URL = 'http://localhost:3000';
 // Temporary, until DNS propagates
-const URL = 'https://voliprav-app.fly.dev';
+const URL = 'https://beta.voliprav.si';
 
 exports.getAssetUrl = (isJpg = false, ...assets) => {
   return `${URL}/${assets.join('/')}.${isJpg ? 'jpg' : 'png'}`;

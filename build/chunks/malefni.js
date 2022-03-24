@@ -534,7 +534,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
       onClick: () => this.toggle()
     }, void 0, _jsx('i', {
       className: __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.hamburger
-    }), ' Valmynd'), _jsx('div', {
+    }), ' Meni'), _jsx('div', {
       className: __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.links
     }, void 0, this.renderLinks()))))), _jsx('nav', {
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(__WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.mobileNav, !isTop && __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.sticky, isOpen && __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.isOpen)

@@ -25,7 +25,8 @@ processes = []
     type = "connections"
 
   [[services.ports]]
-    force_https = true
+    # Cloudflare Flexible SSL temporarily on
+    # force_https = true
     handlers = ["http"]
     port = 80
 

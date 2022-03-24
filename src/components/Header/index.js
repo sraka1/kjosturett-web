@@ -116,7 +116,7 @@ class Header extends PureComponent {
                   className={cx(s.hamburgerBtn, isOpen && s.isOpen)}
                   onClick={() => this.toggle()}
                 >
-                  <i className={s.hamburger} /> Valmynd
+                  <i className={s.hamburger} /> Meni
                 </button>
                 <div className={s.links}>{this.renderLinks()}</div>
               </nav>
