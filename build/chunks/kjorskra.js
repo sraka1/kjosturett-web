@@ -36,7 +36,7 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
       const [fornafn, kjorstadur, kjordeild, kjordaemi, coordinates] = nidurstada;
 
       if (coordinates) {
-        ogImage = `https://voliprav.si/og-image-kjorskra/${coordinates.split(',').join('%2C')}`;
+        ogImage = `https://beta.voliprav.si/og-image-kjorskra/${coordinates.split(',').join('%2C')}`;
       }
 
       nidurstadaObj = {
@@ -448,7 +448,7 @@ class Kjorskra extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
       let data;
 
       try {
-        let url = `https://voliprav.si/kjorskra-lookup/${Object(__WEBPACK_IMPORTED_MODULE_12_kennitala__["clean"])(kennitala)}`;
+        let url = `https://beta.voliprav.si/kjorskra-lookup/${Object(__WEBPACK_IMPORTED_MODULE_12_kennitala__["clean"])(kennitala)}`;
 
         if (false) {
           url = `http://localhost:3000/kjorskra-lookup/${cleanKennitala(kennitala)}`;
@@ -1185,7 +1185,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       return _jsx('div', {
         className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.root
       }, void 0, _jsx('header', {}, void 0, _jsx('a', {
-        href: 'https://voliprav.si/',
+        href: 'https://beta.voliprav.si/',
         target: '_blank'
       }, void 0, _jsx('img', {
         className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.logo,

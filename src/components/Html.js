@@ -62,7 +62,7 @@ class Html extends React.Component {
           />
           <meta property="og:title" content={title} />
           <meta property="og:site_name" content="Voli prav 2022" />
-          <meta property="og:url" content={`https://voliprav.si${path}`} />
+          <meta property="og:url" content={`https://beta.voliprav.si${path}`} />
           <meta property="og:description" content={description} />
           <meta property="og:type" content="website" />
 
@@ -97,7 +97,7 @@ class Html extends React.Component {
           {!ogImage && (
             <meta
               property="og:image"
-              content="https://voliprav.si/og_2021.png"
+              content="https://beta.voliprav.si/og_2021.png"
             />
           )}
 

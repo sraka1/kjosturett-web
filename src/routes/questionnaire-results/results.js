@@ -52,7 +52,7 @@ export default ({ params, url }) => {
           questions={questions}
           candidates={candidates}
           parties={parties}
-          url={`https://voliprav.si/vprasalnik/${encodeURIComponent(
+          url={`https://beta.voliprav.si/vprasalnik/${encodeURIComponent(
             params.results
           )}`}
           ogImage={ogImage}

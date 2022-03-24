@@ -106,7 +106,7 @@ function questionAnswer(reply = []) {
       questions: questions,
       candidates: candidates,
       parties: parties,
-      url: `https://voliprav.si/embed/vprasalnik/${encodeURIComponent(params.results)}`
+      url: `https://beta.voliprav.si/embed/vprasalnik/${encodeURIComponent(params.results)}`
     }))
   };
 });
@@ -307,7 +307,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       return _jsx('div', {
         className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.root
       }, void 0, _jsx('header', {}, void 0, _jsx('a', {
-        href: 'https://voliprav.si/',
+        href: 'https://beta.voliprav.si/',
         target: '_blank'
       }, void 0, _jsx('img', {
         className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.logo,
@@ -1504,7 +1504,7 @@ function pluralize(count, singular, plural, zero = '') {
 }
 
 var _ref = _jsx('strong', {}, void 0, _jsx('a', {
-  href: 'https://voliprav.si/',
+  href: 'https://beta.voliprav.si/',
   target: '_blank'
 }, void 0, 'www.voliprav.si'));
 

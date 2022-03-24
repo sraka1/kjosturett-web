@@ -561,12 +561,12 @@ class CompareParties extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_6__Link__["a" /* default */], {
       className: __WEBPACK_IMPORTED_MODULE_3__styles_scss___default.a.shareButton,
       style: { background: '#4760a5' },
-      href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://voliprav.si' + url)}`,
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://beta.voliprav.si' + url)}`,
       target: '_blank'
     }, void 0, `Deli na Facebooku`), _jsx(__WEBPACK_IMPORTED_MODULE_6__Link__["a" /* default */], {
       className: __WEBPACK_IMPORTED_MODULE_3__styles_scss___default.a.shareButton,
       style: { background: '#1da0f2', marginLeft: '15px' },
-      href: `https://twitter.com/home?status=${encodeURIComponent('Samanburður flokka á kjósturétt.is: https://voliprav.si' + url)}`,
+      href: `https://twitter.com/home?status=${encodeURIComponent('Samanburður flokka á kjósturétt.is: https://beta.voliprav.si' + url)}`,
       target: '_blank'
     }, void 0, `Deli na Twitterju`)), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_3__styles_scss___default.a.resultDisclaimer
@@ -859,7 +859,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       return _jsx('div', {
         className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.root
       }, void 0, _jsx('header', {}, void 0, _jsx('a', {
-        href: 'https://voliprav.si/',
+        href: 'https://beta.voliprav.si/',
         target: '_blank'
       }, void 0, _jsx('img', {
         className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.logo,
