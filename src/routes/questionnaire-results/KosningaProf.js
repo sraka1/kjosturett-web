@@ -192,7 +192,7 @@ class Kosningaprof extends PureComponent {
         <div className={s.questionControls}>
           {!isEmbedded && hasAnswer && (
             <button className={s.skip} onClick={skipQuestion}>
-              <i>Sleppa spurningu</i>
+              <i>Počisti izbiro</i>
             </button>
           )}
           {isEmbedded && (
@@ -210,7 +210,7 @@ class Kosningaprof extends PureComponent {
                 onClick={skipQuestion}
                 style={{ backgroundColor: 'rgb(102, 109, 117)' }}
               >
-                Sleppa spurningu
+                Počisti izbiro
               </button>
               {currentQuestionIndex < questions.length - 1 && (
                 <button
