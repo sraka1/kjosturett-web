@@ -29,7 +29,7 @@ class About extends PureComponent {
 
         <div className={s.we}>
           <div className={s.person}>
-            <img className={s.img} src={'/kristjan.jpg'} alt="Jakob" />
+            <img className={s.img} src={'/jakob.png'} alt="Jakob" />
             <p className={s.name}>Jakob Murko</p>
           </div>
         </div>

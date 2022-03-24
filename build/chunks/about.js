@@ -43,7 +43,7 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.person
     }, void 0, _jsx('img', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
-      src: '/kristjan.jpg',
+      src: '/jakob.png',
       alt: 'Jakob'
     }), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
