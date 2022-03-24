@@ -70,7 +70,7 @@ A file that lists all catagories and their statement for a party. _Likely to cha
 ```json
 [
   {
-    "category": "atvinnumal",
+    "category": "zaposlitve",
     "name": "Atvinnumál",
     "statement": "<p>Alþýðufylkingin hafnar framsali á samningsrétti einstakra verkalýðsfélaga...</p>\n"
   },
@@ -124,7 +124,7 @@ All categories, aka málefnaflokkar(should be topics, but we are just too deep :
 [
   {
     "name": "Atvinnumál",
-    "url": "atvinnumal"
+    "url": "zaposlitve"
   },
   {}
 ]

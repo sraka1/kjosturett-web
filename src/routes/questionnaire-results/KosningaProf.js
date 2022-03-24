@@ -98,9 +98,10 @@ class Kosningaprof extends PureComponent {
     const answerValues = Object.keys(answers)
       .map(x => answers[x])
       .map(x => (x == null ? this.props.answers.default : x));
+    console.log('answerValues', answerValues)
     const answersToken = encodeAnswersToken(answerValues);
 
-    this.context
+    /*this.context
       .fetch(`/konnun/replies/all?timestamp=${Date.now()}`, {
         method: 'POST',
         headers: {
@@ -111,9 +112,10 @@ class Kosningaprof extends PureComponent {
           reply: answersToken,
         }),
       })
-      .catch(console.error);
-    const segments = [isEmbedded && 'embed', 'kosningaprof', answersToken];
+      .catch(console.error);*/
+    const segments = [isEmbedded && 'embed', 'vprasalnik', answersToken];
     const path = segments.filter(Boolean).join('/');
+    console.log('path', path)
     history.push(`/${path}`);
   }
 

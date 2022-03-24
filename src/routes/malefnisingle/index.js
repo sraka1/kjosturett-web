@@ -23,7 +23,7 @@ export default ({ params, url }) => {
     path: url,
     description: `Svör stjórnmálaflokkanna í ${category.name.toLowerCase()}um fyrir Alþingiskosningarnar 2021`,
     component: (
-      <Layout page="malefni" title={category.name}>
+      <Layout page="tematike" title={category.name}>
         <MalefniSingle
           parties={parties}
           categories={categories}

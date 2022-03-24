@@ -16,7 +16,7 @@ function questionAnswer(reply = []) {
 }
 
 export default ({ params, url }) => {
-  const replies = decodeAnswersToken(params.nidurstodur);
+  const replies = decodeAnswersToken(params.results);
   const myAnswers = questionAnswer(replies);
   const parties = getResultsByScore(replies, partyReplies).map(party => {
     party.reply = questionAnswer((party.reply || '').split(''));
@@ -42,7 +42,7 @@ export default ({ params, url }) => {
           candidates={candidates}
           parties={parties}
           url={`https://voliprav.si/embed/vprasalnik/${encodeURIComponent(
-            params.nidurstodur
+            params.results
           )}`}
         />
       </Layout>

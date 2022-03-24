@@ -59,9 +59,9 @@ class KosningaprofResults extends PureComponent {
     if (this.props.isEmbedded) {
       return (
         <div>
-          <p className={s.lead}>Niðurstöður úr kosningaprófi</p>
+          <p className={s.lead}>Rezultati volitvenega vprašalnika</p>
           <p style={{ textAlign: 'center' }}>
-            Þú getur nálgast ýtarefni um flokkana og frambjóðendur á{' '}
+            Več o političnih stališčih in kandidatih strank lahko izveste na{' '}
             <strong>
               <a href="https://voliprav.si/" target="_blank">
                 www.voliprav.si
@@ -77,13 +77,12 @@ class KosningaprofResults extends PureComponent {
     return (
       <div>
         <p className={s.lead}>
-          Niðurstöður úr kosningaprófi <strong>Voli prav</strong>. Þú getur
-          lesið {this.renderLink('/tematike/atvinnumal', 'stefnumál flokkana')} í
-          þeim málefnum sem þér þykir mikilvæg.
+          Preglejte rezultate vprašalnika <strong>Voli prav</strong>. Podrobneje si ogledajte {this.renderLink('/tematike/zaposlitve', 'posamezne tematike')}, ki
+          se vam zdijo zlasti pomembne.
         </p>
 
         <p className={s.buttons}>
-          {this.renderLink('/vprasalnik', 'Taka kosningaprófið', {
+          {this.renderLink('/vprasalnik', 'Reši ponovno', {
             className: s.takeTest,
           })}
         </p>
@@ -99,7 +98,7 @@ class KosningaprofResults extends PureComponent {
             )}`}
             target="_blank"
           >
-            Deila niðurstöðum á Facebook
+            Deli na Facebooku
           </Link>
           <Link
             className={s.shareButton}
@@ -109,7 +108,7 @@ class KosningaprofResults extends PureComponent {
             )}&url=${encodeURIComponent(url)}&hashtags=kosningar`}
             target="_blank"
           >
-            Deila niðurstöðum á Twitter
+            Deli na Twitterju
           </Link>
         </p>
       </div>
@@ -144,25 +143,22 @@ class KosningaprofResults extends PureComponent {
       <div className={s.root}>
         {this.renderIntro()}
 
-        <h3 className={s.partiesHeader}>Stjórnmálaflokkar</h3>
+        <h3 className={s.partiesHeader}>Politične stranke</h3>
         <p className={s.nonLead}>
-          Flokkunum er raðað eftir afstöðu þeirra í kosningaprófinu samanborið
-          við þín svör. <strong>Smelltu á stjórnmálaflokk</strong> til þess að
-          skoða samanburð einstakra spurninga.{' '}
+          Stranke so razvrščene glede na njihova stališča v vprašalniku v primerjavi z vašimi. <strong>Kliknite na posamezno stranko</strong> za primerjavo svojih odgovorov z njihovimi.{' '}
         </p>
 
         {answeredQuestions.length / questions.length < 0.5 && (
           <p className={s.nonLead}>
-            Einungis {answeredQuestions.length}{' '}
-            {pluralize(answeredQuestions.length, 'spurningu', 'spurningum')} var
-            svarað og því gætu niðurstöðurnar ekki veitt fullkomna mynd. Því
-            fleiri spurningum sem þú svarar, því nákvæmari niðurstöður færðu.
+            Odgovorili ste le na {answeredQuestions.length}{' '}
+            {pluralize(answeredQuestions.length, 'vprašanji', 'vprašanj')}, kar pomeni, da vam rezultati ne morajo podati popolne slike. Því
+            Odgovorite na več vprašanj, da pridobite bolj natančno oceno.
           </p>
         )}
 
         {isEmbedded && (
           <p className={s.nonLead}>
-            {this.renderLink('/vprasalnik', 'Taka prófið aftur')}
+            {this.renderLink('/vprasalnik', 'Ponovno izpolnite vprašalnik')}
           </p>
         )}
 

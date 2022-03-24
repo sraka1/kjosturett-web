@@ -1,66 +1,66 @@
 [
   {
     "name": "Davki",
-    "url": "skattamal"
+    "url": "davki"
   },
   {
     "name": "Enakopravnost spolov",
-    "url": "jafnrettismal"
+    "url": "enakopravnost-spolov"
   },
   {
     "name": "Epidemiologija",
-    "url": "stjornarskrarmal"
+    "url": "epidemiologija"
   },
   {
     "name": "Evropska integracija",
-    "url": "evropumal"
+    "url": "evropska-integracija"
   },
   {
     "name": "Gospodarstvo",
-    "url": "sjavarutvegsmal"
+    "url": "gospodarstvo"
   },
   {
     "name": "Infrastruktura",
-    "url": "samgongumal"
+    "url": "infrastruktura"
   },
   {
     "name": "Migracije",
-    "url": "utlendingamal"
+    "url": "migracije"
   },
   {
     "name": "Obramba",
-    "url": "sottvarnarmal"
+    "url": "obramba"
   },
   {
     "name": "Podnebne spremembe",
-    "url": "loftslagsmal"
+    "url": "podnebne-spremembe"
   },
   {
     "name": "Pokrajine",
-    "url": "byggdarmal"
+    "url": "pokrajine"
   },
   {
     "name": "Socialno varstvo",
-    "url": "velferdarmal"
+    "url": "socialno-varstvo"
   },
   {
     "name": "Stanovanjska problematika",
-    "url": "husnaedismal"
+    "url": "stanovanjska-problematika"
   },
   {
     "name": "Šolstvo",
-    "url": "menntamal"
+    "url": "solstvo"
   },
   {
     "name": "Varstvo okolja",
-    "url": "umhverfismal"
+    "url": "varstvo-okolja"
   },
   {
     "name": "Zaposlitve",
-    "url": "atvinnumal"
+    "url": "zaposlitve"
   },
   {
     "name": "Zdravstvo",
-    "url": "heilbrigdismal"
+    "url": "zdravstvo"
   }
 ]

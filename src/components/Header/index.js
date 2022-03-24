@@ -40,19 +40,21 @@ class Header extends PureComponent {
   renderLinks() {
     const { page } = this.props;
 
+    console.log('page', page)
+
     return [
       <Link
         afterClick={() => this.toggle(false)}
         href="/"
         key="/"
-        className={cx(s.politics, page === 'flokkar' ? s.active : null)}
+        className={cx(s.politics, page === 'parties' ? s.active : null)}
       >
         Stranke
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
-        href="/tematike/atvinnumal"
-        key="/tematike/atvinnumal"
+        href="/tematike/davki"
+        key="/tematike/davki"
         className={cx(page === 'tematike' ? s.active : null)}
       >
         Programske tematike
@@ -77,11 +79,11 @@ class Header extends PureComponent {
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}
-        href="/flokkar/bera-saman"
-        key="/flokkar/bera-saman"
-        className={cx(page === 'bera-saman' ? s.active : null)}
+        href="/stranke/primerjaj"
+        key="/stranke/primerjaj"
+        className={cx(page === 'compare-parties' ? s.active : null)}
       >
-        Primerjalnik
+        Primerjaj
       </Link>,
       <Link
         afterClick={() => this.toggle(false)}

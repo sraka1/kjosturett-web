@@ -16,7 +16,7 @@ function questionAnswer(reply = []) {
 }
 
 export default ({ params, url }) => {
-  const replies = decodeAnswersToken(params.nidurstodur);
+  const replies = decodeAnswersToken(params.results);
   const myAnswers = questionAnswer(replies);
   const parties = getResultsByScore(replies, partyReplies).map(party => {
     party.reply = questionAnswer((party.reply || '').split(''));
@@ -33,26 +33,27 @@ export default ({ params, url }) => {
     .map(party => `${party.letter}:${Math.ceil(party.score)}`)
     .join('|');
 
+  // TODO: Deploy voliprav_social_generator to AWS Lambda!
   const ogImage = `https://lx62q4zmz2.execute-api.us-east-1.amazonaws.com/production/${encodeURIComponent(
     socialPayload
   )}`;
 
   return {
-    chunks: ['prof-nidurstodur'],
-    title: `Voli prav - Vprašalnik`,
+    chunks: ['questionnaire-results'],
+    title: `Vprašalnik / Rezultati - Voli prav`,
     path: url,
     ogImage,
     ogImageWidth: 1200,
     ogImageHeight: 630,
     component: (
-      <Layout page="prof-nidurstodur" title="Vprašalnik / Niðurstöður">
+      <Layout page="questionnaire-results" title="Vprašalnik / Rezultati">
         <KosningaProfResults
           answers={answers}
           questions={questions}
           candidates={candidates}
           parties={parties}
           url={`https://voliprav.si/vprasalnik/${encodeURIComponent(
-            params.nidurstodur
+            params.results
           )}`}
           ogImage={ogImage}
         />

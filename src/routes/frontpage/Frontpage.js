@@ -9,25 +9,32 @@ import PartyGrid from '../../components/PartyGrid';
 
 class FrontPage extends PureComponent {
   render() {
-    var showElectionDayMessage =
-      Date.now() > 1632528000000 && Date.now() < 1632614400000;
+    const showElectionDayMessage =
+      Date.now() > 1650751200000 && Date.now() < 1650837600000;
+    // const showElectionDayMessage = true;
 
     return (
       <div>
         {showElectionDayMessage && (
           <div className={s.voteCTA}>
-            <p>Kæri kjósandi, til hamingju með daginn!</p>
+            <p>
+              Pozdrav volivec, uspešno izbiro na volitvah ti želi ekipa Voli
+              prav!
+            </p>
             <div className={s.ctaButtons}>
               <Link href="/vprasalnik" className={s.button}>
-                1. Taktu kosningaprófið
+                1. Izpolnite vprašalnik
               </Link>
               <div className={s.arrow}>→</div>
-              <Link href="/tematike/atvinnumal" className={s.button}>
-                2. Kynntu þér málefnin
+              <Link href="/tematike/davki" className={s.button}>
+                2. Spoznajte tematike
               </Link>
               <div className={s.arrow}>→</div>
-              <Link href="/kjorskra" className={s.button}>
-                3. Finndu út hvar þú átt að kjósa
+              <Link
+                href="https://www.dvk-rs.si/volisca/#/"
+                className={s.button}
+              >
+                3. Preverite kje voliti
               </Link>
             </div>
           </div>
@@ -37,7 +44,7 @@ class FrontPage extends PureComponent {
             <Party
               {...party}
               key={party.letter}
-              href={`/flokkur/${party.url}`}
+              href={`/stranke/${party.url}`}
             />
           ))}
         </PartyGrid>

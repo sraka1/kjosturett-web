@@ -27,7 +27,7 @@ class MalefniSingle extends PureComponent {
               title: party.name,
               content:
                 party.statement ||
-                'Ekkert svar hefur borist við þessum málaflokki',
+                'Stranka ni podala stališča v zvezi s to tematiko.',
               image: getAssetUrl(false, 'party-icons', party.url),
             }))
           }

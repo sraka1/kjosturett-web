@@ -62,7 +62,7 @@ const routes = {
             ),
         },
         {
-          path: '/:nidurstodur',
+          path: '/:results',
           load: () =>
             import(
               /* webpackChunkName: 'questionnaire-results' */ './questionnaire-results/results'
@@ -99,7 +99,7 @@ const routes = {
         import(/* webpackChunkName: 'malefnisingle' */ './malefnisingle'),
     },
     {
-      path: '/flokkar/bera-saman',
+      path: '/stranke/primerjaj',
       children: [
         {
           path: '',
@@ -118,7 +118,7 @@ const routes = {
       ],
     },
     {
-      path: '/flokkur/:party',
+      path: '/stranke/:party',
       load: () => import(/* webpackChunkName: 'partysingle' */ './partysingle'),
     },
     // Wildcard routes, e.g. { path: '*', ... } (must go last)

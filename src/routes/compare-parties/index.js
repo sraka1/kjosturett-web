@@ -12,32 +12,29 @@ parties.sort(function(a, b) {
 });
 
 const partyDeflections = {
-  B: 'Framsóknarflokksins',
-  C: 'Viðreisnar',
-  D: 'Sjálfstæðisflokksins',
-  F: 'Flokki fólksins',
-  M: 'Miðflokksins',
-  J: 'Sósíalistaflokksins',
-  P: 'Pírata',
-  S: 'Samfylkingarinnar',
-  O: 'Frjálslynda Lýðræðisflokksins',
-  V: 'Vinstri grænna'
+  DeSUS: 'DeSUS',
+  DD: 'Dobre Države',
+  GS: 'Gibanje Svoboda',
+  K: 'Konkretno',
+  L: 'Levica',
+  LMŠ: 'Lista Marjana Šarca',
+  ND: 'Naša Dežela',
+  NSi: 'Nova Slovenija',
+  P: 'Piratska Stranka',
+  PS: 'Povežimo Slovenijo'
 };
 
 const partyDeflectionsB = {
-  A: 'Bjarta framtíð',
-  B: 'Framsóknarflokkinn',
-  C: 'Viðreisn',
-  D: 'Sjálfstæðisflokkinn',
-  F: 'Flokk fólksins',
-  M: 'Miðflokkinn',
-  J: 'Sósíalistaflokkinn',
-  P: 'Pírata',
-  R: 'Alþýðufylkinguna',
-  S: 'Samfylkinguna',
-  T: 'Dögun',
-  O: 'Frjálslynda Lýðræðisflokkinn',
-  V: 'Vinstri græn'
+  DeSUS: 'DeSUS',
+  DD: 'Dobre Države',
+  GS: 'Gibanje Svoboda',
+  K: 'Konkretno',
+  L: 'Levica',
+  LMŠ: 'Lista Marjana Šarca',
+  ND: 'Naša Dežela',
+  NSi: 'Nova Slovenija',
+  P: 'Piratska Stranka',
+  PS: 'Povežimo Slovenijo'
 };
 
 const valueMap = {
@@ -54,14 +51,18 @@ export default ({ url, params }) => {
 
   if (!letters) letters = '';
 
-  letters = letters.split('').filter(letter => !!partyDeflections[letter]);
+  letters = letters.split(':').filter(letter => !!partyDeflections[letter]);
 
   //Begin calculations
   let filterParties = letters.map(
     letter => parties.filter(party => party.letter === letter)[0]
   );
 
+  console.log('filterParties', filterParties);
+
   const replies = filterParties.map(party => party.reply.split(''));
+
+  console.log('replies', replies);
 
   const minReplies = [];
   const maxReplies = [];
@@ -85,9 +86,9 @@ export default ({ url, params }) => {
   const score = match(minReplies, maxReplies);
   const percentage = `${score.toFixed(0)}%`;
 
-  let title = 'Primerjalnik - Voli prav';
+  let title = 'Primerjaj - Voli prav';
   let description =
-    'Nú getur þú borið saman flokkana í ýmsum málum. Hvaða stjórnarmeirihlutar eru líklegir? Prófaðu þig áfram!';
+    'Tukaj lahko primerjate stališča različnih političnih strank. Katera koalicija je najbolj verjetna? Poigrajte s različnimi kombinacijami.';
 
   if (letters.length > 0) {
     const currentParties = parties.filter(party =>
@@ -109,9 +110,9 @@ export default ({ url, params }) => {
         .map(p => partyDeflections[p.letter])
         .join(', ');
       let pos = stjorn.lastIndexOf(', ');
-      stjorn = `${stjorn.substring(0, pos)} og${stjorn.substring(pos + 1)}`;
-      title = `Ríkisstjórnin ${letters.join('')} er ${percentage} samstíga`;
-      description = `Skoðaðu betur stjórn ${stjorn} á kjósturétt.is ásamt fleiri möguleikum á kjósturétt.is.`;
+      stjorn = `${stjorn.substring(0, pos)} in${stjorn.substring(pos + 1)}`;
+      title = `Koalicija ${letters.join('-')} je ${percentage} skladna - Voli prav`;
+      description = `Oglejte si podrobnejšo primerjavo strank ${stjorn} na voliprav.si.`;
     }
   }
 
@@ -121,7 +122,7 @@ export default ({ url, params }) => {
     description,
     path: url,
     component: (
-      <Layout page="bera-saman" title="Primerjalnik">
+      <Layout page="compare-parties" title="Primerjaj">
         <CompareParties
           parties={parties}
           questions={questions}

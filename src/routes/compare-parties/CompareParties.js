@@ -78,7 +78,7 @@ class CompareParties extends PureComponent {
                 className={s.edit}
                 onClick={() => {
                   this.setState({ selected: [] });
-                  history.replace(`/flokkar/bera-saman/`);
+                  history.replace(`/stranke/primerjaj/`);
                 }}
               >
                 Počisti izbiro
@@ -88,7 +88,7 @@ class CompareParties extends PureComponent {
                 onClick={() => {
                   this.setState({ isEditing: false });
                   history.push(
-                    `/flokkar/bera-saman/${this.state.selected.join('')}`
+                    `/stranke/primerjaj/${this.state.selected.join(':')}`
                   );
                 }}
               >
@@ -102,7 +102,7 @@ class CompareParties extends PureComponent {
 
     return (
       <div className={s.root}>
-        <h1 className={s.heading}>Samanburður eftirfarandi stjórnmálaflokka</h1>
+        <h1 className={s.heading}>Primerjava političnih strank</h1>
 
         <div className={s.chooseContainer}>
           <PartyGrid>
@@ -120,13 +120,19 @@ class CompareParties extends PureComponent {
             })
           }
         >
-          Velja aðra flokka
+          Izberi druge stranke
         </button>
-        {filterParties.length > 1 && (
+        {filterParties.length > 1 && filterParties.length < 3 && (
           <h2
             id="score"
             className={s.scoreContainer}
-          >{`Flokkarnir eiga ${score.toFixed(0)}% samleið`}</h2>
+          >{`Stranki imata ${score.toFixed(0)}% skladna stališča.`}</h2>
+        )}
+        {filterParties.length > 2 && (
+          <h2
+            id="score"
+            className={s.scoreContainer}
+          >{`Stranke imajo ${score.toFixed(0)}% skladna stališča.`}</h2>
         )}
         {filterParties.length > 1 && (
           <p className={s.buttons}>
@@ -138,7 +144,7 @@ class CompareParties extends PureComponent {
               )}`}
               target="_blank"
             >
-              {`Deila samanburði á Facebook`}
+              {`Deli na Facebooku`}
             </Link>
             <Link
               className={s.shareButton}
@@ -149,12 +155,12 @@ class CompareParties extends PureComponent {
               )}`}
               target="_blank"
             >
-              {`Deila samanburði á Twitter`}
+              {`Deli na Twitterju`}
             </Link>
           </p>
         )}
         <p className={s.resultDisclaimer}>
-          Niðurstöður eru reiknaðar út frá eftirfarandi fullyrðingum:
+          Rezultat je izračunan iz sledečih izjav:
         </p>
         {filterParties.length > 1 && (
           <div className={s.questionsContainer}>
@@ -190,20 +196,20 @@ class CompareParties extends PureComponent {
                     </h4>
                     {distance === 0 && filterParties.length === 2 && (
                       <div>
-                        {`Báðir flokkarnir eru ${answers.textMap[
+                        {`Obe stranki sta označili odgovor ${answers.textMap[
                           replies[0]
                         ].toLowerCase()}${
-                          ['3', '6'].includes(replies[0]) ? 'ir gagnvart' : ''
-                        } fullyrðingunni`}
+                          ['3', '6'].includes(replies[0]) ? '' : ''
+                        } pri tej izjavi.`}
                       </div>
                     )}
                     {distance === 0 && filterParties.length > 2 && (
                       <div>
-                        {`Allir flokkarnir eru ${answers.textMap[
+                        {`Vse stranke so označile odgovor ${answers.textMap[
                           replies[0]
                         ].toLowerCase()}${
-                          ['3', '6'].includes(replies[0]) ? 'ir gagnvart' : ''
-                        } fullyrðingunni`}
+                          ['3', '6'].includes(replies[0]) ? '' : ''
+                        } pri tej izjavi.`}
                       </div>
                     )}
                     {distance > 0 && (
