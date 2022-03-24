@@ -125,12 +125,14 @@ app.post('/candidate/avatar', upload.single('avatar'), (req, res) => {
 
 // Used to gather replies from candidates and parties
 app.post('/konnun/replies', async (req, res) => {
-  if (Date.now() > 1632614400000) {
-    return res.json({
-      success: false,
-      error: 'Kosningarnar eru búnar',
-    });
-  }
+  /*
+    if (Date.now() > 1632614400000) {
+      return res.json({
+        success: false,
+        error: 'Kosningarnar eru búnar',
+      });
+    }
+  */
 
   const { token, reply } = req.body;
 

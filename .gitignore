@@ -4,7 +4,8 @@
 node_modules/
 
 # Compiled output
-build
+# fly.io needs build folder for remote
+# build
 
 # Runtime data
 database.sqlite
