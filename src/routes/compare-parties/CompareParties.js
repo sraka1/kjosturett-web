@@ -176,13 +176,15 @@ class CompareParties extends PureComponent {
                 return 0;
               })
               .map(({ id, question, replies, distance }) => {
+                // If any of the parties didn't answer, ignore the question
+                let questionHasUnansweredReplies = replies.includes('6')
                 return (
                   <div className={s.partyQuestion} key={id}>
                     <h4>
                       <i
                         className={cx(
                           s.dot,
-                          !distance !== 0 &&
+                          !distance !== 0 && !questionHasUnansweredReplies &&
                             s[
                               `dot${
                                 distanceValueMap[
@@ -194,7 +196,7 @@ class CompareParties extends PureComponent {
                       />
                       {question}
                     </h4>
-                    {distance === 0 && filterParties.length === 2 && (
+                    {distance === 0 && filterParties.length === 2 && !questionHasUnansweredReplies && (
                       <div>
                         {`Obe stranki sta označili odgovor ${answers.textMap[
                           replies[0]
@@ -203,7 +205,7 @@ class CompareParties extends PureComponent {
                         } pri tej izjavi.`}
                       </div>
                     )}
-                    {distance === 0 && filterParties.length > 2 && (
+                    {distance === 0 && filterParties.length > 2 && !questionHasUnansweredReplies && (
                       <div>
                         {`Vse stranke so označile odgovor ${answers.textMap[
                           replies[0]
@@ -212,16 +214,16 @@ class CompareParties extends PureComponent {
                         } pri tej izjavi.`}
                       </div>
                     )}
-                    {distance > 0 && (
+                    {(distance > 0 || questionHasUnansweredReplies) && (
                       <div>
                         {filterParties.map(party => (
                           <div key={party.name}>
                             <p>
                               <span>{party.name}</span>{' '}
                               {`${
-                                ['Píratar', 'Vinstri Græn'].includes(party.name)
-                                  ? 'eru'
-                                  : 'er'
+                                ['Socialni Demokrati'].includes(party.name)
+                                  ? 'so označili'
+                                  : 'je označila'
                               } `}
                               <b>
                                 {answers.textMap[

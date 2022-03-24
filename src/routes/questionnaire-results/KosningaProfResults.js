@@ -222,7 +222,7 @@ class KosningaprofResults extends PureComponent {
                     })
                     .map(({ id, myAnswer, question, partyAnswer }) => {
                       const iAmIndiffrent = !(myAnswer !== 3 && myAnswer !== 6);
-                      const pluralParty = party.name === 'Píratar';
+                      const pluralParty = party.name === 'Socialni Demokrati';
                       const partyIndiffrent = !(
                         partyAnswer !== 3 && partyAnswer !== 6
                       );

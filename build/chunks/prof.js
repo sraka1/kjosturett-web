@@ -1056,7 +1056,9 @@ exports.locals = {
 
 
 // const URL = 'https://assets.voliprav.si';
-const URL = 'http://localhost:3000';
+// const URL = 'http://localhost:3000';
+// Temporary, until DNS propagates
+const URL = 'https://voliprav-app.fly.dev';
 
 exports.getAssetUrl = (isJpg = false, ...assets) => {
   return `${URL}/${assets.join('/')}.${isJpg ? 'jpg' : 'png'}`;
@@ -1097,7 +1099,7 @@ module.exports = [{"id":1,"question":"Vsi prebivalci Slovenije bi morali imeti d
 /***/ 97:
 /***/ (function(module, exports) {
 
-module.exports = {"default":"6","textMap":{"1":"Se ne strinjam","2":"Se deloma ne strinjam","3":"Nevtralno","4":"Se deloma strinjam","5":"Se strinjam"}}
+module.exports = {"default":"6","textMap":{"1":"Se ne strinjam","2":"Se deloma ne strinjam","3":"Nevtralno","4":"Se deloma strinjam","5":"Se strinjam","6":"Brez odgovora"}}
 
 /***/ })
 
