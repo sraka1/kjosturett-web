@@ -909,7 +909,7 @@ module.exports = [{"id":1,"question":"Vsi prebivalci Slovenije bi morali imeti d
 /* 97 */
 /***/ (function(module, exports) {
 
-module.exports = {"default":"6","textMap":{"1":"Se sploh ne strinjam","2":"Se deloma ne strinjam","3":"Nevtralno","4":"Se strinjam","5":"Se močno strinjam"}}
+module.exports = {"default":"6","textMap":{"1":"Se ne strinjam","2":"Se deloma ne strinjam","3":"Nevtralno","4":"Se deloma strinjam","5":"Se strinjam"}}
 
 /***/ }),
 /* 98 */

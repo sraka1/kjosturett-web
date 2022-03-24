@@ -6,11 +6,11 @@ import { encodeAnswersToken } from '../../utils';
 import s from './KosningaProf.scss';
 
 const answerMap = {
-  1: 'Se sploh ne strinjam',
+  1: 'Se ne strinjam',
   2: 'Se deloma ne strinjam',
   3: 'Nevtralen',
   4: 'Se deloma strinjam',
-  5: 'Se močno strinjam',
+  5: 'Se strinjam',
   6: 'Ne želim odgovoriti'
 };
 const areYouSure =
