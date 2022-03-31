@@ -1,45 +1,48 @@
 {
   "kjorskra": {
-    "js": "/assets/kjorskra.82712815.chunk.js"
+    "js": "/assets/kjorskra.b93e576a.chunk.js"
   },
   "questionnaire-results": {
-    "js": "/assets/questionnaire-results.912591bc.chunk.js"
+    "js": "/assets/questionnaire-results.dc3c812c.chunk.js"
   },
   "embed-prof": {
-    "js": "/assets/embed-prof.45a7de6d.chunk.js"
+    "js": "/assets/embed-prof.27e675be.chunk.js"
   },
   "compare-parties": {
-    "js": "/assets/compare-parties.befe02c3.chunk.js"
+    "js": "/assets/compare-parties.23c0432d.chunk.js"
   },
   "prof": {
-    "js": "/assets/prof.bfd3f47d.chunk.js"
+    "js": "/assets/prof.a95cf67b.chunk.js"
   },
   "partysingle": {
-    "js": "/assets/partysingle.bee89d5f.chunk.js"
+    "js": "/assets/partysingle.60240798.chunk.js"
   },
   "malefnisingle": {
-    "js": "/assets/malefnisingle.a9118f8e.chunk.js"
+    "js": "/assets/malefnisingle.4c42ac46.chunk.js"
+  },
+  "topics-answers": {
+    "js": "/assets/topics-answers.13bd933d.chunk.js"
   },
   "frontpage": {
-    "js": "/assets/frontpage.32ce8afd.chunk.js"
+    "js": "/assets/frontpage.2bee98a8.chunk.js"
   },
   "about": {
-    "js": "/assets/about.1fb0f4ec.chunk.js"
+    "js": "/assets/about.9818469c.chunk.js"
   },
   "malefni": {
-    "js": "/assets/malefni.0d6330d5.chunk.js"
+    "js": "/assets/malefni.8acf66a4.chunk.js"
   },
   "previous-elections": {
-    "js": "/assets/previous-elections.1dc95d94.chunk.js"
+    "js": "/assets/previous-elections.1afa8037.chunk.js"
   },
   "not-found": {
-    "js": "/assets/not-found.da2af055.chunk.js"
+    "js": "/assets/not-found.7b2be502.chunk.js"
   },
   "client": {
-    "js": "/assets/client.1dff4adc.js"
+    "js": "/assets/client.7c5439f4.js"
   },
   "vendor": {
-    "js": "/assets/vendor.d323b267.js"
+    "js": "/assets/vendor.9545ad10.js"
   },
   "": {
     "svg": "/assets/5314b16f.svg",

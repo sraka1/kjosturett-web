@@ -3,283 +3,9 @@ exports.ids = [0];
 exports.modules = {
 
 /***/ 101:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["b"] = match;
-/* harmony export (immutable) */ __webpack_exports__["a"] = getResultsByScore;
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-// Adapted from @borgar's gist: https://gist.github.com/borgar/5b59dc2d70d1a93bdce5e4fb15ec7d71#file-matchranking-js
-
-const valueMap = {
-  '1': -1,
-  '2': -0.8,
-  '3': 0,
-  '4': 0.8,
-  '5': 1,
-  '6': null
-};
-
-function mapToValues(answers) {
-  return answers.map(value => valueMap[value]);
-}
-
-function match(answers, matchersAnswers) {
-  if (!matchersAnswers) {
-    return 0;
-  }
-
-  let ranks = 0;
-  let distance = 0;
-
-  answers.forEach((my, i) => {
-    const them = matchersAnswers[i];
-
-    if (my != null && them != null) {
-      distance += Math.abs(my - them);
-      ranks += 1;
-    }
-  });
-
-  return (2 - distance / ranks) / 2 * 100;
-}
-
-const sortByRating = (a, b) => b.score - a.score;
-
-function getResultsByScore(answers, dataset) {
-  const answerValues = mapToValues(answers);
-  return dataset.map(data => _extends({}, data, {
-    score: match(answerValues, data.reply && mapToValues(data.reply.split('')))
-  })).sort(sortByRating);
-}
-
-/***/ }),
-
-/***/ 102:
 /***/ (function(module, exports) {
 
 module.exports = [{"letter":"DeSUS","url":"desus","name":"Demokratska Stranka Upokojencev Slovenije","nameDeflected":"DeSUS","website":"https://desus.si/","leader":"Ljubo Jasnič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"DD","url":"dobra-drzava","name":"Dobra Država","nameDeflected":"Dobra Država","website":"https://www.dobradrzava.si/","leader":"Smiljan Mekicar","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"GS","url":"gibanje-svoboda","name":"Gibanje Svoboda","nameDeflected":"Gibanje Svoboda","website":"https://gibanjesvoboda.si/","leader":"Robert Golob","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#00569D"},{"letter":"K","url":"konkretno","name":"Konkretno","nameDeflected":"stranke Konkretno","website":"https://konkretno.si","leader":"Zdravko Počivalšek","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"L","url":"levica","name":"Levica","nameDeflected":"Levice","website":"https://www.levica.si","leader":"Luka Mesec","leaderTitle":"Koordinator","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"LMŠ","url":"lms","name":"Lista Marjana Šarca","nameDeflected":"Liste Marjana Šarca","website":"https://www.strankalms.si","leader":"Marjan Šarec","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"ND","url":"nasa-dezela","name":"Naša Dežela","nameDeflected":"stranke Naša Dežela","website":"https://nasadezela.si/","leader":"Aleksandra Pivec","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"NSi","url":"nsi","name":"Nova Slovenija","nameDeflected":"stranke Nova Slovenija","website":"https://nsi.si","leader":"Matej Tonin","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"P","url":"piratska-stranka","name":"Piratska Stranka","nameDeflected":"Piratske Stranke","website":"https://piratskastranka.si","leader":"Boštjan Tavčar","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#000000"},{"letter":"PS","url":"povezimo-slovenijo","name":"Povežimo Slovenijo","nameDeflected":"gibanja Povežimo Slovenijo","website":"https://povezimoslovenijo.si/","leader":"Nada Pavšer","leaderTitle":"Koordinatorka","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"SAB","url":"sab","name":"Stranka Alenke Bratušek","nameDeflected":"Stranke Alenke Bratušek","website":"https://sab.si","leader":"Alenka Bratušek","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"SD","url":"sd","name":"Socialni Demokrati","nameDeflected":"Socialnih Demokratov","website":"https://socialnidemokrati.si/","leader":"Tanja Fajon","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#E3000F","textColor":"#FFFFFF"},{"letter":"SDS","url":"sds","name":"Slovenska Demokratska Stranka","nameDeflected":"Slovenske Demokratske Stranke","website":"https://www.sds.si","leader":"Ivan Janez Janša","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"SNS","url":"sns","name":"Slovenska Nacionalna Stranka","nameDeflected":"Slovenske Nacionalne Stranke","website":"http://sns.si/","leader":"Zmago Jelinčič Plemeniti","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#FEE51E"},{"letter":"VESNA","url":"vesna","name":"VESNA - zelena stranka","nameDeflected":"stranke VESNA - zelene stranke","website":"https://www.vesnazelenastranka.si","leader":"Uroš Macerl in Urša Zgojznik","leaderTitle":"Sopredsednika","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"}]
-
-/***/ }),
-
-/***/ 103:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Party__ = __webpack_require__(104);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Party__["a"]; });
-
-
-/***/ }),
-
-/***/ 104:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Party_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(75);
-var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
-
-
-
-
-
-
-
-
-var _ref = _jsx('span', {}, void 0, 'x');
-
-const Container = ({
-  url,
-  href,
-  onClick,
-  isSelected,
-  isFaded,
-  letter,
-  name,
-  leader
-}) => {
-  const Wrap = href ? __WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */] : 'button';
-  return _jsx(Wrap, {
-    href: href,
-    onClick: onClick,
-    className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(__WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.party, isSelected && __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.isSelected, isFaded && __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.isFaded)
-  }, void 0, _jsx('span', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.imgWrap
-  }, void 0, _jsx('img', {
-    src: Object(__WEBPACK_IMPORTED_MODULE_4__utils__["getAssetUrl"])(false, 'party-icons', url),
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.image,
-    alt: `${name}'s logo`
-  })), _jsx('span', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.info
-  }, void 0, _jsx('h3', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.name
-  }, void 0, name), _jsx('p', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.leader
-  }, void 0, leader), _jsx('span', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.letter
-  }, void 0, _ref, letter)));
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default()(__WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a)(Container));
-
-/***/ }),
-
-/***/ 105:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-    var content = __webpack_require__(106);
-    var insertCss = __webpack_require__(7);
-
-    if (typeof content === 'string') {
-      content = [[module.i, content, '']];
-    }
-
-    module.exports = content.locals || {};
-    module.exports._getContent = function() { return content; };
-    module.exports._getCss = function() { return content.toString(); };
-    module.exports._insertCss = function(options) { return insertCss(content, options) };
-    
-    // Hot Module Replacement
-    // https://webpack.github.io/docs/hot-module-replacement
-    // Only activated in browser context
-    if (false) {
-      var removeCss = function() {};
-      module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--1-rules-2!../../../node_modules/postcss-loader/lib/index.js??ref--1-rules-3!../../../node_modules/sass-loader/dist/cjs.js!./Party.scss", function() {
-        content = require("!!../../../node_modules/css-loader/index.js??ref--1-rules-2!../../../node_modules/postcss-loader/lib/index.js??ref--1-rules-3!../../../node_modules/sass-loader/dist/cjs.js!./Party.scss");
-
-        if (typeof content === 'string') {
-          content = [[module.id, content, '']];
-        }
-
-        removeCss = insertCss(content, { replace: true });
-      });
-      module.hot.dispose(function() { removeCss(); });
-    }
-  
-
-/***/ }),
-
-/***/ 106:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(6)(false);
-// imports
-
-
-// module
-exports.push([module.i, "._2n2ob{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0 solid #efefef;border-top-width:1px;background:#fff;color:#555;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:16px;font-size:1rem;height:65px;line-height:1;padding:0;position:relative;text-align:left;text-decoration:none;-webkit-transition:-webkit-filter .4s;transition:-webkit-filter .4s;-o-transition:filter .4s;transition:filter .4s;transition:filter .4s,-webkit-filter .4s;width:100%}._2n2ob:hover{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns=\"http://www.w3.org/2000/svg\"><filter id=\"filter\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"4\" /><feOffset dx=\"1\" dy=\"5\" result=\"offsetblur\" /><feFlood flood-color=\"rgba(0,0,0,0.1)\" /><feComposite in2=\"offsetblur\" operator=\"in\" /><feMerge><feMergeNode /><feMergeNode in=\"SourceGraphic\" /></feMerge></filter></svg>#filter');-webkit-filter:drop-shadow(0 4px 4px rgba(0,0,0,.1));filter:drop-shadow(0 4px 4px rgba(0,0,0,.1));-webkit-transition-duration:.25s;-o-transition-duration:.25s;transition-duration:.25s}._2n2ob._2qT6O{border-color:#0a2645}._2n2ob.BCIPi{opacity:.6}@media(min-width:600px){._2n2ob{border-width:1px;height:200px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}._1nDyJ{border:1px solid #efefef;border-right:0;border-top:0;color:#aaa;font-size:16px;font-size:1rem;padding:10px 12px;position:absolute;right:0;top:0}._1nDyJ span{font-size:19.2px;font-size:1.2rem}@media(max-width:599px){._1nDyJ{display:none}}._3yvZg{font-size:16px;font-size:1rem;margin-top:0!important;margin-bottom:.2em}._1fpd4{color:#777;font-size:.8em}._2Jno1{margin-right:8px;margin-right:.5rem;width:32px;width:2rem}.TPyW2{height:auto;max-height:70px;max-width:30px}@media(min-width:600px){._3iGan{line-height:1.2;padding-right:.5rem;width:60%}._2Jno1{margin-left:.5rem;text-align:center;width:calc(40% - .5rem)}.TPyW2{height:auto;max-height:70px;max-width:100px}}", ""]);
-
-// exports
-exports.locals = {
-	"party": "_2n2ob",
-	"isSelected": "_2qT6O",
-	"isFaded": "BCIPi",
-	"letter": "_1nDyJ",
-	"name": "_3yvZg",
-	"leader": "_1fpd4",
-	"imgWrap": "_2Jno1",
-	"image": "TPyW2",
-	"info": "_3iGan"
-};
-
-/***/ }),
-
-/***/ 107:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PartyGrid__ = __webpack_require__(108);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__PartyGrid__["a"]; });
-
-
-/***/ }),
-
-/***/ 108:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__);
-var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
-
-
-
-
-
-const PartyGrid = ({ children }) => _jsx('div', {
-  className: __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss___default.a.grid
-}, void 0, children);
-
-/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default()(__WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss___default.a)(PartyGrid));
-
-/***/ }),
-
-/***/ 109:
-/***/ (function(module, exports, __webpack_require__) {
-
-
-    var content = __webpack_require__(110);
-    var insertCss = __webpack_require__(7);
-
-    if (typeof content === 'string') {
-      content = [[module.i, content, '']];
-    }
-
-    module.exports = content.locals || {};
-    module.exports._getContent = function() { return content; };
-    module.exports._getCss = function() { return content.toString(); };
-    module.exports._insertCss = function(options) { return insertCss(content, options) };
-    
-    // Hot Module Replacement
-    // https://webpack.github.io/docs/hot-module-replacement
-    // Only activated in browser context
-    if (false) {
-      var removeCss = function() {};
-      module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--1-rules-2!../../../node_modules/postcss-loader/lib/index.js??ref--1-rules-3!../../../node_modules/sass-loader/dist/cjs.js!./PartyGrid.scss", function() {
-        content = require("!!../../../node_modules/css-loader/index.js??ref--1-rules-2!../../../node_modules/postcss-loader/lib/index.js??ref--1-rules-3!../../../node_modules/sass-loader/dist/cjs.js!./PartyGrid.scss");
-
-        if (typeof content === 'string') {
-          content = [[module.id, content, '']];
-        }
-
-        removeCss = insertCss(content, { replace: true });
-      });
-      module.hot.dispose(function() { removeCss(); });
-    }
-  
-
-/***/ }),
-
-/***/ 110:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(6)(false);
-// imports
-
-
-// module
-exports.push([module.i, "._3CsGN{display:grid}@media(min-width:600px){._3CsGN{grid-template-columns:1fr 1fr;grid-gap:1rem}}@media(min-width:900px){._3CsGN{grid-template-columns:1fr 1fr 1fr}}", ""]);
-
-// exports
-exports.locals = {
-	"grid": "_3CsGN"
-};
 
 /***/ }),
 
@@ -290,12 +16,12 @@ exports.locals = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__process_replies__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CompareParties__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Layout__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_poll_questions_json__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__process_replies__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__CompareParties__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Layout__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_poll_questions_json__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_poll_questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__data_poll_questions_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__data_build_replies_parties_json__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__data_build_replies_parties_json__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__data_build_replies_parties_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__data_build_replies_parties_json__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -428,7 +154,71 @@ const valueMap = {
 
 /***/ }),
 
-/***/ 204:
+/***/ 153:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["b"] = match;
+/* harmony export (immutable) */ __webpack_exports__["a"] = getResultsByScore;
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+// Adapted from @borgar's gist: https://gist.github.com/borgar/5b59dc2d70d1a93bdce5e4fb15ec7d71#file-matchranking-js
+
+const valueMap = {
+  '1': -1,
+  '2': -0.8,
+  '3': 0,
+  '4': 0.8,
+  '5': 1,
+  '6': null
+};
+
+function mapToValues(answers) {
+  return answers.map(value => valueMap[value]);
+}
+
+function match(answers, matchersAnswers) {
+  if (!matchersAnswers) {
+    return 0;
+  }
+
+  let ranks = 0;
+  let distance = 0;
+
+  answers.forEach((my, i) => {
+    const them = matchersAnswers[i];
+
+    if (my != null && them != null) {
+      distance += Math.abs(my - them);
+      ranks += 1;
+    }
+  });
+
+  return (2 - distance / ranks) / 2 * 100;
+}
+
+const sortByRating = (a, b) => b.score - a.score;
+
+function getResultsByScore(answers, dataset) {
+  const answerValues = mapToValues(answers);
+  return dataset.map(data => _extends({}, data, {
+    score: match(answerValues, data.reply && mapToValues(data.reply.split('')))
+  })).sort(sortByRating);
+}
+
+/***/ }),
+
+/***/ 154:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Party__ = __webpack_require__(155);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Party__["a"]; });
+
+
+/***/ }),
+
+/***/ 155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -438,14 +228,222 @@ const valueMap = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_scss__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Party_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__utils__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(76);
+var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
+
+
+
+
+
+
+
+
+const Container = ({
+  url,
+  href,
+  onClick,
+  isSelected,
+  isFaded,
+  letter,
+  name,
+  leader
+}) => {
+  const Wrap = href ? __WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */] : 'button';
+  return _jsx(Wrap, {
+    href: href,
+    onClick: onClick,
+    className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(__WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.party, isSelected && __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.isSelected, isFaded && __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.isFaded)
+  }, void 0, _jsx('span', {
+    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.imgWrap
+  }, void 0, _jsx('img', {
+    src: Object(__WEBPACK_IMPORTED_MODULE_4__utils__["getAssetUrl"])(false, 'party-icons', url),
+    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.image,
+    alt: `${name}'s logo`
+  })), _jsx('span', {
+    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.info
+  }, void 0, _jsx('h3', {
+    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.name
+  }, void 0, name), _jsx('p', {
+    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.leader
+  }, void 0, leader), _jsx('span', {
+    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.letter
+  }, void 0, letter)));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default()(__WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a)(Container));
+
+/***/ }),
+
+/***/ 156:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+    var content = __webpack_require__(157);
+    var insertCss = __webpack_require__(7);
+
+    if (typeof content === 'string') {
+      content = [[module.i, content, '']];
+    }
+
+    module.exports = content.locals || {};
+    module.exports._getContent = function() { return content; };
+    module.exports._getCss = function() { return content.toString(); };
+    module.exports._insertCss = function(options) { return insertCss(content, options) };
+    
+    // Hot Module Replacement
+    // https://webpack.github.io/docs/hot-module-replacement
+    // Only activated in browser context
+    if (false) {
+      var removeCss = function() {};
+      module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--1-rules-2!../../../node_modules/postcss-loader/lib/index.js??ref--1-rules-3!../../../node_modules/sass-loader/dist/cjs.js!./Party.scss", function() {
+        content = require("!!../../../node_modules/css-loader/index.js??ref--1-rules-2!../../../node_modules/postcss-loader/lib/index.js??ref--1-rules-3!../../../node_modules/sass-loader/dist/cjs.js!./Party.scss");
+
+        if (typeof content === 'string') {
+          content = [[module.id, content, '']];
+        }
+
+        removeCss = insertCss(content, { replace: true });
+      });
+      module.hot.dispose(function() { removeCss(); });
+    }
+  
+
+/***/ }),
+
+/***/ 157:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)(false);
+// imports
+
+
+// module
+exports.push([module.i, "._2n2ob{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0 solid #efefef;border-top-width:1px;background:#fff;color:#555;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:16px;font-size:1rem;height:65px;line-height:1;padding:0;position:relative;text-align:left;text-decoration:none;-webkit-transition:-webkit-filter .4s;transition:-webkit-filter .4s;-o-transition:filter .4s;transition:filter .4s;transition:filter .4s,-webkit-filter .4s;width:100%}._2n2ob:hover{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns=\"http://www.w3.org/2000/svg\"><filter id=\"filter\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"4\" /><feOffset dx=\"1\" dy=\"5\" result=\"offsetblur\" /><feFlood flood-color=\"rgba(0,0,0,0.1)\" /><feComposite in2=\"offsetblur\" operator=\"in\" /><feMerge><feMergeNode /><feMergeNode in=\"SourceGraphic\" /></feMerge></filter></svg>#filter');-webkit-filter:drop-shadow(0 4px 4px rgba(0,0,0,.1));filter:drop-shadow(0 4px 4px rgba(0,0,0,.1));-webkit-transition-duration:.25s;-o-transition-duration:.25s;transition-duration:.25s}._2n2ob._2qT6O{border-color:#0a2645}._2n2ob.BCIPi{opacity:.6}@media(min-width:600px){._2n2ob{border-width:1px;height:200px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}._1nDyJ{border:1px solid #efefef;border-right:0;border-top:0;color:#aaa;font-size:16px;font-size:1rem;padding:10px 12px;position:absolute;right:0;top:0}._1nDyJ span{font-size:19.2px;font-size:1.2rem}@media(max-width:599px){._1nDyJ{display:none}}._3yvZg{font-size:16px;font-size:1rem;margin-top:0!important;margin-bottom:.2em}._1fpd4{color:#777;font-size:.8em}._2Jno1{margin-right:8px;margin-right:.5rem;width:32px;width:2rem}.TPyW2{height:auto;max-height:70px;max-width:30px}@media(min-width:600px){._3iGan{line-height:1.2;padding-right:.5rem;width:60%}._2Jno1{margin-left:.5rem;text-align:center;width:calc(40% - .5rem)}.TPyW2{height:auto;max-height:70px;max-width:100px}}", ""]);
+
+// exports
+exports.locals = {
+	"party": "_2n2ob",
+	"isSelected": "_2qT6O",
+	"isFaded": "BCIPi",
+	"letter": "_1nDyJ",
+	"name": "_3yvZg",
+	"leader": "_1fpd4",
+	"imgWrap": "_2Jno1",
+	"image": "TPyW2",
+	"info": "_3iGan"
+};
+
+/***/ }),
+
+/***/ 158:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PartyGrid__ = __webpack_require__(159);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__PartyGrid__["a"]; });
+
+
+/***/ }),
+
+/***/ 159:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__);
+var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
+
+
+
+
+
+const PartyGrid = ({ children }) => _jsx('div', {
+  className: __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss___default.a.grid
+}, void 0, children);
+
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default()(__WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss___default.a)(PartyGrid));
+
+/***/ }),
+
+/***/ 160:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+    var content = __webpack_require__(161);
+    var insertCss = __webpack_require__(7);
+
+    if (typeof content === 'string') {
+      content = [[module.i, content, '']];
+    }
+
+    module.exports = content.locals || {};
+    module.exports._getContent = function() { return content; };
+    module.exports._getCss = function() { return content.toString(); };
+    module.exports._insertCss = function(options) { return insertCss(content, options) };
+    
+    // Hot Module Replacement
+    // https://webpack.github.io/docs/hot-module-replacement
+    // Only activated in browser context
+    if (false) {
+      var removeCss = function() {};
+      module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--1-rules-2!../../../node_modules/postcss-loader/lib/index.js??ref--1-rules-3!../../../node_modules/sass-loader/dist/cjs.js!./PartyGrid.scss", function() {
+        content = require("!!../../../node_modules/css-loader/index.js??ref--1-rules-2!../../../node_modules/postcss-loader/lib/index.js??ref--1-rules-3!../../../node_modules/sass-loader/dist/cjs.js!./PartyGrid.scss");
+
+        if (typeof content === 'string') {
+          content = [[module.id, content, '']];
+        }
+
+        removeCss = insertCss(content, { replace: true });
+      });
+      module.hot.dispose(function() { removeCss(); });
+    }
+  
+
+/***/ }),
+
+/***/ 161:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(6)(false);
+// imports
+
+
+// module
+exports.push([module.i, "._3CsGN{display:grid}@media(min-width:600px){._3CsGN{grid-template-columns:1fr 1fr;grid-gap:1rem}}@media(min-width:900px){._3CsGN{grid-template-columns:1fr 1fr 1fr}}", ""]);
+
+// exports
+exports.locals = {
+	"grid": "_3CsGN"
+};
+
+/***/ }),
+
+/***/ 208:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_scss__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__styles_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__styles_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__history__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__data_poll_answers_json__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__history__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__data_poll_answers_json__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__data_poll_answers_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__data_poll_answers_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Link__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Party__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_PartyGrid__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Link__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_Party__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_PartyGrid__ = __webpack_require__(158);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
@@ -595,11 +593,11 @@ class CompareParties extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"
 
 /***/ }),
 
-/***/ 205:
+/***/ 209:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(206);
+    var content = __webpack_require__(210);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -631,7 +629,7 @@ class CompareParties extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"
 
 /***/ }),
 
-/***/ 206:
+/***/ 210:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -671,14 +669,14 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 74:
+/***/ 75:
 /***/ (function(module, exports) {
 
 module.exports = "/assets/5314b16f.svg";
 
 /***/ }),
 
-/***/ 75:
+/***/ 76:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -686,7 +684,7 @@ module.exports = "/assets/5314b16f.svg";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(79);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -761,17 +759,17 @@ Link.protoTypes = {
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Container__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Container__ = __webpack_require__(78);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Container__["a"]; });
 
 
 /***/ }),
 
-/***/ 77:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -779,7 +777,7 @@ Link.protoTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Container_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -795,7 +793,7 @@ const Container = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 78:
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -818,7 +816,7 @@ const Container = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 79:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -826,12 +824,12 @@ const Container = ({ children }) => _jsx('div', {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Layout_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Footer__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Container__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Footer__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Container__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -897,11 +895,11 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 /***/ }),
 
-/***/ 80:
+/***/ 81:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(81);
+    var content = __webpack_require__(82);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -933,7 +931,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 /***/ }),
 
-/***/ 81:
+/***/ 82:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -956,7 +954,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 82:
+/***/ 83:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -966,12 +964,12 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Container__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Countdown__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Container__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Countdown__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Header_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1090,11 +1088,11 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 83:
+/***/ 84:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(84);
+    var content = __webpack_require__(85);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1126,7 +1124,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 84:
+/***/ 85:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1143,7 +1141,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 85:
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1153,7 +1151,7 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_countdown_now__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_countdown_now___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Countdown_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1184,11 +1182,11 @@ const Countdown = () => _jsx(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now___d
 
 /***/ }),
 
-/***/ 86:
+/***/ 87:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(87);
+    var content = __webpack_require__(88);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1220,7 +1218,7 @@ const Countdown = () => _jsx(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now___d
 
 /***/ }),
 
-/***/ 87:
+/***/ 88:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1235,11 +1233,11 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(89);
+    var content = __webpack_require__(90);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1271,7 +1269,7 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ 89:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1303,17 +1301,17 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 90:
+/***/ 91:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Footer__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Footer__ = __webpack_require__(92);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Footer__["a"]; });
 
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1321,11 +1319,11 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Footer_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Container_Container__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Container_Container__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1364,11 +1362,11 @@ const Footer = () => _jsx('footer', {
 
 /***/ }),
 
-/***/ 92:
+/***/ 93:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(93);
+    var content = __webpack_require__(94);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1400,7 +1398,7 @@ const Footer = () => _jsx('footer', {
 
 /***/ }),
 
-/***/ 93:
+/***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1421,7 +1419,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 94:
+/***/ 95:
 /***/ (function(module, exports) {
 
 
@@ -1460,14 +1458,14 @@ exports.decodeAnswersToken = token => {
 
 /***/ }),
 
-/***/ 96:
+/***/ 97:
 /***/ (function(module, exports) {
 
-module.exports = [{"id":1,"question":"Vsi prebivalci Slovenije bi morali imeti dostop do primarnega zdravstva v domačem kraju."},{"id":2,"question":"Dopustiti je treba povečano zasebno delovanje v zdravstvenem sistemu."},{"id":3,"question":"Širitev javnega potniškega prometa bistveno pripomore k povezljivosti Slovenije."},{"id":4,"question":"Slovenija naj v sodelovanju z mednarodnimi organizacijami sprejme več prosilcev za mednarodno zaščito."},{"id":5,"question":"Štipendiranje študentov naj bo v višjih zneskih in dostopnejše vsem študentom."},{"id":6,"question":"Drugi in tretji pokojninski steber bi morala imeti vidnejšo vlogo v pokojninskem sistemu."},{"id":7,"question":"Prejemke za invalidsko pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":8,"question":"Prejemke za starostno pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":9,"question":"Država naj uvede univerzalni temeljni dohodek (UTD)."},{"id":10,"question":"Država naj stori več glede decentralizacije Slovenije."},{"id":11,"question":"Pokrajine naj se uvedejo do konca prihajajočega mandata."},{"id":12,"question":"Nadzor in sankcije na področju koruptivnih dejanj je treba povečati."},{"id":13,"question":"Povečati je treba prispevek Slovenije k razvojnemu sodelovanju in dejavnostim pomoči v revnejših državah sveta."},{"id":14,"question":"Zveza NATO naj ima vidno vlogo pri zagotavljanju teritorialne celovitosti Slovenije."},{"id":15,"question":"Vlada bi morala varovati položaj verskih ustanov v slovenski družbi."},{"id":16,"question":"Kazni za spolno in družinsko nasilje bi bilo treba povečati."},{"id":17,"question":"Za vlado naj bo pomembno, da s finančnimi spodbudami reši težave slovenskih kmetovalcev."},{"id":18,"question":"Slovenija naj podpre globlje in tesnejše povezovanje v sklopu Evropske Unije."},{"id":19,"question":"Država naj stori več za spodbujanje vseživljenjskega izobraževanja."},{"id":20,"question":"V prihajajočem volilnem mandatu je treba legalizirati uporabo konoplje."},{"id":21,"question":"Vlada bi morala globlje poseči v stanovanjski trg z namenom regulacije rasti cen nepremičnin."},{"id":22,"question":"Naložbe v infrastrukturo (npr. v promet, telekomunikacije in zdravstveni sistem) naj imajo prednost pred odplačilom dolga državne blagajne."},{"id":23,"question":"Država naj ohrani lastništvo v sistemsko pomembnih bančnih ustanovah."},{"id":24,"question":"Znižati je treba prispevke na plače, ki jih podjetja plačujejo državi."},{"id":25,"question":"Davke na visoke dohodke je treba dvigniti."},{"id":26,"question":"Država naj poenostavi postopke za zaposlitev visoko-kvalificirane delovne sile iz tretjih držav."},{"id":27,"question":"Država naj ohrani deleže v gospodarskih subjektih, ki so vitalnega državnega pomena."},{"id":28,"question":"Slovenija naj bo prehrambeno samooskrbna."},{"id":29,"question":"Država naj odpravi omejitve delovnega časa ob nedeljah."},{"id":30,"question":"Država si naj prizadeva za izboljšanje zmogljivosti in dostopa do turističnih znamenitosti v njeni lasti ali upravljanju."},{"id":31,"question":"Država naj proda svoj delež v energetskih podjetjih."},{"id":32,"question":"Interesi narave bi morali prevladati nad finančnimi interesi pri odločanju vlade pri ustvarjanju delovnih mest."},{"id":33,"question":"Vlada bi morala upoštevati priporočila epidemiološke stroke glede nalezljivih bolezni, tudi kadar ta negativno vplivajo na gospodarstvo."},{"id":34,"question":"Slovenija naj poveča investicije v digitalno preobrazbo družbe in države ter obenem skuša privabiti tehnološka podjetja."},{"id":35,"question":"Pravica do dostopa do interneta naj bo zapisana v ustavi."},{"id":36,"question":"Država naj ustanovi državnega letalskega prevoznika."},{"id":37,"question":"Država naj poenostavi in pohitri postopke prostorskega umeščanja za ključne državne projekte."},{"id":38,"question":"Država naj nadaljuje z vlaganjem v izgradnjo 2. bloka jedrske elektrarne Krško."},{"id":39,"question":"Država naj pospeši časovnico za prepoved prve registracije vozil z notranjim izgorevanjem."},{"id":40,"question":"Država naj aktivno spodbuja krožno gospodarstvo z namenom zmanjšanja količine odpadkov in ogljičnega odtisa Slovenije."}]
+module.exports = [{"id":1,"question":"Vsi prebivalci Slovenije bi morali imeti dostop do primarnega zdravstva v bližini domačem kraju oz. bližnji okolici."},{"id":2,"question":"Dopustiti je treba povečano zasebno delovanje v zdravstvenem sistemu."},{"id":3,"question":"Širitev javnega potniškega prometa bistveno pripomore k povezljivosti Slovenije."},{"id":4,"question":"Slovenija naj v sodelovanju z mednarodnimi organizacijami sprejme več prosilcev za mednarodno zaščito."},{"id":5,"question":"Štipendiranje študentov naj bo v višjih zneskih in dostopnejše vsem študentom."},{"id":6,"question":"Drugi in tretji pokojninski steber bi morala imeti vidnejšo vlogo v pokojninskem sistemu."},{"id":7,"question":"Prejemke za invalidsko pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":8,"question":"Prejemke za starostno pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":9,"question":"Država naj uvede univerzalni temeljni dohodek (UTD)."},{"id":10,"question":"Država naj stori več glede decentralizacije Slovenije."},{"id":11,"question":"Pokrajine naj se uvedejo do konca prihajajočega mandata."},{"id":12,"question":"Nadzor in sankcije na področju koruptivnih dejanj je treba povečati."},{"id":13,"question":"Povečati je treba prispevek Slovenije k razvojnemu sodelovanju in dejavnostim pomoči v revnejših državah sveta."},{"id":14,"question":"Zveza NATO naj ima vidno vlogo pri zagotavljanju teritorialne celovitosti Slovenije."},{"id":15,"question":"Vlada bi morala varovati položaj verskih ustanov v slovenski družbi."},{"id":16,"question":"Kazni za spolno in družinsko nasilje bi bilo treba povečati."},{"id":17,"question":"Za vlado naj bo pomembno, da s finančnimi spodbudami reši težave slovenskih kmetovalcev."},{"id":18,"question":"Slovenija naj podpre globlje in tesnejše povezovanje v sklopu Evropske Unije."},{"id":19,"question":"Država naj stori več za spodbujanje vseživljenjskega izobraževanja."},{"id":20,"question":"V prihajajočem volilnem mandatu je treba legalizirati uporabo konoplje."},{"id":21,"question":"Vlada bi morala globlje poseči v stanovanjski trg z namenom regulacije rasti cen nepremičnin."},{"id":22,"question":"Naložbe v infrastrukturo (npr. v promet, telekomunikacije in zdravstveni sistem) naj imajo prednost pred odplačilom dolga državne blagajne."},{"id":23,"question":"Država naj ohrani lastništvo v sistemsko pomembnih bančnih ustanovah."},{"id":24,"question":"Znižati je treba prispevke na plače, ki jih podjetja plačujejo državi."},{"id":25,"question":"Davke na visoke dohodke je treba dvigniti."},{"id":26,"question":"Država naj poenostavi postopke za zaposlitev visoko-kvalificirane delovne sile iz tretjih držav."},{"id":27,"question":"Država naj ohrani deleže v gospodarskih subjektih, ki so vitalnega državnega pomena."},{"id":28,"question":"Slovenija naj bo prehrambeno samooskrbna."},{"id":29,"question":"Država naj odpravi omejitve delovnega časa ob nedeljah."},{"id":30,"question":"Država si naj prizadeva za izboljšanje zmogljivosti in dostopa do turističnih znamenitosti v njeni lasti ali upravljanju."},{"id":31,"question":"Država naj proda svoj delež v energetskih podjetjih."},{"id":32,"question":"Interesi narave bi morali prevladati nad finančnimi interesi pri odločanju vlade pri ustvarjanju delovnih mest."},{"id":33,"question":"Vlada bi morala upoštevati priporočila epidemiološke stroke glede nalezljivih bolezni, tudi kadar ta negativno vplivajo na gospodarstvo."},{"id":34,"question":"Slovenija naj poveča investicije v digitalno preobrazbo družbe in države ter obenem skuša privabiti tehnološka podjetja."},{"id":35,"question":"Pravica do dostopa do interneta naj bo zapisana v ustavi."},{"id":36,"question":"Država naj ustanovi državnega letalskega prevoznika."},{"id":37,"question":"Država naj poenostavi in pohitri postopke prostorskega umeščanja za ključne državne projekte."},{"id":38,"question":"Država naj nadaljuje z vlaganjem v izgradnjo 2. bloka jedrske elektrarne Krško."},{"id":39,"question":"Država naj pospeši časovnico za prepoved prve registracije vozil z notranjim izgorevanjem."},{"id":40,"question":"Država naj aktivno spodbuja krožno gospodarstvo z namenom zmanjšanja količine odpadkov in ogljičnega odtisa Slovenije."}]
 
 /***/ }),
 
-/***/ 97:
+/***/ 98:
 /***/ (function(module, exports) {
 
 module.exports = {"default":"6","textMap":{"1":"Se ne strinjam","2":"Se deloma ne strinjam","3":"Nevtralno","4":"Se deloma strinjam","5":"Se strinjam","6":"Brez odgovora"}}

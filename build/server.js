@@ -7,7 +7,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		12: 0
+/******/ 		13: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -39,7 +39,7 @@ module.exports =
 /******/ 	__webpack_require__.e = function requireEnsure(chunkId) {
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./chunks/" + ({"0":"compare-parties","1":"questionnaire-results","2":"embed-prof","3":"kjorskra","4":"prof","5":"malefnisingle","6":"partysingle","7":"frontpage","8":"about","9":"malefni","10":"previous-elections","11":"not-found"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./chunks/" + ({"0":"compare-parties","1":"questionnaire-results","2":"embed-prof","3":"kjorskra","4":"prof","5":"malefnisingle","6":"partysingle","7":"topics-answers","8":"frontpage","9":"about","10":"malefni","11":"previous-elections","12":"not-found"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -524,9 +524,12 @@ let redis;
 if (process.env.REDIS_URL) {
   redis = new __WEBPACK_IMPORTED_MODULE_10_ioredis___default.a(process.env.REDIS_URL, process.env.REDIS_URL.includes('rediss://') ? {
     tls: {
-      rejectUnauthorized: false
+      rejectUnauthorized: false,
+      family: process.env.FLY_APP_NAME ? 6 : 4
     }
-  } : {});
+  } : {
+    family: process.env.FLY_APP_NAME ? 6 : 4
+  });
 } else {
   console.error('WARNING YOU ARE RUNNING THIS PROJECT WITHOUT PERMANENTLY STORING REPLY DATA');
 }
@@ -628,11 +631,11 @@ app.post('/konnun/replies', (() => {
       }
     */
 
-    const { token, reply } = req.body;
+    const { token, party, reply } = req.body;
 
     const timestamp = Math.round(Date.now() / 1000);
 
-    yield redis.set(`poll:private:${token}:${timestamp}`, reply);
+    yield redis.set(`poll:private:${party}:${token}:${timestamp}`, reply);
     res.json({ success: true });
   });
 
@@ -641,9 +644,33 @@ app.post('/konnun/replies', (() => {
   };
 })());
 
+app.post('/konnun/topics', (() => {
+  var _ref2 = _asyncToGenerator(function* (req, res) {
+    /*
+      if (Date.now() > 1632614400000) {
+        return res.json({
+          success: false,
+          error: 'Kosningarnar eru búnar',
+        });
+      }
+    */
+
+    const { token, party, answers } = req.body;
+
+    const timestamp = Math.round(Date.now() / 1000);
+
+    yield redis.set(`topics:private:${party}:${token}:${timestamp}`, JSON.stringify(answers));
+    res.json({ success: true });
+  });
+
+  return function (_x3, _x4) {
+    return _ref2.apply(this, arguments);
+  };
+})());
+
 // Used to gather replies from voters in an anonymous way
 app.post('/konnun/replies/all', (() => {
-  var _ref2 = _asyncToGenerator(function* (req, res) {
+  var _ref3 = _asyncToGenerator(function* (req, res) {
     const { reply } = req.body;
 
     const token = __WEBPACK_IMPORTED_MODULE_11_uuid__["v4"]();
@@ -653,8 +680,8 @@ app.post('/konnun/replies/all', (() => {
     res.json({ success: true });
   });
 
-  return function (_x3, _x4) {
-    return _ref2.apply(this, arguments);
+  return function (_x5, _x6) {
+    return _ref3.apply(this, arguments);
   };
 })());
 
@@ -662,7 +689,7 @@ app.post('/konnun/replies/all', (() => {
 // Register server-side rendering middleware
 // -----------------------------------------------------------------------------
 app.get('*', (() => {
-  var _ref3 = _asyncToGenerator(function* (req, res, next) {
+  var _ref4 = _asyncToGenerator(function* (req, res, next) {
     try {
       const css = new Set();
 
@@ -738,8 +765,8 @@ app.get('*', (() => {
     }
   });
 
-  return function (_x5, _x6, _x7) {
-    return _ref3.apply(this, arguments);
+  return function (_x7, _x8, _x9) {
+    return _ref4.apply(this, arguments);
   };
 })());
 
@@ -1301,20 +1328,23 @@ const routes = {
   // Keep in mind, routes are evaluated in order
   children: [{
     path: '/',
-    load: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 60))
+    load: () => __webpack_require__.e/* import() */(8).then(__webpack_require__.bind(null, 61))
   }, {
     path: '/4e94afa38918c6f2dcc12fd8a04d3972',
     load: () => __webpack_require__.e/* import() */(4/* duplicate */).then(__webpack_require__.bind(null, 9))
+  }, {
+    path: '/5e94afa38918c6f2dcc12fd8a04d3972',
+    load: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 62))
   }, {
     path: '/embed',
     children: [{
       path: '/vprasalnik',
       children: [{
         path: '',
-        load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 62))
+        load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 63))
       }, {
         path: '/:results',
-        load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 63))
+        load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 64))
       }]
     }]
   }, {
@@ -1324,20 +1354,20 @@ const routes = {
     path: '/vprasalnik',
     children: [{
       path: '',
-      load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 64))
+      load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 65))
     }, {
       path: '/:results',
-      load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 65))
+      load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 66))
     }]
   }, {
     path: '/prejsnje-volitve',
-    load: () => __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 66))
+    load: () => __webpack_require__.e/* import() */(11).then(__webpack_require__.bind(null, 67))
   }, {
     path: '/tematike',
-    load: () => __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, 67))
+    load: () => __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 68))
   }, {
     path: '/o-nas',
-    load: () => __webpack_require__.e/* import() */(8).then(__webpack_require__.bind(null, 68))
+    load: () => __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, 69))
   }, {
     path: '/kjorskra',
     load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 10))
@@ -1346,7 +1376,7 @@ const routes = {
     load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 10))
   }, {
     path: '/tematike/:malefni',
-    load: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 71))
+    load: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 72))
   }, {
     path: '/stranke/primerjaj',
     children: [{
@@ -1358,12 +1388,12 @@ const routes = {
     }]
   }, {
     path: '/stranke/:party',
-    load: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 72))
+    load: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 73))
   },
   // Wildcard routes, e.g. { path: '*', ... } (must go last)
   {
     path: '*',
-    load: () => __webpack_require__.e/* import() */(11).then(__webpack_require__.bind(null, 73))
+    load: () => __webpack_require__.e/* import() */(12).then(__webpack_require__.bind(null, 74))
   }],
 
   action({ next }) {
@@ -1711,34 +1741,34 @@ module.exports = require("react-collapse");
 /* 56 */
 /***/ (function(module, exports) {
 
-module.exports = require("rc-slider");
+module.exports = require("react-scroll");
 
 /***/ }),
 /* 57 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-image");
+module.exports = require("query-string");
 
 /***/ }),
 /* 58 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-select");
+module.exports = require("rc-slider");
 
 /***/ }),
 /* 59 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-scroll");
+module.exports = require("react-image");
 
 /***/ }),
-/* 60 */,
-/* 61 */
+/* 60 */
 /***/ (function(module, exports) {
 
-module.exports = require("query-string");
+module.exports = require("react-select");
 
 /***/ }),
+/* 61 */,
 /* 62 */,
 /* 63 */,
 /* 64 */,
@@ -1746,13 +1776,14 @@ module.exports = require("query-string");
 /* 66 */,
 /* 67 */,
 /* 68 */,
-/* 69 */
+/* 69 */,
+/* 70 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-google-maps");

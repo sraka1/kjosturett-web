@@ -11,6 +11,7 @@ import styles from './Collapsable.scss';
 
 class Collapsable extends React.Component {
   static propTypes = {
+    ignoreAnchor: PropTypes.bool,
     openByDefault: PropTypes.bool,
     items: PropTypes.arrayOf(
       PropTypes.shape({
@@ -57,6 +58,7 @@ class Collapsable extends React.Component {
     Scroll.animateScroll.scrollTo(curtop - 90);
   }
   toggle = (key: string) => event => {
+    const { ignoreAnchor } = this.props;
     const target = event.currentTarget;
     event.preventDefault();
 
@@ -67,7 +69,11 @@ class Collapsable extends React.Component {
       // Scroll to collapsable only when opening.
       if (nextState && target.offsetParent) {
         this.scrollTo(target);
-        history.replace(`#${key}`);
+        if (!!!ignoreAnchor) {
+          history.replace(`#${key}`);
+        }
+        // console.log('will replace')
+        // history.replace(`#${key}`);
       }
 
       return { open };
@@ -84,7 +90,7 @@ class Collapsable extends React.Component {
         }}
         className={styles.root}
       >
-        {items.map(({ key, title, content, image }) => (
+        {items.map(({ key, title, content, image, contentObject }) => (
           <div className={styles.category} key={key}>
             <a
               href={`#${key}`}
@@ -102,7 +108,7 @@ class Collapsable extends React.Component {
               isOpened={open[key] === true}
               springConfig={Collapsable.spring}
             >
-              <div
+              { content && (<div
                 dangerouslySetInnerHTML={{
                   __html: content,
                 }}
@@ -110,7 +116,12 @@ class Collapsable extends React.Component {
                   styles.content,
                   // category.statement === '' ? s.textNoReply : null
                 )}
-              />
+              />) }
+              {
+                contentObject && (
+                  contentObject
+                )
+              }
             </Collapse>
           </div>
         ))}

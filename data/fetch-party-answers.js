@@ -12,7 +12,7 @@ let redis;
 
 const reversePartyMap = Object.assign(
   {},
-  ...Object.entries(partyMap).map(([a, b]) => ({ [b]: a }))
+  ...Object.entries(partyMap).map(([a, b]) => ({ [b]: a })),
 );
 if (process.env.REDIS_URL) {
   redis = new Redis(
@@ -20,10 +20,13 @@ if (process.env.REDIS_URL) {
     process.env.REDIS_URL.includes('rediss://')
       ? {
           tls: {
-            rejectUnauthorized: false
-          }
+            rejectUnauthorized: false,
+            family: 6,
+          },
         }
-      : {}
+      : {
+          family: 6,
+        },
   );
 }
 

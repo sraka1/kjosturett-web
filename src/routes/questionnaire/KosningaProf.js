@@ -68,6 +68,7 @@ class Kosningaprof extends PureComponent {
   state = {
     started: false,
     token: null,
+    party: null,
     finished: false,
     answers: this.props.questions.reduce((all, { id }) => {
       // eslint-disable-next-line
@@ -80,12 +81,12 @@ class Kosningaprof extends PureComponent {
     this.onSend = this.onSend.bind(this);
   }
   componentDidMount() {
-    const { token } = queryString.parse(window.location.search);
+    const { token, party } = queryString.parse(window.location.search);
     if (!token) {
       window.location = '/';
     }
     // eslint-disable-next-line
-    this.setState({ token });
+    this.setState({ token, party });
   }
   componentWillUnmount() {
     window.onbeforeunload = null;
@@ -110,7 +111,7 @@ class Kosningaprof extends PureComponent {
   };
   async onSend() {
     console.log('this is', this);
-    const { answers, token } = this.state;
+    const { answers, token, party } = this.state;
 
     await this.context.fetch(`/konnun/replies?timestamp=${Date.now()}`, {
       method: 'POST',
@@ -119,6 +120,7 @@ class Kosningaprof extends PureComponent {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
+        party,
         token,
         reply: encodeAnswersToken(Object.keys(answers).map(x => answers[x]))
       })
@@ -142,7 +144,7 @@ class Kosningaprof extends PureComponent {
 
         {!finished && (
           <div className={s.intro}>
-            <h1>Vprašalnik Voli prav 2021</h1>
+            <h1>Vprašalnik Voli prav 2022</h1>
             <p>
               Odgovori na vprašalnik bodo javno razvidni javnosti
               v roku nekaj ur po oddaji. Zadnji odgovori prepišejo prejšnje.

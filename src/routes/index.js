@@ -24,6 +24,11 @@ const routes = {
       load: () => import(/* webpackChunkName: 'prof' */ './questionnaire'),
     },
     {
+      path: '/5e94afa38918c6f2dcc12fd8a04d3972',
+      load: () =>
+        import(/* webpackChunkName: 'topics-answers' */ './topics-private'),
+    },
+    {
       path: '/embed',
       children: [
         {

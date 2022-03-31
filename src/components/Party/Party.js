@@ -34,7 +34,7 @@ const Container = ({
         <p className={s.leader}>{leader}</p>
 
         <span className={s.letter}>
-          <span>x</span>
+          { /* <span>x</span> */ }
           {letter}
         </span>
       </span>

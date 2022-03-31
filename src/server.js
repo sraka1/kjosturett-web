@@ -32,9 +32,12 @@ if (process.env.REDIS_URL) {
       ? {
           tls: {
             rejectUnauthorized: false,
+            family: process.env.FLY_APP_NAME ? 6 : 4,
           },
         }
-      : {},
+      : {
+          family: process.env.FLY_APP_NAME ? 6 : 4,
+        },
   );
 } else {
   console.error(
@@ -138,11 +141,32 @@ app.post('/konnun/replies', async (req, res) => {
     }
   */
 
-  const { token, reply } = req.body;
+  const { token, party, reply } = req.body;
 
   const timestamp = Math.round(Date.now() / 1000);
 
-  await redis.set(`poll:private:${token}:${timestamp}`, reply);
+  await redis.set(`poll:private:${party}:${token}:${timestamp}`, reply);
+  res.json({ success: true });
+});
+
+app.post('/konnun/topics', async (req, res) => {
+  /*
+    if (Date.now() > 1632614400000) {
+      return res.json({
+        success: false,
+        error: 'Kosningarnar eru búnar',
+      });
+    }
+  */
+
+  const { token, party, answers } = req.body;
+
+  const timestamp = Math.round(Date.now() / 1000);
+
+  await redis.set(
+    `topics:private:${party}:${token}:${timestamp}`,
+    JSON.stringify(answers),
+  );
   res.json({ success: true });
 });
 
