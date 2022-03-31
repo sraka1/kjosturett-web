@@ -1021,7 +1021,7 @@ var _ref13 = _jsx('meta', {
 
 var _ref14 = _jsx('meta', {
   property: 'og:image',
-  content: 'https://beta.voliprav.si/og_2021.png'
+  content: 'https://beta.voliprav.si/og_2022.png'
 });
 
 var _ref15 = _jsx('meta', {

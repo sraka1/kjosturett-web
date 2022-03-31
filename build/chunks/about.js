@@ -518,23 +518,23 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
       afterClick: () => this.toggle(false),
       href: '/',
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(__WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.politics, page === 'parties' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null)
-    }, '/', 'Stranke'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'home', 'Stranke'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       href: '/tematike/davki',
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(page === 'tematike' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null)
-    }, '/tematike/davki', 'Programske tematike'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'tematike-davki', 'Programske tematike'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       href: 'https://www.dvk-rs.si/volisca/#/',
       target: '_blank'
-    }, void 0, 'Zemljevid voli\u0161\u010D'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'zemljevid', 'Zemljevid voli\u0161\u010D'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       href: '/vprasalnik',
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(page === 'kosningaprof' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null)
-    }, '/vprasalnik', 'Vpra\u0161alnik'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'vprasalnik', 'Vpra\u0161alnik'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       href: '/stranke/primerjaj',
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(page === 'compare-parties' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null)
-    }, '/stranke/primerjaj', 'Primerjaj'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'stranke/primerjaj', 'Primerjaj'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(page === 'prejsnje-volitve' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null),
       href: '/prejsnje-volitve'

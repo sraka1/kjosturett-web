@@ -46,7 +46,7 @@ class Header extends PureComponent {
       <Link
         afterClick={() => this.toggle(false)}
         href="/"
-        key="/"
+        key="home"
         className={cx(s.politics, page === 'parties' ? s.active : null)}
       >
         Stranke
@@ -54,7 +54,7 @@ class Header extends PureComponent {
       <Link
         afterClick={() => this.toggle(false)}
         href="/tematike/davki"
-        key="/tematike/davki"
+        key="tematike-davki"
         className={cx(page === 'tematike' ? s.active : null)}
       >
         Programske tematike
@@ -64,7 +64,7 @@ class Header extends PureComponent {
         href="https://www.dvk-rs.si/volisca/#/"
         target="_blank"
         // href="/kjorskra"
-        // key="/kjorskra"
+        key="zemljevid"
         // className={cx(page === 'kjorskra' ? s.active : null)}
       >
         Zemljevid volišč
@@ -72,7 +72,7 @@ class Header extends PureComponent {
       <Link
         afterClick={() => this.toggle(false)}
         href="/vprasalnik"
-        key="/vprasalnik"
+        key="vprasalnik"
         className={cx(page === 'kosningaprof' ? s.active : null)}
       >
         Vprašalnik
@@ -80,7 +80,7 @@ class Header extends PureComponent {
       <Link
         afterClick={() => this.toggle(false)}
         href="/stranke/primerjaj"
-        key="/stranke/primerjaj"
+        key="stranke/primerjaj"
         className={cx(page === 'compare-parties' ? s.active : null)}
       >
         Primerjaj

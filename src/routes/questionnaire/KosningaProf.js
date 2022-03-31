@@ -6,12 +6,12 @@ import { encodeAnswersToken } from '../../utils';
 import s from './KosningaProf.scss';
 
 const answerMap = {
-  1: 'Se ne strinjam',
-  2: 'Se deloma ne strinjam',
-  3: 'Nevtralen',
-  4: 'Se deloma strinjam',
-  5: 'Se strinjam',
-  6: 'Ne želim odgovoriti'
+  1: 'Se ne strinjamo',
+  2: 'Se deloma ne strinjamo',
+  3: 'Nevtralni',
+  4: 'Se deloma strinjamo',
+  5: 'Se strinjamo',
+  6: 'Ne želimo odgovoriti'
 };
 const areYouSure =
   'Ste prepričani, da želite zapustiti stran? Vaši odgovori bodo izgubljeni.';
@@ -131,22 +131,21 @@ class Kosningaprof extends PureComponent {
     const { answers, started, finished } = this.state;
     return (
       <div className={s.root}>
-        {!finished && (
+        {!finished && false && (
           <UploadCandidateImage
             token={token}
             uploadSuccess={uploadSuccess}
             uploadFailure={uploadFailure}
           />
         )}
-        {finished && <h3>Takk fyrir þátttökuna!</h3>}
+        {finished && <h3>Hvala za sodelovanje!</h3>}
 
         {!finished && (
           <div className={s.intro}>
             <h1>Vprašalnik Voli prav 2021</h1>
             <p>
-              Svörin við prófinu birtast í niðurstöðusíðu kosningaprófsins fyrir
-              almenning. Það getur tekið allt að 30 mínútur fyrir svörin að
-              uppfærast. Nýjasta svarið gildir.
+              Odgovori na vprašalnik bodo javno razvidni javnosti
+              v roku nekaj ur po oddaji. Zadnji odgovori prepišejo prejšnje.
             </p>
           </div>
         )}
@@ -172,7 +171,7 @@ class Kosningaprof extends PureComponent {
               })}
             </div>
           ))}
-        {started && !finished && <button onClick={this.onSend}>Senda</button>}
+        {started && !finished && <button onClick={this.onSend}>Pošlji</button>}
       </div>
     );
   }

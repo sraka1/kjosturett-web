@@ -23,9 +23,15 @@ const constituencies = {
 const scoreToFloatingPoint = (score, scalar = 1) =>
   Math.max(1, Math.ceil(score / scalar)) / 100;
 
-function pluralize(count, singular, plural, zero = '') {
+function pluralize(count, singular, plural, double, threeQuad, zero = '') {
   if (count === 0 && zero) {
     return zero;
+  }
+  if (count > 2 && count < 5 && threeQuad) {
+    return threeQuad;
+  }
+  if (count === 2 && double) {
+    return double;
   }
   return count > 1 ? plural : singular;
 }
@@ -151,7 +157,7 @@ class KosningaprofResults extends PureComponent {
         {answeredQuestions.length / questions.length < 0.5 && (
           <p className={s.nonLead}>
             Odgovorili ste le na {answeredQuestions.length}{' '}
-            {pluralize(answeredQuestions.length, 'vprašanji', 'vprašanj')}, kar pomeni, da vam rezultati ne morajo podati popolne slike. Því
+            {pluralize(answeredQuestions.length, 'vprašanje', 'vprašanj', 'vprašanji', 'vprašanja')}, kar pomeni, da vam rezultati ne morajo podati popolne slike.
             Odgovorite na več vprašanj, da pridobite bolj natančno oceno.
           </p>
         )}

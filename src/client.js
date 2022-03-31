@@ -105,9 +105,17 @@ async function onLocationChange(location, action) {
     scrollX: window.pageXOffset,
     scrollY: window.pageYOffset
   };
+  console.log('location', location);
   // Delete stored scroll position for next page if any
   if (action === 'PUSH') {
     delete scrollPositionsHistory[location.key];
+  }
+  if (location.pathname.includes("/tematike/") && currentLocation.pathname.includes("/tematike/")) {
+    // Don't scroll to top when staying on "topics"
+    scrollPositionsHistory[location.key] = {
+      scrollX: window.pageXOffset,
+      scrollY: window.pageYOffset
+    };
   }
   currentLocation = location;
 

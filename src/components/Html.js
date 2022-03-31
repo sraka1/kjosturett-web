@@ -97,7 +97,7 @@ class Html extends React.Component {
           {!ogImage && (
             <meta
               property="og:image"
-              content="https://beta.voliprav.si/og_2021.png"
+              content="https://beta.voliprav.si/og_2022.png"
             />
           )}
 

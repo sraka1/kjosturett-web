@@ -84,11 +84,11 @@ class UploadCandidateImage extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComp
   }
 }
 
-var _ref4 = _jsx('h3', {}, void 0, 'Takk fyrir \xFE\xE1ttt\xF6kuna!');
+var _ref4 = _jsx('h3', {}, void 0, 'Hvala za sodelovanje!');
 
 var _ref5 = _jsx('h1', {}, void 0, 'Vpra\u0161alnik Voli prav 2021');
 
-var _ref6 = _jsx('p', {}, void 0, 'Sv\xF6rin vi\xF0 pr\xF3finu birtast \xED ni\xF0urst\xF6\xF0us\xED\xF0u kosningapr\xF3fsins fyrir almenning. \xDEa\xF0 getur teki\xF0 allt a\xF0 30 m\xEDn\xFAtur fyrir sv\xF6rin a\xF0 uppf\xE6rast. N\xFDjasta svari\xF0 gildir.');
+var _ref6 = _jsx('p', {}, void 0, 'Odgovori na vpra\u0161alnik bodo javno razvidni javnosti v roku nekaj ur po oddaji. Zadnji odgovori prepi\u0161ejo prej\u0161nje.');
 
 class Kosningaprof extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
   constructor(props) {
@@ -165,7 +165,7 @@ class Kosningaprof extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] 
     const { answers, started, finished } = this.state;
     return _jsx('div', {
       className: __WEBPACK_IMPORTED_MODULE_5__KosningaProf_scss___default.a.root
-    }, void 0, !finished && _jsx(UploadCandidateImage, {
+    }, void 0, !finished && false && _jsx(UploadCandidateImage, {
       token: token,
       uploadSuccess: uploadSuccess,
       uploadFailure: uploadFailure
@@ -187,7 +187,7 @@ class Kosningaprof extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] 
       }, void 0, answerMap[value]));
     }))), started && !finished && _jsx('button', {
       onClick: this.onSend
-    }, void 0, 'Senda'));
+    }, void 0, 'Po\u0161lji'));
   }
 }
 
@@ -615,23 +615,23 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
       afterClick: () => this.toggle(false),
       href: '/',
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(__WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.politics, page === 'parties' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null)
-    }, '/', 'Stranke'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'home', 'Stranke'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       href: '/tematike/davki',
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(page === 'tematike' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null)
-    }, '/tematike/davki', 'Programske tematike'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'tematike-davki', 'Programske tematike'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       href: 'https://www.dvk-rs.si/volisca/#/',
       target: '_blank'
-    }, void 0, 'Zemljevid voli\u0161\u010D'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'zemljevid', 'Zemljevid voli\u0161\u010D'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       href: '/vprasalnik',
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(page === 'kosningaprof' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null)
-    }, '/vprasalnik', 'Vpra\u0161alnik'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'vprasalnik', 'Vpra\u0161alnik'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       href: '/stranke/primerjaj',
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(page === 'compare-parties' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null)
-    }, '/stranke/primerjaj', 'Primerjaj'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
+    }, 'stranke/primerjaj', 'Primerjaj'), _jsx(__WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */], {
       afterClick: () => this.toggle(false),
       className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(page === 'prejsnje-volitve' ? __WEBPACK_IMPORTED_MODULE_6__Header_scss___default.a.active : null),
       href: '/prejsnje-volitve'
@@ -1092,7 +1092,7 @@ exports.decodeAnswersToken = token => {
 /***/ 96:
 /***/ (function(module, exports) {
 
-module.exports = [{"id":1,"question":"Vsi prebivalci Slovenije bi morali imeti dostop do primarnega zdravstva v domačem kraju."},{"id":2,"question":"Dopustiti je treba zasebno delovanje v zdravstvenem sistemu."},{"id":3,"question":"Širitev javnega potniškega prometa bistveno pripomore k povezljivosti Slovenije."},{"id":4,"question":"Slovenija naj v sodelovanju z mednarodnimi organizacijami sprejme več prosilcev za mednarodno zaščito."},{"id":5,"question":"Štipendiranje študentov naj bo v višjih zneskih in dostopnejše vsem študentom."},{"id":6,"question":"Drugi in tretji pokojninski steber bi morala imeti vidnejšo vlogo v pokojninskem sistemu."},{"id":7,"question":"Prejemke za invalidsko pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":8,"question":"Prejemke za starostno pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":9,"question":"Država naj uvede univerzalni temeljni dohodek (UTD)."},{"id":10,"question":"Pokrajine naj se uvedejo do konca prihajajočega mandata."},{"id":11,"question":"Nadzor in sankcije na področju koruptivnih dejanj je treba povečati."},{"id":12,"question":"Povečati je treba prispevek Slovenije k razvojnemu sodelovanju in dejavnostim pomoči v revnejših državah sveta."},{"id":13,"question":"Zveza NATO naj ima vidno vlogo pri zagotavljanju teritorialne celovitosti Slovenije."},{"id":14,"question":"Država naj stori več glede decentralizacije Slovenije."},{"id":15,"question":"Vlada bi morala varovati položaj verskih ustanov v slovenski družbi."},{"id":16,"question":"Kazni za spolno in družinsko nasilje bi bilo treba povečati."},{"id":17,"question":"Za vlado naj bo pomembno, da s finančnimi spodbudami reši težave slovenskih kmetovalcev."},{"id":18,"question":"Slovenija naj podpre globlje in tesnejše povezovanje v sklopu Evropske Unije."},{"id":19,"question":"Država naj stori več za spodbujanje vseživljenjskega izobraževanja."},{"id":20,"question":"V prihajajočem volilnem mandatu je treba legalizirati uporabo konoplje."},{"id":21,"question":"Vlada bi morala globlje poseči v stanovanjski trg z namenom regulacije rasti cen nepremičnin."},{"id":22,"question":"Naložbe v infrastrukturo (npr. v promet, telekomunikacije in zdravstveni sistem) naj imajo prednost pred odplačilom dolga državne blagajne."},{"id":23,"question":"Država naj ohrani lastništvo v sistemsko pomembnih bančnih ustanovah."},{"id":24,"question":"Znižati je treba prispevke na plače, ki jih podjetja plačujejo državi."},{"id":25,"question":"Davke na visoke dohodke je treba dvigniti."},{"id":26,"question":"Država naj ohrani deleže v gospodarskih subjektih, ki so vitalnega državnega pomena."},{"id":27,"question":"Slovenija naj bo prehrambeno samooskrbna."},{"id":28,"question":"Država naj odpravi omejitve delovnega časa ob nedeljah."},{"id":29,"question":"Država si naj prizadeva za izboljšanje zmogljivosti in dostopa do turističnih znamenitosti v njeni lasti ali upravljanju."},{"id":30,"question":"Hækka þarf veiðigjald af fiskveiðiauðlindum Íslands á næsta kjörtímabili."},{"id":31,"question":"Država naj proda svoj delež v energetskih podjetjih."},{"id":32,"question":"Interesi narave bi morali prevladati nad finančnimi interesi pri odločanju vlade pri ustvarjanju delovnih mest."},{"id":33,"question":"Vlada bi morala upoštevati priporočila epidemiološke stroke glede nalezljivih bolezni, četudi ta negativno vplivajo na gospodarstvo."},{"id":34,"question":"Stofna ætti hálendisþjóðgarð til að vernda náttúru Íslands."},{"id":35,"question":"Država naj ustanovi državnega letalskega prevoznika."},{"id":36,"question":"Taka ætti fyrir kaup erlendra einstaklinga og fyrirtækja á stórum jörðum á Íslandi."},{"id":37,"question":"Država naj nadaljuje z vlaganjem v izgradnjo 2. bloka jedrske elektrarne Krško."},{"id":38,"question":"Banna á leit að jarðefnaeldsneyti í lögsögu Íslands."},{"id":39,"question":"Auka þarf eftirlit og eftirfylgni á sjó til að stuðla að náttúruvernd t.d. er varðar brottkast fisks."},{"id":40,"question":"Država naj aktivno spodbuja krožno gospodarstvo z namenom zmanjšanja količine odpadkov in ogljičnega odtisa Slovenije."}]
+module.exports = [{"id":1,"question":"Vsi prebivalci Slovenije bi morali imeti dostop do primarnega zdravstva v domačem kraju."},{"id":2,"question":"Dopustiti je treba povečano zasebno delovanje v zdravstvenem sistemu."},{"id":3,"question":"Širitev javnega potniškega prometa bistveno pripomore k povezljivosti Slovenije."},{"id":4,"question":"Slovenija naj v sodelovanju z mednarodnimi organizacijami sprejme več prosilcev za mednarodno zaščito."},{"id":5,"question":"Štipendiranje študentov naj bo v višjih zneskih in dostopnejše vsem študentom."},{"id":6,"question":"Drugi in tretji pokojninski steber bi morala imeti vidnejšo vlogo v pokojninskem sistemu."},{"id":7,"question":"Prejemke za invalidsko pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":8,"question":"Prejemke za starostno pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":9,"question":"Država naj uvede univerzalni temeljni dohodek (UTD)."},{"id":10,"question":"Država naj stori več glede decentralizacije Slovenije."},{"id":11,"question":"Pokrajine naj se uvedejo do konca prihajajočega mandata."},{"id":12,"question":"Nadzor in sankcije na področju koruptivnih dejanj je treba povečati."},{"id":13,"question":"Povečati je treba prispevek Slovenije k razvojnemu sodelovanju in dejavnostim pomoči v revnejših državah sveta."},{"id":14,"question":"Zveza NATO naj ima vidno vlogo pri zagotavljanju teritorialne celovitosti Slovenije."},{"id":15,"question":"Vlada bi morala varovati položaj verskih ustanov v slovenski družbi."},{"id":16,"question":"Kazni za spolno in družinsko nasilje bi bilo treba povečati."},{"id":17,"question":"Za vlado naj bo pomembno, da s finančnimi spodbudami reši težave slovenskih kmetovalcev."},{"id":18,"question":"Slovenija naj podpre globlje in tesnejše povezovanje v sklopu Evropske Unije."},{"id":19,"question":"Država naj stori več za spodbujanje vseživljenjskega izobraževanja."},{"id":20,"question":"V prihajajočem volilnem mandatu je treba legalizirati uporabo konoplje."},{"id":21,"question":"Vlada bi morala globlje poseči v stanovanjski trg z namenom regulacije rasti cen nepremičnin."},{"id":22,"question":"Naložbe v infrastrukturo (npr. v promet, telekomunikacije in zdravstveni sistem) naj imajo prednost pred odplačilom dolga državne blagajne."},{"id":23,"question":"Država naj ohrani lastništvo v sistemsko pomembnih bančnih ustanovah."},{"id":24,"question":"Znižati je treba prispevke na plače, ki jih podjetja plačujejo državi."},{"id":25,"question":"Davke na visoke dohodke je treba dvigniti."},{"id":26,"question":"Država naj poenostavi postopke za zaposlitev visoko-kvalificirane delovne sile iz tretjih držav."},{"id":27,"question":"Država naj ohrani deleže v gospodarskih subjektih, ki so vitalnega državnega pomena."},{"id":28,"question":"Slovenija naj bo prehrambeno samooskrbna."},{"id":29,"question":"Država naj odpravi omejitve delovnega časa ob nedeljah."},{"id":30,"question":"Država si naj prizadeva za izboljšanje zmogljivosti in dostopa do turističnih znamenitosti v njeni lasti ali upravljanju."},{"id":31,"question":"Država naj proda svoj delež v energetskih podjetjih."},{"id":32,"question":"Interesi narave bi morali prevladati nad finančnimi interesi pri odločanju vlade pri ustvarjanju delovnih mest."},{"id":33,"question":"Vlada bi morala upoštevati priporočila epidemiološke stroke glede nalezljivih bolezni, tudi kadar ta negativno vplivajo na gospodarstvo."},{"id":34,"question":"Slovenija naj poveča investicije v digitalno preobrazbo družbe in države ter obenem skuša privabiti tehnološka podjetja."},{"id":35,"question":"Pravica do dostopa do interneta naj bo zapisana v ustavi."},{"id":36,"question":"Država naj ustanovi državnega letalskega prevoznika."},{"id":37,"question":"Država naj poenostavi in pohitri postopke prostorskega umeščanja za ključne državne projekte."},{"id":38,"question":"Država naj nadaljuje z vlaganjem v izgradnjo 2. bloka jedrske elektrarne Krško."},{"id":39,"question":"Država naj pospeši časovnico za prepoved prve registracije vozil z notranjim izgorevanjem."},{"id":40,"question":"Država naj aktivno spodbuja krožno gospodarstvo z namenom zmanjšanja količine odpadkov in ogljičnega odtisa Slovenije."}]
 
 /***/ }),
 
