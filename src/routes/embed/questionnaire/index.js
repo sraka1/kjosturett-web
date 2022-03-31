@@ -8,7 +8,7 @@ export default ({ url }) => ({
   chunks: ['embed-questionnaire'],
   title: `Vprašalnik Voli prav`,
   description:
-    'Hvaða flokkar og frambjóðendur eru þér algjörlega sammála? Þú getur þreytt prófið og komist að áreiðanlegri niðurstöðu.',
+    'Kako se vaša stališča primerjajo s stališči političnih strank? Izpolnite vprašalnik in primerjajte.',
   path: url,
   ogImage: 'https://assets.voliprav.si/og_prof.png',
   component: (

@@ -32,12 +32,12 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 
 const answerMap = {
-  1: 'Se ne strinjam',
-  2: 'Se deloma ne strinjam',
-  3: 'Nevtralen',
-  4: 'Se deloma strinjam',
-  5: 'Se strinjam',
-  6: 'Ne želim odgovoriti'
+  1: 'Se ne strinjamo',
+  2: 'Se deloma ne strinjamo',
+  3: 'Nevtralni',
+  4: 'Se deloma strinjamo',
+  5: 'Se strinjamo',
+  6: 'Ne želimo odgovoriti'
 };
 const areYouSure = 'Ste prepričani, da želite zapustiti stran? Vaši odgovori bodo izgubljeni.';
 const defaultAnswer = '3';
