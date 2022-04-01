@@ -9,7 +9,7 @@ module.exports = [{"name":"Davki","url":"davki"},{"name":"Enakopravnost spolov",
 
 /***/ }),
 
-/***/ 182:
+/***/ 189:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19,7 +19,7 @@ module.exports = [{"name":"Davki","url":"davki"},{"name":"Enakopravnost spolov",
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_build_categories_json__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_build_categories_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__data_build_categories_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Malefni_scss__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Malefni_scss__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Malefni_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Malefni_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -51,11 +51,11 @@ class Malefni extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 183:
+/***/ 190:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(184);
+    var content = __webpack_require__(191);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -87,7 +87,7 @@ class Malefni extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 184:
+/***/ 191:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -116,7 +116,7 @@ exports.locals = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Malefni__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Malefni__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(80);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -318,6 +318,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       altTitle,
       children,
       color,
+      textColor,
       isEmbed = false,
       showHeader = true
     } = this.props;
@@ -351,9 +352,15 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_5__Container__["a" /* default */], {}, void 0, _jsx('div', {
       className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.subHeaderContent
     }, void 0, _jsx('h2', {
-      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.title
+      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.title,
+      style: textColor ? {
+        color: textColor
+      } : undefined
     }, void 0, title), _jsx('p', {
-      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.altTitle
+      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.altTitle,
+      style: textColor ? {
+        color: textColor
+      } : undefined
     }, void 0, altTitle)))), _jsx(__WEBPACK_IMPORTED_MODULE_5__Container__["a" /* default */], {}, void 0, children)), _ref);
   }
 }

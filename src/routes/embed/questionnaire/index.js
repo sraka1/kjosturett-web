@@ -10,7 +10,7 @@ export default ({ url }) => ({
   description:
     'Kako se vaša stališča primerjajo s stališči političnih strank? Izpolnite vprašalnik in primerjajte.',
   path: url,
-  ogImage: 'https://assets.voliprav.si/og_prof.png',
+  ogImage: 'https://beta.voliprav.si/og_prof.png',
   component: (
     <Layout isEmbed>
       <KosningaProf

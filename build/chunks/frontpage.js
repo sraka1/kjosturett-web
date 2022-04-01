@@ -2,17 +2,17 @@ require("source-map-support").install();
 exports.ids = [8];
 exports.modules = {
 
-/***/ 154:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Party__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Party__ = __webpack_require__(162);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Party__["a"]; });
 
 
 /***/ }),
 
-/***/ 155:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22,7 +22,7 @@ exports.modules = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Party_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__utils__);
@@ -44,7 +44,8 @@ const Container = ({
   isFaded,
   letter,
   name,
-  leader
+  leader,
+  leaderShort
 }) => {
   const Wrap = href ? __WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */] : 'button';
   return _jsx(Wrap, {
@@ -63,7 +64,7 @@ const Container = ({
     className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.name
   }, void 0, name), _jsx('p', {
     className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.leader
-  }, void 0, leader), _jsx('span', {
+  }, void 0, leaderShort ? leaderShort : leader), _jsx('span', {
     className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.letter
   }, void 0, letter)));
 };
@@ -72,11 +73,11 @@ const Container = ({
 
 /***/ }),
 
-/***/ 156:
+/***/ 163:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(157);
+    var content = __webpack_require__(164);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -108,7 +109,7 @@ const Container = ({
 
 /***/ }),
 
-/***/ 157:
+/***/ 164:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -133,17 +134,17 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 158:
+/***/ 165:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PartyGrid__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PartyGrid__ = __webpack_require__(166);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__PartyGrid__["a"]; });
 
 
 /***/ }),
 
-/***/ 159:
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -151,7 +152,7 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -167,11 +168,11 @@ const PartyGrid = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 160:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(161);
+    var content = __webpack_require__(168);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -203,7 +204,7 @@ const PartyGrid = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 161:
+/***/ 168:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -220,7 +221,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 170:
+/***/ 177:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -231,10 +232,10 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_build_parties_json__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_build_parties_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__data_build_parties_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Frontpage_scss__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Frontpage_scss__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Frontpage_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Frontpage_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Party__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_PartyGrid__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Party__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_PartyGrid__ = __webpack_require__(165);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
@@ -283,11 +284,11 @@ class FrontPage extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 171:
+/***/ 178:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(172);
+    var content = __webpack_require__(179);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -319,7 +320,7 @@ class FrontPage extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 172:
+/***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -346,7 +347,7 @@ exports.locals = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Frontpage__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Frontpage__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(80);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -550,6 +551,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       altTitle,
       children,
       color,
+      textColor,
       isEmbed = false,
       showHeader = true
     } = this.props;
@@ -583,9 +585,15 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_5__Container__["a" /* default */], {}, void 0, _jsx('div', {
       className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.subHeaderContent
     }, void 0, _jsx('h2', {
-      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.title
+      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.title,
+      style: textColor ? {
+        color: textColor
+      } : undefined
     }, void 0, title), _jsx('p', {
-      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.altTitle
+      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.altTitle,
+      style: textColor ? {
+        color: textColor
+      } : undefined
     }, void 0, altTitle)))), _jsx(__WEBPACK_IMPORTED_MODULE_5__Container__["a" /* default */], {}, void 0, children)), _ref);
   }
 }
@@ -1124,9 +1132,9 @@ exports.locals = {
 
 
 // const URL = 'https://assets.voliprav.si';
-// const URL = 'http://localhost:3000';
+const URL = 'http://localhost:3000';
 // Temporary, until DNS propagates
-const URL = 'https://beta.voliprav.si';
+// const URL = 'https://beta.voliprav.si';
 
 exports.getAssetUrl = (isJpg = false, ...assets) => {
   return `${URL}/${assets.join('/')}.${isJpg ? 'jpg' : 'png'}`;
@@ -1160,7 +1168,7 @@ exports.decodeAnswersToken = token => {
 /***/ 96:
 /***/ (function(module, exports) {
 
-module.exports = [{"letter":"DD","url":"dobra-drzava","name":"Dobra Država","nameDeflected":"Dobra Država","website":"https://www.dobradrzava.si/","leader":"Smiljan Mekicar","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"DeSUS","url":"desus","name":"Demokratska Stranka Upokojencev Slovenije","nameDeflected":"DeSUS","website":"https://desus.si/","leader":"Ljubo Jasnič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"GS","url":"gibanje-svoboda","name":"Gibanje Svoboda","nameDeflected":"Gibanje Svoboda","website":"https://gibanjesvoboda.si/","leader":"Robert Golob","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#00569D"},{"letter":"K","url":"konkretno","name":"Konkretno","nameDeflected":"stranke Konkretno","website":"https://konkretno.si","leader":"Zdravko Počivalšek","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"L","url":"levica","name":"Levica","nameDeflected":"Levice","website":"https://www.levica.si","leader":"Luka Mesec","leaderTitle":"Koordinator","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"LMŠ","url":"lms","name":"Lista Marjana Šarca","nameDeflected":"Liste Marjana Šarca","website":"https://www.strankalms.si","leader":"Marjan Šarec","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"ND","url":"nasa-dezela","name":"Naša Dežela","nameDeflected":"stranke Naša Dežela","website":"https://nasadezela.si/","leader":"Aleksandra Pivec","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"NSi","url":"nsi","name":"Nova Slovenija","nameDeflected":"stranke Nova Slovenija","website":"https://nsi.si","leader":"Matej Tonin","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"P","url":"piratska-stranka","name":"Piratska Stranka","nameDeflected":"Piratske Stranke","website":"https://piratskastranka.si","leader":"Boštjan Tavčar","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#000000"},{"letter":"PS","url":"povezimo-slovenijo","name":"Povežimo Slovenijo","nameDeflected":"gibanja Povežimo Slovenijo","website":"https://povezimoslovenijo.si/","leader":"Nada Pavšer","leaderTitle":"Koordinatorka","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"SAB","url":"sab","name":"Stranka Alenke Bratušek","nameDeflected":"Stranke Alenke Bratušek","website":"https://sab.si","leader":"Alenka Bratušek","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"SD","url":"sd","name":"Socialni Demokrati","nameDeflected":"Socialnih Demokratov","website":"https://socialnidemokrati.si/","leader":"Tanja Fajon","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#E3000F","textColor":"#FFFFFF"},{"letter":"SDS","url":"sds","name":"Slovenska Demokratska Stranka","nameDeflected":"Slovenske Demokratske Stranke","website":"https://www.sds.si","leader":"Ivan Janez Janša","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"},{"letter":"SNS","url":"sns","name":"Slovenska Nacionalna Stranka","nameDeflected":"Slovenske Nacionalne Stranke","website":"http://sns.si/","leader":"Zmago Jelinčič Plemeniti","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#FEE51E"},{"letter":"VESNA","url":"vesna","name":"VESNA - zelena stranka","nameDeflected":"stranke VESNA - zelene stranke","website":"https://www.vesnazelenastranka.si","leader":"Uroš Macerl in Urša Zgojznik","leaderTitle":"Sopredsednika","reply":"6666666666666666666666666666666666666666","color":"#3A36FF","textColor":"#FFFFFF"}]
+module.exports = [{"letter":"DOM","url":"dom","name":"Domovinska liga","nameDeflected":"Domovinske lige","website":"https://domovinskaliga.si","leader":"mag. Bernard Brščič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF"},{"letter":"DeSUS","url":"desus","name":"Demokratska Stranka Upokojencev Slovenije","nameDeflected":"DeSUS","website":"https://desus.si/","leader":"Ljubo Jasnič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#A0C539","textColor":"#FFFFFF"},{"letter":"GS","url":"gibanje-svoboda","name":"Gibanje Svoboda","nameDeflected":"Gibanje Svoboda","website":"https://gibanjesvoboda.si/","leader":"Robert Golob","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#005EA4"},{"letter":"L","url":"levica","name":"Levica","nameDeflected":"Levice","website":"https://www.levica.si","leader":"Luka Mesec","leaderTitle":"Koordinator","reply":"6666666666666666666666666666666666666666","color":"#E82C26","textColor":"#FFFFFF"},{"letter":"LBP","url":"lbp","name":"Lista Borisa Popoviča - Digitalizirajmo Slovenijo","nameDeflected":"Liste Borisa Popoviča - Digitalizirajmo Slovenijo","website":"","leader":"Boris Popovič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#005AAB","textColor":"#FFFFFF"},{"letter":"LL","url":"ljudska-lista","name":"Ljudska lista gibanja Zdrava družba","nameDeflected":"Ljudske liste gibanja Zdrava družba","website":"https://www.ljudskalista.si/","leader":"Karel Lipič","leaderTitle":"Vodja volilnega štaba","reply":"6666666666666666666666666666666666666666","color":"#005EA4"},{"letter":"LMŠ","url":"lms","name":"Lista Marjana Šarca","nameDeflected":"Liste Marjana Šarca","website":"https://www.strankalms.si","leader":"Marjan Šarec","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#005AAB","textColor":"#FFFFFF"},{"letter":"ND","url":"nasa-dezela","name":"Naša Dežela","nameDeflected":"stranke Naša Dežela","website":"https://nasadezela.si/","leader":"Aleksandra Pivec","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#65B32E","textColor":"#FFFFFF"},{"letter":"NP-DD","url":"nasa-prihodnost-dobra-drzava","name":"Naša prihodnost in Dobra država","nameDeflected":"Naše prihodnosti in Dobre države","website":"https://nasaprihodnost.si/","websiteTwo":"https://www.dobradrzava.si/","leader":"Ivan Gale (Naša prihodnost) in Smiljan Mekicar (Dobra država)","leaderTitle":"Predsednika","reply":"6666666666666666666666666666666666666666","color":"#00699A","textColor":"#FFFFFF"},{"letter":"NSi","url":"nsi","name":"Nova Slovenija - Krščanski demokrati","nameDeflected":"stranke Nova Slovenija","website":"https://nsi.si","leader":"Matej Tonin","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#009AC7","textColor":"#FFFFFF"},{"letter":"P","url":"piratska-stranka","name":"Piratska Stranka","nameDeflected":"Piratske Stranke","website":"https://piratskastranka.si","leader":"Boštjan Tavčar","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#000000"},{"letter":"PoS","url":"povezimo-slovenijo","name":"Povežimo Slovenijo (Konkretno, Zeleni, SLS, NLS, NS)","nameDeflected":"gibanja Povežimo Slovenijo","website":"https://povezimoslovenijo.si/","leader":"Nada Pavšer","leaderTitle":"Koordinatorka","reply":"6666666666666666666666666666666666666666","color":"#002C70","textColor":"#FFFFFF"},{"letter":"R","url":"resnica","name":"Resni.ca","nameDeflected":"stranke Resni.ca","website":"https://stranka-resnica.si","leader":"Zoran Stevanović","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#0054A6","textColor":"#FFFFFF"},{"letter":"SAB","url":"sab","name":"Stranka Alenke Bratušek","nameDeflected":"Stranke Alenke Bratušek","website":"https://sab.si","leader":"Alenka Bratušek","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#ED1941","textColor":"#FFFFFF"},{"letter":"SD","url":"sd","name":"Socialni Demokrati","nameDeflected":"Socialnih Demokratov","website":"https://socialnidemokrati.si/","leader":"Tanja Fajon","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#E13439","textColor":"#FFFFFF"},{"letter":"SDS","url":"sds","name":"Slovenska Demokratska Stranka","nameDeflected":"Slovenske Demokratske Stranke","website":"https://www.sds.si","leader":"Ivan Janez Janša","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#FFE800","textColor":"#313131"},{"letter":"SNS","url":"sns","name":"Slovenska Nacionalna Stranka","nameDeflected":"Slovenske Nacionalne Stranke","website":"http://sns.si/","leader":"Zmago Jelinčič Plemeniti","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#FEE520","textColor":"#313131"},{"letter":"VESNA","url":"vesna","name":"VESNA - zelena stranka","nameDeflected":"stranke VESNA - zelene stranke","website":"https://www.vesnazelenastranka.si","leader":"Uroš Macerl in Urša Zgojznik","leaderTitle":"Sopredsednika","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF"},{"letter":"ZLS","url":"zls","name":"Za ljudstvo Slovenije","nameDeflected":"Za ljudstvo Slovenije","website":"https://www.zaljudstvoslovenije.si","leader":"Anica Bidar","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF"},{"letter":"ZOS","url":"zos","name":"Zavezništvo Osvobodimo Slovenijo","nameDeflected":"Zavezništva Osvobodimo Slovenijo","website":"https://osvobodimo.si","leader":"Andrej Šiško (Gibanje zedinjena Slovenija), Ludvik Poljanec (Stara pravda stranka prava), Aleksander Kamenik (Stranka Aleksandra Kamenika), Janko Veber (Sloga), Miha Majc (Stranka Slovenskega naroda) in Klemen Piber (Slovenska praanarhistična stranka)","leaderShort":"Andrej Šiško, Ludvik Poljanec, Aleksander Kamenik, Janko Veber, Miha Majc, Klemen Piber","leaderTitle":"Predsedniki združenih strank","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF"}]
 
 /***/ })
 

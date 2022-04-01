@@ -13,7 +13,8 @@ const Container = ({
   isFaded,
   letter,
   name,
-  leader
+  leader,
+  leaderShort
 }) => {
   const Wrap = href ? Link : 'button';
   return (
@@ -31,7 +32,7 @@ const Container = ({
       </span>
       <span className={s.info}>
         <h3 className={s.name}>{name}</h3>
-        <p className={s.leader}>{leader}</p>
+        <p className={s.leader}>{leaderShort ? leaderShort : leader}</p>
 
         <span className={s.letter}>
           { /* <span>x</span> */ }

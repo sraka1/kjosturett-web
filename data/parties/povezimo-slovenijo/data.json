@@ -1,12 +1,12 @@
 {
-  "letter": "PS",
+  "letter": "PoS",
   "url": "povezimo-slovenijo",
-  "name": "Povežimo Slovenijo",
+  "name": "Povežimo Slovenijo (Konkretno, Zeleni, SLS, NLS, NS)",
   "nameDeflected": "gibanja Povežimo Slovenijo",
   "website": "https://povezimoslovenijo.si/",
   "leader": "Nada Pavšer",
   "leaderTitle": "Koordinatorka",
   "reply": "6666666666666666666666666666666666666666",
-  "color": "#3A36FF",
+  "color": "#002C70",
   "textColor": "#FFFFFF"
 }

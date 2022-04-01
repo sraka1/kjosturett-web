@@ -25,10 +25,32 @@ export default ({ params, url }) => {
       <Layout
         title={party.name}
         color={party.color}
+        textColor={party.textColor}
         altTitle={
-          <a href={party.website} target="_blank">
-            {pleasantUrl(party.website)}
-          </a>
+          <React.Fragment>
+            <a href={party.website} target="_blank" style={
+              party.textColor
+                ? {
+                    color: party.textColor,
+                  }
+                : undefined
+            }>
+              {pleasantUrl(party.website)}
+            </a>
+            {
+              party.websiteTwo && (
+                <a href={party.websiteTwo} target="_blank" style={
+                  party.textColor
+                    ? {
+                        color: party.textColor,
+                      }
+                    : undefined
+                }>
+                  {pleasantUrl(party.websiteTwo)}
+                </a>
+              )
+            }
+          </React.Fragment>
         }
       >
         <PartySingle party={party} categories={categories} />

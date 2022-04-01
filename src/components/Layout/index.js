@@ -14,6 +14,7 @@ class Layout extends Component {
       altTitle,
       children,
       color,
+      textColor,
       isEmbed = false,
       showHeader = true,
     } = this.props;
@@ -50,8 +51,20 @@ class Layout extends Component {
             >
               <Container>
                 <div className={s.subHeaderContent}>
-                  <h2 className={s.title}>{title}</h2>
-                  <p className={s.altTitle}>{altTitle}</p>
+                  <h2 className={s.title} style={
+                    textColor
+                      ? {
+                        color: textColor,
+                        }
+                      : undefined
+                  }>{title}</h2>
+                  <p className={s.altTitle} style={
+                    textColor
+                      ? {
+                          color: textColor,
+                        }
+                      : undefined
+                  }>{altTitle}</p>
                 </div>
               </Container>
             </header>
