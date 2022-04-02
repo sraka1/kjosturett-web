@@ -40,10 +40,10 @@ class About extends PureComponent {
           <div className={s.person}>
             <img
               className={s.img}
-              src={require('./axel.jpg')}
-              alt="Jana Novak"
+              src={require('./avatar.png')}
+              alt="Luka Medic"
             />
-            <p className={s.name}>Jana Novak</p>
+            <p className={s.name}>Luka Medic</p>
           </div>
         </div>
 

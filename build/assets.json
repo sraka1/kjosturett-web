@@ -1,39 +1,39 @@
 {
   "kjorskra": {
-    "js": "/assets/kjorskra.4d90873e.chunk.js"
+    "js": "/assets/kjorskra.fef8bcba.chunk.js"
   },
   "questionnaire-results": {
-    "js": "/assets/questionnaire-results.edcf2b21.chunk.js"
+    "js": "/assets/questionnaire-results.31f27530.chunk.js"
   },
   "embed-prof": {
-    "js": "/assets/embed-prof.7155bc1b.chunk.js"
+    "js": "/assets/embed-prof.16faae64.chunk.js"
   },
   "compare-parties": {
-    "js": "/assets/compare-parties.8e48fd70.chunk.js"
+    "js": "/assets/compare-parties.0147a138.chunk.js"
   },
   "prof": {
-    "js": "/assets/prof.7de497c9.chunk.js"
+    "js": "/assets/prof.949b3e38.chunk.js"
   },
   "partysingle": {
-    "js": "/assets/partysingle.53c75df5.chunk.js"
+    "js": "/assets/partysingle.b8aaea4c.chunk.js"
   },
   "malefnisingle": {
-    "js": "/assets/malefnisingle.3deb140f.chunk.js"
+    "js": "/assets/malefnisingle.d624b54a.chunk.js"
   },
   "topics-answers": {
-    "js": "/assets/topics-answers.458b4b19.chunk.js"
+    "js": "/assets/topics-answers.e32d26ee.chunk.js"
   },
   "frontpage": {
-    "js": "/assets/frontpage.bb81f679.chunk.js"
+    "js": "/assets/frontpage.1e5eabd1.chunk.js"
   },
   "about": {
-    "js": "/assets/about.58721fd5.chunk.js"
+    "js": "/assets/about.4fafdf5c.chunk.js"
   },
   "malefni": {
-    "js": "/assets/malefni.a70ad47a.chunk.js"
+    "js": "/assets/malefni.99651c54.chunk.js"
   },
   "previous-elections": {
-    "js": "/assets/previous-elections.fd59ab7c.chunk.js"
+    "js": "/assets/previous-elections.b0c8e92c.chunk.js"
   },
   "not-found": {
     "js": "/assets/not-found.13b4ae71.chunk.js"
@@ -42,17 +42,17 @@
     "js": "/assets/client.e11b0d68.js"
   },
   "vendor": {
-    "js": "/assets/vendor.d484535a.js"
+    "js": "/assets/vendor.20e5887a.js"
   },
   "": {
     "svg": "/assets/5314b16f.svg",
     "png": [
       "/assets/36c7cbf9.png",
+      "/assets/3f28b642.png",
       "/assets/bc2cfac3.png",
       "/assets/5e4d2d76.png",
       "/assets/19904944.png",
       "/assets/279cd161.png"
-    ],
-    "jpg": "/assets/96addf70.jpg"
+    ]
   }
 }

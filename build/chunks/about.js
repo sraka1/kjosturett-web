@@ -54,10 +54,10 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
     }, void 0, _jsx('img', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
       src: __webpack_require__(195),
-      alt: 'Jana Novak'
+      alt: 'Luka Medic'
     }), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
-    }, void 0, 'Jana Novak'))), _ref4, _ref5);
+    }, void 0, 'Luka Medic'))), _ref4, _ref5);
   }
 }
 
@@ -127,7 +127,7 @@ exports.locals = {
 /***/ 195:
 /***/ (function(module, exports) {
 
-module.exports = "/assets/96addf70.jpg";
+module.exports = "/assets/3f28b642.png";
 
 /***/ }),
 
@@ -340,6 +340,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       page,
       title,
       altTitle,
+      altTitleTwo,
       children,
       color,
       textColor,
@@ -385,7 +386,12 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       style: textColor ? {
         color: textColor
       } : undefined
-    }, void 0, altTitle)))), _jsx(__WEBPACK_IMPORTED_MODULE_5__Container__["a" /* default */], {}, void 0, children)), _ref);
+    }, void 0, altTitle), altTitleTwo && _jsx('p', {
+      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.altTitle,
+      style: textColor ? {
+        color: textColor
+      } : undefined
+    }, void 0, altTitleTwo)))), _jsx(__WEBPACK_IMPORTED_MODULE_5__Container__["a" /* default */], {}, void 0, children)), _ref);
   }
 }
 

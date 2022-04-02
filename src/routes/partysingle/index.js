@@ -27,30 +27,26 @@ export default ({ params, url }) => {
         color={party.color}
         textColor={party.textColor}
         altTitle={
-          <React.Fragment>
-            <a href={party.website} target="_blank" style={
-              party.textColor
-                ? {
-                    color: party.textColor,
-                  }
-                : undefined
-            }>
-              {pleasantUrl(party.website)}
-            </a>
-            {
-              party.websiteTwo && (
-                <a href={party.websiteTwo} target="_blank" style={
-                  party.textColor
-                    ? {
-                        color: party.textColor,
-                      }
-                    : undefined
-                }>
-                  {pleasantUrl(party.websiteTwo)}
-                </a>
-              )
-            }
-          </React.Fragment>
+          <a href={party.website} target="_blank" style={
+            party.textColor
+              ? {
+                  color: party.textColor,
+                }
+              : undefined
+          }>
+            {pleasantUrl(party.website)}
+          </a>
+        }
+        altTitleTwo={
+          (party.websiteTwo && <a href={party.websiteTwo} target="_blank" style={
+            party.textColor
+              ? {
+                  color: party.textColor,
+                }
+              : undefined
+          }>
+            {pleasantUrl(party.websiteTwo)}
+          </a>)
         }
       >
         <PartySingle party={party} categories={categories} />

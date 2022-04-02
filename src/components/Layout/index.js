@@ -12,6 +12,7 @@ class Layout extends Component {
       page,
       title,
       altTitle,
+      altTitleTwo,
       children,
       color,
       textColor,
@@ -65,6 +66,13 @@ class Layout extends Component {
                         }
                       : undefined
                   }>{altTitle}</p>
+                  { altTitleTwo && (<p className={s.altTitle} style={
+                    textColor
+                      ? {
+                          color: textColor,
+                        }
+                      : undefined
+                  }>{altTitleTwo}</p>) }
                 </div>
               </Container>
             </header>

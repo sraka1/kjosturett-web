@@ -1196,6 +1196,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       page,
       title,
       altTitle,
+      altTitleTwo,
       children,
       color,
       textColor,
@@ -1241,7 +1242,12 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       style: textColor ? {
         color: textColor
       } : undefined
-    }, void 0, altTitle)))), _jsx(__WEBPACK_IMPORTED_MODULE_5__Container__["a" /* default */], {}, void 0, children)), _ref);
+    }, void 0, altTitle), altTitleTwo && _jsx('p', {
+      className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.altTitle,
+      style: textColor ? {
+        color: textColor
+      } : undefined
+    }, void 0, altTitleTwo)))), _jsx(__WEBPACK_IMPORTED_MODULE_5__Container__["a" /* default */], {}, void 0, children)), _ref);
   }
 }
 
@@ -1779,9 +1785,9 @@ exports.locals = {
 
 
 // const URL = 'https://assets.voliprav.si';
-const URL = 'http://localhost:3000';
+// const URL = 'http://localhost:3000';
 // Temporary, until DNS propagates
-// const URL = 'https://beta.voliprav.si';
+const URL = 'https://beta.voliprav.si';
 
 exports.getAssetUrl = (isJpg = false, ...assets) => {
   return `${URL}/${assets.join('/')}.${isJpg ? 'jpg' : 'png'}`;
