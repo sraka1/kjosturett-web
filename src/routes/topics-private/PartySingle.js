@@ -74,7 +74,7 @@ class PartySingle extends PureComponent {
   render() {
     const { party, categories } = this.props;
 
-    const { finished } = this.state;
+    const { finished, party: urlParty } = this.state;
 
     // console.log('party', party);
     // console.log('categories', categories)
@@ -85,10 +85,12 @@ class PartySingle extends PureComponent {
 
         {!finished && (
           <div className={s.intro}>
-            <h1>Programske tematike (odgovori) - Voli prav 2022</h1>
+            <h1>Programske tematike (odgovori strank) - Voli prav 2022</h1>
+            <h3>Šifra stranke: <code>{urlParty}</code></h3>
             <p>
-              Vsebina strnjenih programskih tematik bo javno razvidna javnosti
-              v roku nekaj ur po oddaji. Zadnji odgovori prepišejo prejšnje.
+              Vsebina strnjenih programskih tematik bo na strani razvidna
+              v roku nekaj ur po oddaji. Odgovore lahko podate večkrat,
+              zadnji odgovori prepišejo prejšnje.
             </p>
           </div>
         )}

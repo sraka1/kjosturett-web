@@ -130,7 +130,7 @@ class Kosningaprof extends PureComponent {
   }
   render() {
     const { questions, token, uploadSuccess, uploadFailure } = this.props;
-    const { answers, started, finished } = this.state;
+    const { answers, started, finished, party } = this.state;
     return (
       <div className={s.root}>
         {!finished && false && (
@@ -144,7 +144,8 @@ class Kosningaprof extends PureComponent {
 
         {!finished && (
           <div className={s.intro}>
-            <h1>Vprašalnik Voli prav 2022</h1>
+            <h1>Vprašalnik (za stranke) - Voli prav 2022</h1>
+            <h3>Šifra stranke: <code>{party}</code></h3>
             <p>
               Odgovori na vprašalnik bodo javno razvidni javnosti
               v roku nekaj ur po oddaji. Zadnji odgovori prepišejo prejšnje.
@@ -154,7 +155,7 @@ class Kosningaprof extends PureComponent {
         {!finished &&
           questions.map(({ question, id }) => (
             <div key={id} className={s.question}>
-              <h3>{question}</h3>
+              <h3>{id}. {question}</h3>
               {Object.keys(answerMap).map(value => {
                 const name = `${id}_${value}`;
                 return (

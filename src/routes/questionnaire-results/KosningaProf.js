@@ -163,7 +163,7 @@ class Kosningaprof extends PureComponent {
     };
     return (
       <div key={id} id={id} className={cx(s.question, extraStyle)}>
-        <h3 className={s.questionText}>{question}</h3>
+        <h3 className={s.questionText}>{id}. {question}</h3>
         <Slider
           dots
           min={1}
@@ -202,7 +202,7 @@ class Kosningaprof extends PureComponent {
                   className={s.nextPrev}
                   onClick={() => this.changeQuestion(-1)}
                 >
-                  Til baka
+                  Nazaj
                 </button>
               )}
               <button
@@ -219,7 +219,7 @@ class Kosningaprof extends PureComponent {
                   style={{ backgroundColor: 'rgb(34,36,40)' }}
                   disabled={!hasAnswer}
                 >
-                  Áfram
+                  Naprej
                 </button>
               )}
               {isLastQuestion && (
@@ -228,15 +228,15 @@ class Kosningaprof extends PureComponent {
                   className={s.embedSubmit}
                   onClick={() => this.onSend()}
                 >
-                  Sjá niðurstöður
+                  Poglej rezultate
                 </button>
               )}
             </div>
           )}
           {isLastQuestion && !hasSomeAnswers && (
             <p style={{ margin: '1rem 0' }}>
-              Til að sjá niðurstöður verður þú að taka afstöðu með eða móti
-              allavega einni fullyrðingu.
+              Za ogled rezultatov se morate opredeliti vsaj pri
+              enem vprašanju oz. izjavi.
             </p>
           )}
         </div>

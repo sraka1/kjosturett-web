@@ -1521,9 +1521,9 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 var _ref = _jsx('h3', {}, void 0, 'Hvala za sodelovanje!');
 
-var _ref2 = _jsx('h1', {}, void 0, 'Programske tematike (odgovori) - Voli prav 2022');
+var _ref2 = _jsx('h1', {}, void 0, 'Programske tematike (odgovori strank) - Voli prav 2022');
 
-var _ref3 = _jsx('p', {}, void 0, 'Vsebina strnjenih programskih tematik bo javno razvidna javnosti v roku nekaj ur po oddaji. Zadnji odgovori prepi\u0161ejo prej\u0161nje.');
+var _ref3 = _jsx('p', {}, void 0, 'Vsebina strnjenih programskih tematik bo na strani razvidna v roku nekaj ur po oddaji. Odgovore lahko podate ve\u010Dkrat, zadnji odgovori prepi\u0161ejo prej\u0161nje.');
 
 class PartySingle extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
   constructor(props) {
@@ -1593,7 +1593,7 @@ class PartySingle extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
   render() {
     const { party, categories } = this.props;
 
-    const { finished } = this.state;
+    const { finished, party: urlParty } = this.state;
 
     // console.log('party', party);
     // console.log('categories', categories)
@@ -1602,7 +1602,7 @@ class PartySingle extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
       className: __WEBPACK_IMPORTED_MODULE_5__PartySingle_scss___default.a.root
     }, void 0, finished && _ref, !finished && _jsx('div', {
       className: __WEBPACK_IMPORTED_MODULE_5__PartySingle_scss___default.a.intro
-    }, void 0, _ref2, _ref3), !finished && _jsx('div', {
+    }, void 0, _ref2, _jsx('h3', {}, void 0, '\u0160ifra stranke: ', _jsx('code', {}, void 0, urlParty)), _ref3), !finished && _jsx('div', {
       className: __WEBPACK_IMPORTED_MODULE_5__PartySingle_scss___default.a.topics
     }, void 0, _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Collapsable__["a" /* default */], {
       ignoreAnchor: true,
