@@ -1,6 +1,12 @@
 @import '../../components/functions.scss';
 @import '../../components/variables.scss';
 
+@media print {
+  div {
+    break-inside: avoid;
+  }
+}
+
 .root {
   margin: 0 auto;
 

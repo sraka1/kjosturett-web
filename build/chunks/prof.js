@@ -88,7 +88,7 @@ var _ref4 = _jsx('h3', {}, void 0, 'Hvala za sodelovanje!');
 
 var _ref5 = _jsx('h1', {}, void 0, 'Vpra\u0161alnik (za stranke) - Voli prav 2022');
 
-var _ref6 = _jsx('p', {}, void 0, 'Odgovori na vpra\u0161alnik bodo javno razvidni javnosti v roku nekaj ur po oddaji. Zadnji odgovori prepi\u0161ejo prej\u0161nje.');
+var _ref6 = _jsx('p', {}, void 0, 'Odgovori na vpra\u0161alnik bodo vidni v roku nekaj ur po oddaji. Zadnji odgovori prepi\u0161ejo prej\u0161nje.');
 
 class Kosningaprof extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
   constructor(props) {
@@ -1114,7 +1114,7 @@ module.exports = [{"id":1,"question":"Vsi prebivalci Slovenije bi morali imeti d
 /***/ 98:
 /***/ (function(module, exports) {
 
-module.exports = {"default":"6","textMap":{"1":"Se ne strinjam","2":"Se deloma ne strinjam","3":"Nevtralno","4":"Se deloma strinjam","5":"Se strinjam","6":"Brez odgovora"}}
+module.exports = {"default":"6","textMap":{"1":"Se ne strinjamo","2":"Se deloma ne strinjamo","3":"Nevtralno","4":"Se deloma strinjamo","5":"Se strinjamo","6":"Brez odgovora"}}
 
 /***/ })
 

@@ -147,7 +147,7 @@ class Kosningaprof extends PureComponent {
             <h1>Vprašalnik (za stranke) - Voli prav 2022</h1>
             <h3>Šifra stranke: <code>{party}</code></h3>
             <p>
-              Odgovori na vprašalnik bodo javno razvidni javnosti
+              Odgovori na vprašalnik bodo vidni
               v roku nekaj ur po oddaji. Zadnji odgovori prepišejo prejšnje.
             </p>
           </div>

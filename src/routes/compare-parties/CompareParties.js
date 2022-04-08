@@ -69,7 +69,7 @@ class CompareParties extends PureComponent {
           </div>
           {this.state.selected.length === 1 && (
             <p style={{ textAlign: 'center', marginTop: '20px' }}>
-              Veldu amk. einn flokk til viðbótar.
+              Izberite vsaj še eno stranko ali listo.
             </p>
           )}
           {this.state.selected.length > 1 && (
@@ -194,7 +194,7 @@ class CompareParties extends PureComponent {
                             ]
                         )}
                       />
-                      {question}
+                      {id}. {question}
                     </h4>
                     {distance === 0 && filterParties.length === 2 && !questionHasUnansweredReplies && (
                       <div>

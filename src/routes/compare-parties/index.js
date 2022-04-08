@@ -12,29 +12,47 @@ parties.sort(function(a, b) {
 });
 
 const partyDeflections = {
+  DOM: 'Domovinska liga',
   DeSUS: 'DeSUS',
-  DD: 'Dobre Države',
   GS: 'Gibanje Svoboda',
-  K: 'Konkretno',
   L: 'Levica',
+  LBP: 'Lista Borisa Popoviča',
+  LL: 'Ljudska lista',
   LMŠ: 'Lista Marjana Šarca',
   ND: 'Naša Dežela',
+  'NP-DD': 'Naša Pruhodnost in Dobra država',
   NSi: 'Nova Slovenija',
   P: 'Piratska Stranka',
-  PS: 'Povežimo Slovenijo'
+  PoS: 'Povežimo Slovenijo',
+  R: 'Resni.ca',
+  SD: 'Socialni Demokrati',
+  SDS: 'Slovenska demokratska stranka',
+  SNS: 'Slovenska nacionalna stranka',
+  VESNA: 'VESNA - zelena stranka',
+  ZLS: 'Za ljudstvo Slovenije',
+  ZOS: 'Zavezništvo osvobodimo Slovenijo'
 };
 
 const partyDeflectionsB = {
+  DOM: 'Domovinska liga',
   DeSUS: 'DeSUS',
-  DD: 'Dobre Države',
   GS: 'Gibanje Svoboda',
-  K: 'Konkretno',
   L: 'Levica',
+  LBP: 'Lista Borisa Popoviča',
+  LL: 'Ljudska lista',
   LMŠ: 'Lista Marjana Šarca',
   ND: 'Naša Dežela',
+  'NP-DD': 'Naša Pruhodnost in Dobra država',
   NSi: 'Nova Slovenija',
   P: 'Piratska Stranka',
-  PS: 'Povežimo Slovenijo'
+  PoS: 'Povežimo Slovenijo',
+  R: 'Resni.ca',
+  SD: 'Socialni Demokrati',
+  SDS: 'Slovenska demokratska stranka',
+  SNS: 'Slovenska nacionalna stranka',
+  VESNA: 'VESNA - zelena stranka',
+  ZLS: 'Za ljudstvo Slovenije',
+  ZOS: 'Zavezništvo osvobodimo Slovenijo'
 };
 
 const valueMap = {
@@ -51,7 +69,13 @@ export default ({ url, params }) => {
 
   if (!letters) letters = '';
 
+  console.log('letters', letters);
+
   letters = letters.split(':').filter(letter => !!partyDeflections[letter]);
+
+  console.log('letters', letters);
+
+  console.log('parties', parties);
 
   //Begin calculations
   let filterParties = letters.map(
@@ -96,15 +120,15 @@ export default ({ url, params }) => {
     );
 
     if (letters.length === 1) {
-      title = `Berðu ${
+      title = `Primerjajte ${
         partyDeflectionsB[currentParties[0].letter]
-      } saman við aðra flokka`;
-      description = `Hversu samstíga eru ${currentParties[0].name} og aðrir flokkar? Þú getu skoðað málið betur hérna.`;
+      } z drugimi strankami`;
+      description = `Kako se vaša stališča skladajo s stranko ${currentParties[0].name}?`;
     } else if (letters.length === 2) {
       title = `${currentParties
         .map(p => p.name)
-        .join(' og ')} eru ${percentage} samstíga`;
-      description = `Skoðaðu málið betur ásamt fleiri möguleikum á kjósturétt.is.`;
+        .join(' in ')} sta ${percentage} skladni`;
+      description = `Podrobneje si oglejte primerjavo skupaj z drugimi strankami na voliprav.si`;
     } else {
       let stjorn = currentParties
         .map(p => partyDeflections[p.letter])
