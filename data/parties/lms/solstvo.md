@@ -1,0 +1,3 @@
+Slovenija ima kvalitetno javno šolstvo in takšno mora ostati tudi v bodoče. Naša temeljna usmeritev je na znanju temelječa družba, zato je treba zagotoviti čim širši dostop in čim večjo kakovost vzgoje in izobraževanja. To mora biti javno, kar vsakomur omogoča optimalen razvoj svojih sposobnosti in potenciala.
+
+Postopno je potrebno zviševati skupne izdatke za izobraževanje do ciljnih 6 % BDP. Prav tako je ključno povečanje javnih vlaganj v znanstvenoraziskovalno in inovacijsko dejavnost. Do leta 2026 bomo vsako leto zagotovili dodatnih vsaj 100 milijonov evrov (do ciljnega 1,5 % BDP), celotna vlaganja v znanstvenoraziskovalno in inovacijsko dejavnost pa je treba zvišati na najmanj 3 % BDP.

@@ -1,0 +1,1 @@
+V LMŠ zagovarjamo decentralizacijo Slovenije, okrepljen regionalni razvoj in medobčinsko sodelovanje ter odločno stojimo za tem, da je potrebno ustanoviti regije, nanje prenesti določene pristojnosti države, vključno s selitvijo dela sedežev državnih organov, ter jim zagotoviti lastne finančne vire.
