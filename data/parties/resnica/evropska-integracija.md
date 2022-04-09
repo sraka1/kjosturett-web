@@ -1,0 +1,1 @@
+Naše stališče do članstva v mednarodnih združenjih je vezano na voljo ljudstva. Tako bi s sistemom neposredne demokracije preverili vzdušje med državljani RS, kolikor bi se pokazalo, da je to potrebno.

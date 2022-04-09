@@ -1,0 +1,3 @@
+Temelj socialdemokratske ideje je boj za enakost žensk. Kot del naprednih koalicij s civilno družbo in stroko smo dosegli krepitev volilne pravice žensk z zakonskimi kvotami, pravico do svobodnega odločanja otrok, merjenje plačne vrzeli, ohranitev brezplačne hormonske kontracepcije, spremembo redefinicije posilstva, korake za odpravo menstrualne revščine.
+
+Naprej se borimo za ekonomsko, politično in socialno enakopravnost: pariteto pri družbenem odločanju na vseh ravneh (v vladi, v podjetjih, v znanosti), odpravo stereotipov glede tradicionalne vloge žensk, ničelno toleranco do nasilja, odpravo revščine (starejših samskih) žensk, dostop do ginekologa. Več na: www.socialnidemokrati.si/8marec

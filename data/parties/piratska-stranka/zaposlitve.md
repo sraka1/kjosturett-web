@@ -1,0 +1,1 @@
+Naš fokus bo predvsem ustvarjanje novih kakovostnih delovnih mest, predvsem s spodbujanjem visokotehnološke transformacije slovenskega gospodarstva, z digitalizacijo, vseživljenjskim učenjem ter s spodbujanjem lastništva zaposlenih.

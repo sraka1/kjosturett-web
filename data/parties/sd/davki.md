@@ -1,0 +1,3 @@
+Želimo več univerzalnih pravic do socialne in ekonomske varnosti, dostopnega zdravstva, izobraževanja, oskrbe v starosti. Za to potrebujemo ustrezen obseg in strukturo davčnih prihodkov. S pravično, progresivno in kohezivno davčno politiko želimo okrepiti blaginjo, povečati pravičnost davčnih obremenitev, hkrati pa spodbuditi podjetja k investiranju in zaposlovanju; omejevati želimo rabo zdravju škodljivih izdelkov in zmanjševati negativne vplive na okolje (obdavčitev onesnaževalcev); zavzemamo se za manjšo obremenitev plač, večjo obremenitev kapitala in premoženja.
+
+Naši predlogi so namenjeni krepitvi srednjega razreda, zmanjševanju revščine in omogočanju socialnega napredovanja vseh.

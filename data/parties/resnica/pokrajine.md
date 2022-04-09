@@ -1,0 +1,1 @@
+Zavzemamo se za decentralizacijo in za prenos nekaterih pomembnih institucij izven Ljubljane ter za večjo povezavo med izvršilno (občine, pokrajine) in zakonodajno vejo oblasti (vlada v DZ), kjer bi preko pokrajinskega sveta potekala redna in direktna komunikacija. Hkrati z ustanavljanjem pokrajin bi se odprle nove možnosti za dodatna financiranja v infrastrukturo.

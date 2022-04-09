@@ -1,0 +1,3 @@
+Podnebne spremembe so dejstvo, s katerim moramo živeti in se naučiti shajati tako, da bomo čim bolj kompenzirali dvig temperature ozračja, ekstremne vremenske pojave ipd. Ko govorimo o podnebnih spremembah, gre za že zatečeno dejstvo in ne nekaj, kar je možno spremeniti za nazaj.
+
+Zavzemamo se za širše sodelovanje med resorji in med državami, deljenje dobrih praks, odprt in reden diskurz s strokovnjaki s tega področja. Politika je tista, ki implementira tisto, kar bodo ugotovili znanstveniki, ki se s tem področjem ukvarjajo. Poseben pomen bo treba dati na ustrezno prilagojene poljščine in tiste kulture, ki so manj občutljive na spremembe podnebja.
