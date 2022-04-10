@@ -1328,23 +1328,23 @@ const routes = {
   // Keep in mind, routes are evaluated in order
   children: [{
     path: '/',
-    load: () => __webpack_require__.e/* import() */(8).then(__webpack_require__.bind(null, 61))
+    load: () => __webpack_require__.e/* import() */(8).then(__webpack_require__.bind(null, 62))
   }, {
     path: '/4e94afa38918c6f2dcc12fd8a04d3972',
     load: () => __webpack_require__.e/* import() */(4/* duplicate */).then(__webpack_require__.bind(null, 9))
   }, {
     path: '/5e94afa38918c6f2dcc12fd8a04d3972',
-    load: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 62))
+    load: () => __webpack_require__.e/* import() */(7).then(__webpack_require__.bind(null, 63))
   }, {
     path: '/embed',
     children: [{
       path: '/vprasalnik',
       children: [{
         path: '',
-        load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 63))
+        load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 64))
       }, {
         path: '/:results',
-        load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 64))
+        load: () => __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, 65))
       }]
     }]
   }, {
@@ -1354,20 +1354,20 @@ const routes = {
     path: '/vprasalnik',
     children: [{
       path: '',
-      load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 65))
+      load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 66))
     }, {
       path: '/:results',
-      load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 66))
+      load: () => __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 67))
     }]
   }, {
     path: '/prejsnje-volitve',
-    load: () => __webpack_require__.e/* import() */(11).then(__webpack_require__.bind(null, 67))
+    load: () => __webpack_require__.e/* import() */(11).then(__webpack_require__.bind(null, 68))
   }, {
     path: '/tematike',
-    load: () => __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 68))
+    load: () => __webpack_require__.e/* import() */(10).then(__webpack_require__.bind(null, 69))
   }, {
     path: '/o-nas',
-    load: () => __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, 69))
+    load: () => __webpack_require__.e/* import() */(9).then(__webpack_require__.bind(null, 70))
   }, {
     path: '/kjorskra',
     load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 10))
@@ -1376,7 +1376,7 @@ const routes = {
     load: () => __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 10))
   }, {
     path: '/tematike/:malefni',
-    load: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 72))
+    load: () => __webpack_require__.e/* import() */(5).then(__webpack_require__.bind(null, 73))
   }, {
     path: '/stranke/primerjaj',
     children: [{
@@ -1388,12 +1388,12 @@ const routes = {
     }]
   }, {
     path: '/stranke/:party',
-    load: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 73))
+    load: () => __webpack_require__.e/* import() */(6).then(__webpack_require__.bind(null, 74))
   },
   // Wildcard routes, e.g. { path: '*', ... } (must go last)
   {
     path: '*',
-    load: () => __webpack_require__.e/* import() */(12).then(__webpack_require__.bind(null, 74))
+    load: () => __webpack_require__.e/* import() */(12).then(__webpack_require__.bind(null, 75))
   }],
 
   action({ next }) {
@@ -1747,28 +1747,33 @@ module.exports = require("react-scroll");
 /* 57 */
 /***/ (function(module, exports) {
 
-module.exports = require("query-string");
+module.exports = require("lodash");
 
 /***/ }),
 /* 58 */
 /***/ (function(module, exports) {
 
-module.exports = require("rc-slider");
+module.exports = require("query-string");
 
 /***/ }),
 /* 59 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-image");
+module.exports = require("rc-slider");
 
 /***/ }),
 /* 60 */
 /***/ (function(module, exports) {
 
+module.exports = require("react-image");
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports) {
+
 module.exports = require("react-select");
 
 /***/ }),
-/* 61 */,
 /* 62 */,
 /* 63 */,
 /* 64 */,
@@ -1777,13 +1782,14 @@ module.exports = require("react-select");
 /* 67 */,
 /* 68 */,
 /* 69 */,
-/* 70 */
+/* 70 */,
+/* 71 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-google-maps");

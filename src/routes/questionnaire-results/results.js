@@ -22,6 +22,7 @@ export default ({ params, url }) => {
     party.reply = questionAnswer((party.reply || '').split(''));
     return party;
   });
+  console.log('parties', parties);
   const candidates = getResultsByScore(replies, candidateReplies);
   const questions = questionsBase.map(({ id, question }) => ({
     id,
@@ -33,8 +34,7 @@ export default ({ params, url }) => {
     .map(party => `${party.letter}:${Math.ceil(party.score)}`)
     .join('|');
 
-  // TODO: Deploy voliprav_social_generator to AWS Lambda!
-  const ogImage = `https://lx62q4zmz2.execute-api.us-east-1.amazonaws.com/production/${encodeURIComponent(
+  const ogImage = `https://holy-dust-6986.fly.dev/${encodeURIComponent(
     socialPayload
   )}`;
 

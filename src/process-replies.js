@@ -1,4 +1,5 @@
 // Adapted from @borgar's gist: https://gist.github.com/borgar/5b59dc2d70d1a93bdce5e4fb15ec7d71#file-matchranking-js
+const _ = require('lodash');
 
 const valueMap = {
   '1': -1,
@@ -6,7 +7,7 @@ const valueMap = {
   '3': 0,
   '4': 0.8,
   '5': 1,
-  '6': null
+  '6': null,
 };
 
 function mapToValues(answers) {
@@ -30,20 +31,18 @@ export function match(answers, matchersAnswers) {
     }
   });
 
-  return (2 - distance / ranks) / 2 * 100;
+  return ((2 - distance / ranks) / 2) * 100;
 }
 
-const sortByRating = (a, b) => b.score - a.score;
+// const sortByRating = (a, b) => b.score - a.score;
 
 export default function getResultsByScore(answers, dataset) {
   const answerValues = mapToValues(answers);
-  return dataset
-    .map(data => ({
-      ...data,
-      score: match(
-        answerValues,
-        data.reply && mapToValues(data.reply.split(''))
-      )
-    }))
-    .sort(sortByRating);
+  const data = dataset.map(data => ({
+    ...data,
+    score: match(answerValues, data.reply && mapToValues(data.reply.split(''))),
+  }));
+  // Ignore NaN scores
+  const filteredData = _.filter(data, 'score');
+  return _.orderBy(filteredData, 'score', 'desc');
 }

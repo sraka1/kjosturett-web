@@ -20,8 +20,11 @@ const constituencies = {
   sudvesturkjordaemi: 'Suðvesturkjördæmi',
 };
 
-const scoreToFloatingPoint = (score, scalar = 1) =>
-  Math.max(1, Math.ceil(score / scalar)) / 100;
+const scoreToFloatingPoint = (score, scalar = 1) => {
+  console.log('score', score);
+  console.log('scalar', scalar);
+  return Math.max(1, Math.ceil(score / scalar)) / 100;
+}
 
 function pluralize(count, singular, plural, double, threeQuad, zero = '') {
   if (count === 0 && zero) {
@@ -110,8 +113,8 @@ class KosningaprofResults extends PureComponent {
             className={s.shareButton}
             style={{ background: '#1da0f2', marginLeft: '15px' }}
             href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-              'Mínar niðurstöður úr kosningaprófi Voli prav: '
-            )}&url=${encodeURIComponent(url)}&hashtags=kosningar`}
+              'Moji rezultati volilnega vprašalnika Voli prav: '
+            )}&url=${encodeURIComponent(url)}&hashtags=volitve`}
             target="_blank"
           >
             Deli na Twitterju
@@ -145,6 +148,7 @@ class KosningaprofResults extends PureComponent {
       .slice(0, candidateCount);
 
     const partyScoreScalar = parties.length ? parties[0].score / 100 : 1;
+    console.log('parties[0].score', parties[0])
     return (
       <div className={s.root}>
         {this.renderIntro()}
@@ -228,10 +232,10 @@ class KosningaprofResults extends PureComponent {
                     })
                     .map(({ id, myAnswer, question, partyAnswer }) => {
                       const iAmIndiffrent = !(myAnswer !== 3 && myAnswer !== 6);
-                      const pluralParty = party.name === 'Socialni Demokrati';
-                      const partyIndiffrent = !(
-                        partyAnswer !== 3 && partyAnswer !== 6
-                      );
+                      // const pluralParty = party.name === 'Socialni Demokrati';
+                      // const partyIndiffrent = !(
+                      //   partyAnswer !== 3 && partyAnswer !== 6
+                      // );
                       const difference = Math.abs(myAnswer - partyAnswer);
 
                       return (
@@ -248,31 +252,25 @@ class KosningaprofResults extends PureComponent {
 
                           {difference === 0 ? (
                             <div>
-                              Bæði ég og {party.name} erum{' '}
+                              Odgovor obojih je {' '}
                               <strong>
                                 {answers.textMap[myAnswer].toLowerCase()}
-                              </strong>{' '}
-                              {iAmIndiffrent && 'gagnvart '} þessari
-                              staðhæfingu.
+                              </strong>.
                             </div>
                           ) : (
                             <div>
-                              Ég er{' '}
+                              Moj odgovor je {' '}
                               <strong>
                                 {(
-                                  answers.textMap[myAnswer] || 'hlutlaus'
+                                  answers.textMap[myAnswer]
                                 ).toLowerCase()}
-                              </strong>{' '}
-                              en {party.name} {pluralParty ? 'eru ' : 'er '}
+                              </strong>{', '}odgovor{' '}
+                              {party.nameDeflected} pa{' '}
                               <strong>
                                 {(
-                                  answers.textMap[partyAnswer] || 'hlutlaus'
+                                  answers.textMap[partyAnswer]
                                 ).toLowerCase()}
-                                {(partyIndiffrent && pluralParty && 'ir ') ||
-                                  ' '}
-                              </strong>{' '}
-                              {partyIndiffrent && 'gagnvart '} þessari
-                              staðhæfingu.
+                              </strong>{'.'}
                             </div>
                           )}
                         </div>

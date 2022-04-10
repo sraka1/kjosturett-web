@@ -1,11 +1,11 @@
 {
   "default": "6",
   "textMap": {
-    "1": "Se ne strinjamo",
-    "2": "Se deloma ne strinjamo",
+    "1": "Se ne strinjam",
+    "2": "Se deloma ne strinjam",
     "3": "Nevtralno",
-    "4": "Se deloma strinjamo",
-    "5": "Se strinjamo",
+    "4": "Se deloma strinjam",
+    "5": "Se strinjam",
     "6": "Brez odgovora"
   }
 }

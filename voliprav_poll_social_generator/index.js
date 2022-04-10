@@ -1,10 +1,16 @@
 const gm = require('gm').subClass({ imageMagick: true });
 require('gm-base64');
+const fastifyNoIcon = require('fastify-no-icon');
+const _ = require('lodash');
 
-const partiesImport = require('./parties');
+const partiesImport = require('./parties.json');
 
-exports.handler = (event, context, callback) => {
-  const payload = decodeURIComponent(event.pathParameters.text);
+// Require the framework and instantiate it
+const fastify = require('fastify')({ logger: true, maxParamLength: 300 });
+
+// Declare a route
+fastify.get('/:rawParties', async (request, reply) => {
+  const payload = request.params.rawParties;
 
   let parties = payload.split('|').map(raw => {
     const [letter, score] = raw.split(':');
@@ -23,6 +29,10 @@ exports.handler = (event, context, callback) => {
       score: finalScore,
     };
   });
+  // Ignore NaN scores!
+  parties = _.filter(parties, 'score');
+
+  console.log('parties', parties);
 
   parties.sort((a, b) => {
     if (a.score > b.score) return -1;
@@ -60,26 +70,23 @@ exports.handler = (event, context, callback) => {
       .drawText(pos[0] + 55, pos[1] + 225, `${party.score}%`);
   });
 
-  image
-    .mosaic()
-    // .write('./out.png', function(err) {
-    //   if (!err) console.log('done');
-    // });
-    .toBase64('png', (error, base64) => {
-      if (error) return callback(error);
-      callback(null, {
-        statusCode: 200,
-        headers: {
-          'Content-Type': 'image/png',
-        },
-        body: base64,
-        isBase64Encoded: true,
-      });
-    });
-};
+  image.mosaic().toBuffer('png', (err, buffer) => {
+    if (err) return err;
+    return reply
+      .code(200)
+      .header('Content-Type', 'image/png')
+      .send(buffer);
+  });
+});
 
-// exports.handler(
-//   { pathParameters: { text: 'J:68|D:67|F:58|M:38|P:34' } },
-//   {},
-//   console.log
-// );
+// Run the server!
+const start = async () => {
+  try {
+    fastify.register(fastifyNoIcon);
+    await fastify.listen(3333, '0.0.0.0');
+  } catch (err) {
+    fastify.log.error(err);
+    process.exit(1);
+  }
+};
+start();
