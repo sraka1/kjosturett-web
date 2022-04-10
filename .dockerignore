@@ -1,0 +1,9 @@
+# Ignore everything
+src/**
+data/**
+voliprav_poll_social_generator/**
+node_modules/**
+.git/**
+
+# Allow files and directories
+# !build/**
