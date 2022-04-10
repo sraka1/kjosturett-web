@@ -69,7 +69,7 @@ class KosningaprofResults extends PureComponent {
           <p style={{ textAlign: 'center' }}>
             Več o političnih stališčih in kandidatih strank lahko izveste na{' '}
             <strong>
-              <a href="https://beta.voliprav.si/" target="_blank">
+              <a href="https://voliprav.si/" target="_blank">
                 www.voliprav.si
               </a>
             </strong>

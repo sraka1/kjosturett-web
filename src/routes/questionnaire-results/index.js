@@ -10,7 +10,7 @@ export default ({ url }) => ({
   description:
     'Hvaða flokkar og frambjóðendur eru þér algjörlega sammála? Þú getur þreytt prófið og komist að áreiðanlegri niðurstöðu.',
   path: url,
-  ogImage: 'https://beta.voliprav.si/og_prof.png',
+  ogImage: 'https://voliprav.si/og_prof.png',
   component: (
     <Layout page="kosningaprof" title="Vprašalnik">
       <KosningaProf answers={answers} questions={questions} />

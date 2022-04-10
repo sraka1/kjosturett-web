@@ -596,7 +596,7 @@ function pluralize(count, singular, plural, double, threeQuad, zero = '') {
 }
 
 var _ref = _jsx('strong', {}, void 0, _jsx('a', {
-  href: 'https://beta.voliprav.si/',
+  href: 'https://voliprav.si/',
   target: '_blank'
 }, void 0, 'www.voliprav.si'));
 
@@ -937,7 +937,7 @@ var _ref = _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default 
   title: `Vprašalnik -  Voli prav`,
   description: 'Hvaða flokkar og frambjóðendur eru þér algjörlega sammála? Þú getur þreytt prófið og komist að áreiðanlegri niðurstöðu.',
   path: url,
-  ogImage: 'https://beta.voliprav.si/og_prof.png',
+  ogImage: 'https://voliprav.si/og_prof.png',
   component: _ref
 }));
 
@@ -1016,7 +1016,7 @@ function questionAnswer(reply = []) {
       questions: questions,
       candidates: candidates,
       parties: parties,
-      url: `https://beta.voliprav.si/vprasalnik/${encodeURIComponent(params.results)}`,
+      url: `https://voliprav.si/vprasalnik/${encodeURIComponent(params.results)}`,
       ogImage: ogImage
     }))
   };
@@ -1216,7 +1216,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       return _jsx('div', {
         className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.root
       }, void 0, _jsx('header', {}, void 0, _jsx('a', {
-        href: 'https://beta.voliprav.si/',
+        href: 'https://voliprav.si/',
         target: '_blank'
       }, void 0, _jsx('img', {
         className: __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default.a.logo,
@@ -1795,7 +1795,7 @@ exports.locals = {
 // const URL = 'https://assets.voliprav.si';
 // const URL = 'http://localhost:3000';
 // Temporary, until DNS propagates
-const URL = 'https://beta.voliprav.si';
+const URL = 'https://voliprav.si';
 
 exports.getAssetUrl = (isJpg = false, ...assets) => {
   return `${URL}/${assets.join('/')}.${isJpg ? 'jpg' : 'png'}`;

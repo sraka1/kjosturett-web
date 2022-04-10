@@ -27,7 +27,7 @@ export default ({ params, url }) => {
       ] = nidurstada;
 
       if (coordinates) {
-        ogImage = `https://beta.voliprav.si/og-image-kjorskra/${coordinates
+        ogImage = `https://voliprav.si/og-image-kjorskra/${coordinates
           .split(',')
           .join('%2C')}`;
       }

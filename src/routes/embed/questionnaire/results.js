@@ -41,7 +41,7 @@ export default ({ params, url }) => {
           questions={questions}
           candidates={candidates}
           parties={parties}
-          url={`https://beta.voliprav.si/embed/vprasalnik/${encodeURIComponent(
+          url={`https://voliprav.si/embed/vprasalnik/${encodeURIComponent(
             params.results
           )}`}
         />

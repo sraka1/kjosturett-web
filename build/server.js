@@ -1048,7 +1048,7 @@ var _ref13 = _jsx('meta', {
 
 var _ref14 = _jsx('meta', {
   property: 'og:image',
-  content: 'https://beta.voliprav.si/og_2022.png'
+  content: 'https://voliprav.si/og_2022.png'
 });
 
 var _ref15 = _jsx('meta', {
@@ -1097,7 +1097,7 @@ function Html(props) {
     content: title
   }), _ref6, _jsx('meta', {
     property: 'og:url',
-    content: `https://beta.voliprav.si${path}`
+    content: `https://voliprav.si${path}`
   }), _jsx('meta', {
     property: 'og:description',
     content: description
