@@ -1,0 +1,3 @@
+Naša dežela je pripravila nabor ukrepov, s katerimi bomo izboljšali dostopnost, učinkovitost in dosegljivost raznolikih socialnih in skupnostnih storitev v socialnem varstvu.
+Zavzeli se bomo za sprejem ustreznih ukrepov, s katerimi bomo zmanjšali tveganje revščine, ki so mu še posebej izpostavljeni starejši, samske osebe in ženske. Uvedli bomo enotno vstopno točko za vse prosilce socialnih pomoči ter mobilne enote na terenu, ki bodo pomoč približale tistim, ki jo zares potrebujejo.
+Posebej se bomo zavzeli za informacijsko in psihosocialno podporo za starše dolgotrajno in neozdravljivo bolnih otrok ter otrok s hudimi psihičnimi in gibalnimi omejitvami.

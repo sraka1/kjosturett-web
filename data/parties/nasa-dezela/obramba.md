@@ -1,0 +1,1 @@
+Slovenija je del zavezništva NATO - zato bo spoštovala obveze iz tega zavezništva. Spodbudili bomo razpravo o prioritetah Slovenske vojske, njeni opremljenosti ter kadrovske popolnjenosti. Zavzemali se bomo za krepitev sistemov zaščite in reševanja ter helikopterskih enot.

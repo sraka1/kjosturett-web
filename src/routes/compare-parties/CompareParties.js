@@ -150,7 +150,7 @@ class CompareParties extends PureComponent {
               className={s.shareButton}
               style={{ background: '#1da0f2', marginLeft: '15px' }}
               href={`https://twitter.com/home?status=${encodeURIComponent(
-                'Samanburður flokka á kjósturétt.is: https://voliprav.si' +
+                'Primerjava strank na portalu Voli prav - https://voliprav.si' +
                   url
               )}`}
               target="_blank"

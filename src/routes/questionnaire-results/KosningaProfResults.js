@@ -114,7 +114,7 @@ class KosningaprofResults extends PureComponent {
             style={{ background: '#1da0f2', marginLeft: '15px' }}
             href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
               'Moji rezultati volilnega vprašalnika Voli prav: '
-            )}&url=${encodeURIComponent(url)}&hashtags=volitve`}
+            )}&url=${encodeURIComponent(url)}&hashtags=volitve,volitve2022,voliprav`}
             target="_blank"
           >
             Deli na Twitterju

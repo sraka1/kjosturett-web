@@ -1,0 +1,3 @@
+Zavzeli se bomo za ureditev oblik fleksibilnga zaposlovanja, t.i. flexicurity, s ciljem zagotavljanja uravnoteženega okolja (varnosti in prožnosti hkrati). Z zmanjšano obdavčitvijo dela bomo spodbujali »kroženje znanja«, delodajalce pa bomo z davčno politiko spodbudili k zaposlovanju mladih, visoko izobraženih kadrov. Podprli bomo ukrepe v segmentu davčne razbremenitve stroškov dela (plače), s čimer bomo uspeli zadržati najboljše kadre ter spodbudili ustvarjanje delovnih mest z višjo dodano vrednostjo.
+
+Podprli bomo ukrepe, ki bodo okrepili vlaganja v posebna znanja, povezana z delovnim mestom, pa tudi v programe vseživljenjskega izobraževanja in usposabljanja.

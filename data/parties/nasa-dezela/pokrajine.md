@@ -1,0 +1,2 @@
+Ena izmed glavnih prioritet Naše dežele je decentralizacija ter enakomeren razvoj celotne Slovenije. Zavzeli se bomo za ustanovitev pokrajin (dežel), v katerih bodo lahko mesta, občine in krajevne enote lažje uresničevale svoje cilje in potrebe.
+Pokrajine bodo po načelu subsidiarnosti opravljale naloge, ki presegajo zmogljivosti občin. Slednje namreč nekaterih nalog, zaradi preseganja njihove kadrovske, tehnične, organizacijske ter finančne zmogljjivosti, ne morejo opravljati.

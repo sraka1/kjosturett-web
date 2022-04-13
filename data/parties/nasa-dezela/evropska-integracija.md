@@ -1,0 +1,3 @@
+Slovenija je del Evropske unije ter Evroobmočja ter Schengna. Naša dežela bo gojila pripadnost Evropski uniji ter aktivno pripomogla k povezani, trdni ter na vrednotah utemeljeni Evropski uniji. Zavedamo se pomena povezovanja sodobnih družb in držav v času pospešene ekonomnske, politične in kulturne globalizacije.
+Naša dežela dr. Aleksandre Pivec se bo zavzemala za odprt trg in odrte notranje meje EU, hkrati pa tudi sodelovanje v skupnih politikah, predvsem na področju skupne zunanje politike, varnosti, zdravja, gospodarstva, energetike.
+Posebej podpiramo Konferenco o prihodnosti Evrope, ki ambiciozno spodbuja evropske državljane k soustvarjanju evropske prihodnosti.

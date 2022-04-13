@@ -1,0 +1,3 @@
+Posodobili bomo programe vzgoje in izobraževanja od vrtca do univerze, da bodo ti bolj odprti, omogočali večjo odzivnost na potrebe sedanjega časa in prihodnosti. Posodobili bomo didaktiko poučevanja od vrtca do univerze v smeri večje vključenosti učečih se v načrtovanje in spremljanje procesa lastnega učenja.
+Učitelje bomo opolnomočili, da bodo z učnimi pristopi in metodami znali in zmogli odkrivati, podpirati in razvijati raznolikost v nadarjenosti, učnih zmožnostih, kompetencah in željah posameznikov.
+Okrepili bomo temelje poklicnega izobraževanja, spodbudili vpis v tovrstne programe, namenili večji poudarek strokovnim predmetom in praktičnemu usposabljanju (vajeništvo).

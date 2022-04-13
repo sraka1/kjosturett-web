@@ -1,0 +1,1 @@
+Zavzeli se bomo za izpolnitev zavez iz Vodne Direktive ter ureditev prakse izvajanja posegov v vodotoke. Posebno pozornost bomo namenili ohranjanju kakovostnih kmetijskih zemljišč ter spodbujali trajnostno kmetijstvo, ki ne bo obremenjevalo ekosistema prek sprejemljivih meja. Prizadevali si bomo za 20-odstotno znižanje ekološkega odtisa Slovenije do leta 2030 glede na leto 2013.
