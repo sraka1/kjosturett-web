@@ -2,7 +2,7 @@ require("source-map-support").install();
 exports.ids = [4];
 exports.modules = {
 
-/***/ 181:
+/***/ 182:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16,7 +16,7 @@ exports.modules = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__KosningaProf_scss__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__KosningaProf_scss__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__KosningaProf_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__KosningaProf_scss__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -200,11 +200,11 @@ Kosningaprof.contextTypes = {
 
 /***/ }),
 
-/***/ 182:
+/***/ 183:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(183);
+    var content = __webpack_require__(184);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -236,7 +236,7 @@ Kosningaprof.contextTypes = {
 
 /***/ }),
 
-/***/ 183:
+/***/ 184:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -843,7 +843,7 @@ exports.push([module.i, "", ""]);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__KosningaProf__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__KosningaProf__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json__);
@@ -998,7 +998,7 @@ const Footer = () => _jsx('footer', {
 }, void 0, 'O nas'), _jsx(__WEBPACK_IMPORTED_MODULE_3__Link__["a" /* default */], {
   className: __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default.a.link,
   href: '/prejsnje-volitve'
-}, void 0, 'Pre\u0161nje volitve'), _jsx(__WEBPACK_IMPORTED_MODULE_3__Link__["a" /* default */], {
+}, void 0, 'Prej\u0161nje volitve'), _jsx(__WEBPACK_IMPORTED_MODULE_3__Link__["a" /* default */], {
   className: __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default.a.link,
   target: '_blank',
   href: 'https://github.com/sraka1/voliprav-web'

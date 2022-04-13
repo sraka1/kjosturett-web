@@ -2,7 +2,14 @@ require("source-map-support").install();
 exports.ids = [9];
 exports.modules = {
 
-/***/ 193:
+/***/ 103:
+/***/ (function(module, exports) {
+
+module.exports = "/assets/3f28b642.png";
+
+/***/ }),
+
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +17,7 @@ exports.modules = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__About_scss__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__About_scss__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__About_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__About_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -25,7 +32,7 @@ var _ref = _jsx('p', {}, void 0, 'Voliprav.si je neodvisna informativna spletna 
 
 var _ref2 = _jsx('h3', {}, void 0, 'Ustanovitelji projekta');
 
-var _ref3 = _jsx('h3', {}, void 0, 'Pri projektu so pomagali');
+var _ref3 = _jsx('h3', {}, void 0, 'Pri projektu so na kakr\u0161enkoli na\u010Din pomagali (s testiranjem, predlogi, komentarji)');
 
 var _ref4 = _jsx('h3', {}, void 0, 'Kontakt');
 
@@ -53,11 +60,41 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.person
     }, void 0, _jsx('img', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
-      src: __webpack_require__(196),
+      src: __webpack_require__(103),
+      alt: 'Sledilnik.org'
+    }), _jsx('p', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
+    }, void 0, 'Sledilnik.org'), _jsx('img', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
+      src: __webpack_require__(103),
       alt: 'Luka Medic'
     }), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
-    }, void 0, 'Luka Medic'))), _ref4, _ref5);
+    }, void 0, 'Luka Medic'), _jsx('img', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
+      src: __webpack_require__(103),
+      alt: 'Branko Jevti\u0107'
+    }), _jsx('p', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
+    }, void 0, 'Branko Jevti\u0107'), _jsx('img', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
+      src: __webpack_require__(103),
+      alt: '\u0160tefan Baebler'
+    }), _jsx('p', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
+    }, void 0, '\u0160tefan Baebler'), _jsx('img', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
+      src: __webpack_require__(103),
+      alt: 'An\u017Ee Voh Bo\u0161tic'
+    }), _jsx('p', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
+    }, void 0, 'An\u017Ee Voh Bo\u0161tic'), _jsx('img', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
+      src: __webpack_require__(103),
+      alt: 'Maja Zalo\u017Enik'
+    }), _jsx('p', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
+    }, void 0, 'Maja Zalo\u017Enik'))), _ref4, _ref5);
   }
 }
 
@@ -65,11 +102,11 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 194:
+/***/ 195:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(195);
+    var content = __webpack_require__(196);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -101,7 +138,7 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -124,13 +161,6 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 196:
-/***/ (function(module, exports) {
-
-module.exports = "/assets/3f28b642.png";
-
-/***/ }),
-
 /***/ 70:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -138,7 +168,7 @@ module.exports = "/assets/3f28b642.png";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__About__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__About__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(81);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -856,7 +886,7 @@ const Footer = () => _jsx('footer', {
 }, void 0, 'O nas'), _jsx(__WEBPACK_IMPORTED_MODULE_3__Link__["a" /* default */], {
   className: __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default.a.link,
   href: '/prejsnje-volitve'
-}, void 0, 'Pre\u0161nje volitve'), _jsx(__WEBPACK_IMPORTED_MODULE_3__Link__["a" /* default */], {
+}, void 0, 'Prej\u0161nje volitve'), _jsx(__WEBPACK_IMPORTED_MODULE_3__Link__["a" /* default */], {
   className: __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default.a.link,
   target: '_blank',
   href: 'https://github.com/sraka1/voliprav-web'

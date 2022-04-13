@@ -9,11 +9,11 @@ module.exports = [{"name":"Eyjólfur Ármannsson","seat":1,"constituency":"nordv
 
 /***/ }),
 
-/***/ 160:
+/***/ 161:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(173);
+    var content = __webpack_require__(174);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -45,7 +45,7 @@ module.exports = [{"name":"Eyjólfur Ármannsson","seat":1,"constituency":"nordv
 
 /***/ }),
 
-/***/ 161:
+/***/ 162:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -103,11 +103,11 @@ function getResultsByScore(answers, dataset) {
 
 /***/ }),
 
-/***/ 170:
+/***/ 171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_rc_slider_assets_index_css__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_rc_slider_assets_index_css__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_rc_slider_assets_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__node_modules_rc_slider_assets_index_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -121,7 +121,7 @@ function getResultsByScore(answers, dataset) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__styles_scss__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__styles_scss__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__styles_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__styles_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__history__ = __webpack_require__(80);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
@@ -419,11 +419,11 @@ Kosningaprof.defaultProps = {
 
 /***/ }),
 
-/***/ 171:
+/***/ 172:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(172);
+    var content = __webpack_require__(173);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -455,7 +455,7 @@ Kosningaprof.defaultProps = {
 
 /***/ }),
 
-/***/ 172:
+/***/ 173:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -470,7 +470,7 @@ exports.push([module.i, ".rc-slider{position:relative;height:14px;padding:5px 0;
 
 /***/ }),
 
-/***/ 173:
+/***/ 174:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -540,7 +540,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 174:
+/***/ 175:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -554,16 +554,16 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_image___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_image__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_scss__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_scss__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__styles_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_select__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_select___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_select__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Link__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__transparent_png__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__transparent_png__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__transparent_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__transparent_png__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__node_modules_react_select_dist_react_select_css__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__node_modules_react_select_dist_react_select_css__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__node_modules_react_select_dist_react_select_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__node_modules_react_select_dist_react_select_css__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -669,7 +669,7 @@ class KosningaprofResults extends __WEBPACK_IMPORTED_MODULE_0_react__["PureCompo
 
     return _jsx('div', {}, void 0, _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_5__styles_scss___default.a.lead
-    }, void 0, 'Preglejte rezultate vpra\u0161alnika ', _ref2, '. Podrobneje si ogledajte ', this.renderLink('/tematike/zaposlitve', 'posamezne tematike'), ', ki se vam zdijo zlasti pomembne.'), _jsx('p', {
+    }, void 0, 'Preglejte rezultate vpra\u0161alnika ', _ref2, '. Podrobneje si oglejte ', this.renderLink('/tematike/zaposlitve', 'posamezne tematike'), ', ki se vam zdijo zlasti pomembne.'), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_5__styles_scss___default.a.buttons
     }, void 0, this.renderLink('/vprasalnik', 'Reši ponovno', {
       className: __WEBPACK_IMPORTED_MODULE_5__styles_scss___default.a.takeTest
@@ -863,18 +863,18 @@ class KosningaprofResults extends __WEBPACK_IMPORTED_MODULE_0_react__["PureCompo
 
 /***/ }),
 
-/***/ 175:
+/***/ 176:
 /***/ (function(module, exports) {
 
 module.exports = "/assets/36c7cbf9.png";
 
 /***/ }),
 
-/***/ 176:
+/***/ 177:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(177);
+    var content = __webpack_require__(178);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -906,7 +906,7 @@ module.exports = "/assets/36c7cbf9.png";
 
 /***/ }),
 
-/***/ 177:
+/***/ 178:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -928,7 +928,7 @@ exports.push([module.i, ".Select{position:relative}.Select input::-webkit-contac
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__KosningaProf__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__KosningaProf__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json__);
@@ -968,7 +968,7 @@ var _ref = _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default 
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__KosningaProfResults__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__KosningaProfResults__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json__);
@@ -978,7 +978,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__data_build_replies_candidates2_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__data_build_replies_candidates2_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_build_parties_json__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_build_parties_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__data_build_parties_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__process_replies__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__process_replies__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils__ = __webpack_require__(96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__utils__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
@@ -1738,7 +1738,7 @@ const Footer = () => _jsx('footer', {
 }, void 0, 'O nas'), _jsx(__WEBPACK_IMPORTED_MODULE_3__Link__["a" /* default */], {
   className: __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default.a.link,
   href: '/prejsnje-volitve'
-}, void 0, 'Pre\u0161nje volitve'), _jsx(__WEBPACK_IMPORTED_MODULE_3__Link__["a" /* default */], {
+}, void 0, 'Prej\u0161nje volitve'), _jsx(__WEBPACK_IMPORTED_MODULE_3__Link__["a" /* default */], {
   className: __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default.a.link,
   target: '_blank',
   href: 'https://github.com/sraka1/voliprav-web'
