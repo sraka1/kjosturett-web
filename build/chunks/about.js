@@ -64,31 +64,41 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
       alt: 'Sledilnik.org'
     }), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
-    }, void 0, 'Sledilnik.org'), _jsx('img', {
+    }, void 0, 'Sledilnik.org')), _jsx('div', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.person
+    }, void 0, _jsx('img', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
       src: __webpack_require__(103),
       alt: 'Luka Medic'
     }), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
-    }, void 0, 'Luka Medic'), _jsx('img', {
+    }, void 0, 'Luka Medic')), _jsx('div', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.person
+    }, void 0, _jsx('img', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
       src: __webpack_require__(103),
       alt: 'Branko Jevti\u0107'
     }), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
-    }, void 0, 'Branko Jevti\u0107'), _jsx('img', {
+    }, void 0, 'Branko Jevti\u0107')), _jsx('div', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.person
+    }, void 0, _jsx('img', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
       src: __webpack_require__(103),
       alt: '\u0160tefan Baebler'
     }), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
-    }, void 0, '\u0160tefan Baebler'), _jsx('img', {
+    }, void 0, '\u0160tefan Baebler')), _jsx('div', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.person
+    }, void 0, _jsx('img', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
       src: __webpack_require__(103),
       alt: 'An\u017Ee Voh Bo\u0161tic'
     }), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.name
-    }, void 0, 'An\u017Ee Voh Bo\u0161tic'), _jsx('img', {
+    }, void 0, 'An\u017Ee Voh Bo\u0161tic')), _jsx('div', {
+      className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.person
+    }, void 0, _jsx('img', {
       className: __WEBPACK_IMPORTED_MODULE_2__About_scss___default.a.img,
       src: __webpack_require__(103),
       alt: 'Maja Zalo\u017Enik'

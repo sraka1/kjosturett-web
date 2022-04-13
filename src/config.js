@@ -8,7 +8,8 @@ if (process.env.BROWSER) {
 
 let googleTrackingId;
 
-if (process.env.NODE_ENV !== 'development') {
+// Disable GA
+if (false && process.env.NODE_ENV !== 'development') {
   googleTrackingId = 'UA-39870444-1';
 }
 

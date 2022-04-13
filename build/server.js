@@ -117,7 +117,8 @@ if (false) {
 
 let googleTrackingId;
 
-if (true) {
+// Disable GA
+if (false) {
   googleTrackingId = 'UA-39870444-1';
 }
 

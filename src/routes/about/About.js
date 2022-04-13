@@ -38,36 +38,46 @@ class About extends PureComponent {
 
         <div className={s.contributors}>
           <div className={s.person}>
-          <img
+            <img
               className={s.img}
               src={require('./avatar.png')}
               alt="Sledilnik.org"
             />
             <p className={s.name}>Sledilnik.org</p>
+          </div>
+          <div className={s.person}>
             <img
               className={s.img}
               src={require('./avatar.png')}
               alt="Luka Medic"
             />
             <p className={s.name}>Luka Medic</p>
+          </div>
+          <div className={s.person}>
             <img
               className={s.img}
               src={require('./avatar.png')}
               alt="Branko Jevtić"
             />
             <p className={s.name}>Branko Jevtić</p>
+          </div>
+          <div className={s.person}>
             <img
               className={s.img}
               src={require('./avatar.png')}
               alt="Štefan Baebler"
             />
             <p className={s.name}>Štefan Baebler</p>
+          </div>
+          <div className={s.person}>
             <img
               className={s.img}
               src={require('./avatar.png')}
               alt="Anže Voh Boštic"
             />
             <p className={s.name}>Anže Voh Boštic</p>
+          </div>
+          <div className={s.person}>
             <img
               className={s.img}
               src={require('./avatar.png')}

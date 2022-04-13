@@ -669,7 +669,7 @@ class KosningaprofResults extends __WEBPACK_IMPORTED_MODULE_0_react__["PureCompo
 
     return _jsx('div', {}, void 0, _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_5__styles_scss___default.a.lead
-    }, void 0, 'Preglejte rezultate vpra\u0161alnika ', _ref2, '. Podrobneje si oglejte ', this.renderLink('/tematike/zaposlitve', 'posamezne tematike'), ', ki se vam zdijo zlasti pomembne.'), _jsx('p', {
+    }, void 0, 'Preglejte rezultate vpra\u0161alnika ', _ref2, '. Podrobneje si oglejte ', this.renderLink('/tematike/davki', 'posamezne tematike'), ', ki se vam zdijo zlasti pomembne.'), _jsx('p', {
       className: __WEBPACK_IMPORTED_MODULE_5__styles_scss___default.a.buttons
     }, void 0, this.renderLink('/vprasalnik', 'Reši ponovno', {
       className: __WEBPACK_IMPORTED_MODULE_5__styles_scss___default.a.takeTest
