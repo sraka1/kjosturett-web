@@ -86,7 +86,7 @@ class KosningaprofResults extends PureComponent {
     return (
       <div>
         <p className={s.lead}>
-          Preglejte rezultate vprašalnika <strong>Voli prav</strong>. Podrobneje si ogledajte {this.renderLink('/tematike/zaposlitve', 'posamezne tematike')}, ki
+          Preglejte rezultate vprašalnika <strong>Voli prav</strong>. Podrobneje si oglejte {this.renderLink('/tematike/zaposlitve', 'posamezne tematike')}, ki
           se vam zdijo zlasti pomembne.
         </p>
 

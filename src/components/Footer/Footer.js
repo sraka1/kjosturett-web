@@ -19,7 +19,7 @@ const Footer = () => (
             O nas
           </Link>
           <Link className={styles.link} href={'/prejsnje-volitve'}>
-            Prešnje volitve
+            Prejšnje volitve
           </Link>
           <Link
             className={styles.link}

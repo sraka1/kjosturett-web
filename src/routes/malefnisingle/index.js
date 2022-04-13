@@ -21,7 +21,7 @@ export default ({ params, url }) => {
     chunks: ['malefnisingle'],
     title: `${category.name} - Voli prav`,
     path: url,
-    description: `Svör stjórnmálaflokkanna í ${category.name.toLowerCase()}um fyrir Alþingiskosningarnar 2021`,
+    description: `Odgovori političnih strank v zvezi s tematiko ${category.name.toLowerCase()} pred volitvami 2022`,
     component: (
       <Layout page="tematike" title={category.name}>
         <MalefniSingle
