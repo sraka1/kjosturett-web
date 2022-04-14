@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import cx from 'classnames';
 import s from './Party.scss';
 import { getAssetUrl } from '../../utils';
 import Link from '../../Link';
+import ReactTooltip from 'react-tooltip';
 
 const Container = ({
   url,
@@ -14,14 +15,22 @@ const Container = ({
   letter,
   name,
   leader,
-  leaderShort
+  leaderShort,
+  isDisabled,
+  disabledMessage,
 }) => {
+  let partyRef;
+  console.log('useState', useState);
+  // const [isDisabledMessageShown, setIsDisabledMessageShown] = useState(false);
   const Wrap = href ? Link : 'button';
   return (
     <Wrap
       href={href}
-      onClick={onClick}
-      className={cx(s.party, isSelected && s.isSelected, isFaded && s.isFaded)}
+      onClick={!isDisabled ? onClick : () => { ReactTooltip.show(partyRef) }}
+      // onMouseOver={isDisabled ? () => { console.log('onMouse') } : undefined}
+      className={cx(s.party, isSelected && s.isSelected, isFaded && s.isFaded, isDisabled && s.isDisabled)}
+      data-tip={isDisabled ? disabledMessage : undefined}
+      ref={ref => partyRef = ref}
     >
       <span className={s.imgWrap}>
         <img
@@ -39,6 +48,11 @@ const Container = ({
           {letter}
         </span>
       </span>
+      {/*isDisabledMessageShown && (
+        <div>
+          {disabledMessage}
+        </div>
+      )*/}
     </Wrap>
   );
 };

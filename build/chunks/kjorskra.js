@@ -9,8 +9,8 @@ exports.modules = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Kjorskra__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Kjorskra__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(82);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
 
@@ -70,7 +70,7 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 /***/ }),
 
-/***/ 197:
+/***/ 198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80,24 +80,24 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Kjorskra_scss__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Kjorskra_scss__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Kjorskra_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Kjorskra_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__walking_png__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__walking_png__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__walking_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__walking_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__driving_png__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__driving_png__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__driving_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__driving_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bicycling_png__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bicycling_png__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bicycling_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__bicycling_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bus_png__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bus_png__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bus_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__bus_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bus_json__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bus_json__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bus_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__bus_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Autocomplete__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__OpeningHours__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__history__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Autocomplete__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__OpeningHours__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__history__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_kennitala__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_kennitala___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_kennitala__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_react_google_maps__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_react_google_maps__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_react_google_maps___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_react_google_maps__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -692,11 +692,11 @@ Kjorskra.contextTypes = {
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(199);
+    var content = __webpack_require__(200);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -728,7 +728,7 @@ Kjorskra.contextTypes = {
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -769,48 +769,48 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 200:
+/***/ 201:
 /***/ (function(module, exports) {
 
 module.exports = "/assets/bc2cfac3.png";
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, exports) {
 
 module.exports = "/assets/5e4d2d76.png";
 
 /***/ }),
 
-/***/ 202:
+/***/ 203:
 /***/ (function(module, exports) {
 
 module.exports = "/assets/19904944.png";
 
 /***/ }),
 
-/***/ 203:
+/***/ 204:
 /***/ (function(module, exports) {
 
 module.exports = "/assets/279cd161.png";
 
 /***/ }),
 
-/***/ 204:
+/***/ 205:
 /***/ (function(module, exports) {
 
 module.exports = {"requestParameters":{"date":"2017-10-20","mode":"TRANSIT,WALK","arriveBy":"false","wheelchair":"false","showIntermediateStops":"false","fromPlace":"64.1456203,-21.8666037","toPlace":"64.1163028,-21.7996805","time":"14:50","locale":"is","numItineraries":"3"},"plan":{"date":1508511000000,"from":{"name":"Upphafstaður","lon":-21.8666037,"lat":64.1456203,"orig":"","vertexType":"NORMAL"},"to":{"name":"Áfangastað","lon":-21.7996805,"lat":64.1163028,"orig":"","vertexType":"NORMAL"},"itineraries":[{"duration":1580,"startTime":1508511380000,"endTime":1508512960000,"walkTime":618,"transitTime":960,"waitingTime":2,"walkDistance":731.9999699122933,"walkLimitExceeded":false,"elevationLost":0,"elevationGained":0,"transfers":0,"legs":[{"startTime":1508511380000,"endTime":1508511839000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":548.675,"pathway":false,"mode":"WALK","route":"","agencyTimeZoneOffset":0,"interlineWithPreviousLeg":false,"from":{"name":"Upphafstaður","lon":-21.8666037,"lat":64.1456203,"departure":1508511380000,"orig":"","vertexType":"NORMAL"},"to":{"name":"Hrafnista","stopId":"1:90000188","stopCode":"HRAFNI1","lon":-21.867406,"lat":64.149018,"arrival":1508511839000,"departure":1508511840000,"stopIndex":9,"stopSequence":10,"vertexType":"TRANSIT"},"legGeometry":{"points":"omofKfymdC@s@?W?E?AW???A?????A?????AA????A??????AA?????A??A??A????A??A??A??A??A?????AA??A??AA?????AA??A???A??IUiAuAYtBM`ACRANEXARCXGGIGGx@AJEn@Cb@I`B?HAb@Af@??{CyAYGOCUIKSMPOPKNMHG@E???A@?@?@A??@?@?@?@EFEFQUOUG[GUOWYIQKHk@?A","length":101},"rentedBike":false,"transitLeg":false,"duration":459,"steps":[{"distance":276.106,"relativeDirection":"DEPART","streetName":"göngustígur","absoluteDirection":"EAST","stayOn":false,"area":false,"bogusName":false,"lon":-21.866599417045258,"lat":64.14568240233562,"elevation":[]},{"distance":250.251,"relativeDirection":"RIGHT","streetName":"Ã¾jónustu vegur","absoluteDirection":"NORTH","stayOn":false,"area":false,"bogusName":true,"lon":-21.8685879,"lat":64.1468886,"elevation":[]},{"distance":9.701,"relativeDirection":"CONTINUE","streetName":"Kleppsvegur","absoluteDirection":"NORTH","stayOn":false,"area":false,"bogusName":false,"lon":-21.867757400000002,"lat":64.1489395,"elevation":[]},{"distance":12.617,"relativeDirection":"RIGHT","streetName":"göngustígur","absoluteDirection":"SOUTHEAST","stayOn":false,"area":false,"bogusName":true,"lon":-21.867695700000002,"lat":64.1490225,"elevation":[]}]},{"startTime":1508511840000,"endTime":1508512800000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":6526.983823317477,"pathway":false,"mode":"BUS","route":"16","agencyName":"Strætó bs.","agencyUrl":"http://straeto.is/","agencyTimeZoneOffset":0,"routeType":3,"routeId":"1:16.17301.ST","interlineWithPreviousLeg":false,"tripBlockId":"4414","headsign":"Árbær/Hraunsás","agencyId":"1","tripId":"1:306945","serviceDate":"20171020","from":{"name":"Hrafnista","stopId":"1:90000188","stopCode":"HRAFNI1","lon":-21.867406,"lat":64.149018,"arrival":1508511839000,"departure":1508511840000,"stopIndex":9,"stopSequence":10,"vertexType":"TRANSIT"},"to":{"name":"Bæjarbraut","stopId":"1:90000732","stopCode":"BÆJARB8","lon":-21.799352,"lat":64.117652,"arrival":1508512800000,"departure":1508512801000,"stopIndex":22,"stopSequence":23,"vertexType":"TRANSIT"},"legGeometry":{"points":"ubpfKz}mdCZ{B`@sC^{BPcAPgARaANu@XoANq@Ry@T}@XeA\\mAl@mBd@uAf@yAd@qA\\cAZy@zDaLjEiMfBkFhA{C^aA`@{@b@w@JQ^k@j@{@h@m@v@u@n@e@bAi@|@[d@Kb@G\\Ax@Cn@E|@EzDMpDMhFQtDMnEObCIRArACb@CdFUdIc@pEUbG[p@G|AMvC]zCa@jAWj@M\\Ih@KVGb@K^IlBa@JNZCVC\\@THVb@Pf@Fh@@p@E`AQbAUr@[j@WZ_@J]H[?c@Ba@EYUQ_@Ms@E}@@aADwCBc@HaAn@yIb@eHLaCPsDX}GX}H?IJiEHyCDoBP_CTcDFw@Hu@BUDKHYFMFIHGFC@?J?HBHDHHFJFPBLDTBVBf@?dB@fE?dE?rC@`@WLu@h@y@h@u@\\G?WDA?O@??MA]C_@I?A???A???A???A???A???A???A???A???A???A???A???AA??A?????A???A???A???A??AA?????A???A???AA????A?????A??AA?????A?????AA????A????A??A???????AA??????A??A??????A??A???????A??A????????FwFFmED{B@mA@iA?}@@i@?_A?g@?u@A{BAgHAY?iB?s@AgBAaCCyCA}@?mAGwCG_BCi@UeCO_BIi@Q_B[aCSwCKsBC}@fCK\\CJ?DAj@?X?L?LA@?@?H@??l@A|@ABxB@lA@nC@vA??@^?bA@v@@Z@VF`@BPBL@D@@HXHNFHDBFFFDF@RD?A@?@@hARFAF?BABAFEBE@ADIJKDABAZFt@JN@B@HEJWFa@@q@FqDD_BAu@I_AAS_@mDCo@@aAJ}FTiKNcI@q@FcEA{@?m@?IBiADuBBaBBaC?oA?{B???[?Y??@}A?_BDaBLk@HeAHy@Fu@ZeDj@gGRyBTgCUOi@_@}AcAWQ[SKEQGKCy@MSC??u@Mi@ES?{@FwCFCgE?u@G{K?k@???{A?S?YEeD?}@CkHAcGCiDHkBFeA\\\\d@LX???D@h@CfAExBGr@C\\A`@?N@L?H?J@J@F@NDXFHDJBHDLFPH\\TDB|@l@b@Zb@Z??n@d@vA`AAF?F?J@H@H@HBDBDB@B?B?BABABEBI@K@ClBnAFj@RSf@^f@\\","length":443},"routeShortName":"16","rentedBike":false,"transitLeg":true,"duration":960,"steps":[]},{"startTime":1508512801000,"endTime":1508512960000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":182.93699999999998,"pathway":false,"mode":"WALK","route":"","agencyTimeZoneOffset":0,"interlineWithPreviousLeg":false,"from":{"name":"Bæjarbraut","stopId":"1:90000732","stopCode":"BÆJARB8","lon":-21.799352,"lat":64.117652,"arrival":1508512800000,"departure":1508512801000,"stopIndex":22,"stopSequence":23,"vertexType":"TRANSIT"},"to":{"name":"Áfangastað","lon":-21.7996805,"lat":64.1163028,"arrival":1508512960000,"orig":"","vertexType":"NORMAL"},"legGeometry":{"points":"k~ifKlu`dCRNx@j@hBnA@O@QPJLiBJFPLTP","length":11},"rentedBike":false,"transitLeg":false,"duration":159,"steps":[{"distance":116.30599999999998,"relativeDirection":"DEPART","streetName":"göngustígur","absoluteDirection":"SOUTH","stayOn":false,"area":false,"bogusName":true,"lon":-21.79942940354801,"lat":64.1176631216134,"elevation":[]},{"distance":9.644,"relativeDirection":"RIGHT","streetName":"Bæjarbraut","absoluteDirection":"SOUTH","stayOn":false,"area":false,"bogusName":false,"lon":-21.799952400000002,"lat":64.1167214,"elevation":[]},{"distance":26.816,"relativeDirection":"LEFT","streetName":"Rofabær","absoluteDirection":"EAST","stayOn":false,"area":false,"bogusName":false,"lon":-21.800012300000002,"lat":64.11663870000001,"elevation":[]},{"distance":30.171,"relativeDirection":"RIGHT","streetName":"road","absoluteDirection":"SOUTH","stayOn":false,"area":false,"bogusName":true,"lon":-21.7994893,"lat":64.116561,"elevation":[]}]}],"tooSloped":false},{"duration":1971,"startTime":1508511782000,"endTime":1508513753000,"walkTime":375,"transitTime":1440,"waitingTime":156,"walkDistance":459.4325112732098,"walkLimitExceeded":false,"elevationLost":0,"elevationGained":0,"transfers":1,"legs":[{"startTime":1508511782000,"endTime":1508511959000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":209.639,"pathway":false,"mode":"WALK","route":"","agencyTimeZoneOffset":0,"interlineWithPreviousLeg":false,"from":{"name":"Upphafstaður","lon":-21.8666037,"lat":64.1456203,"departure":1508511782000,"orig":"","vertexType":"NORMAL"},"to":{"name":"Hrafnista","stopId":"1:90000249","stopCode":"AUSTUR5","lon":-21.867253,"lat":64.146758,"arrival":1508511959000,"departure":1508511960000,"stopIndex":18,"stopSequence":19,"vertexType":"TRANSIT"},"legGeometry":{"points":"omofKfymdC@s@?W?E?AW???A?????A?????AA????A??????AA?????A??A??A????A??A??A??A??A?????AA??A??AA?????AA??A???A??IUiAuAYtBM`ACRANEXARCXGGIGGx@AJ","length":63},"rentedBike":false,"transitLeg":false,"duration":177,"steps":[{"distance":209.639,"relativeDirection":"DEPART","streetName":"göngustígur","absoluteDirection":"EAST","stayOn":false,"area":false,"bogusName":false,"lon":-21.866599417045258,"lat":64.14568240233562,"elevation":[]}]},{"startTime":1508511960000,"endTime":1508512380000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":1713.1428650662126,"pathway":false,"mode":"BUS","route":"14","agencyName":"Strætó bs.","agencyUrl":"http://straeto.is/","agencyTimeZoneOffset":0,"routeType":3,"routeId":"1:14.17301.ST","interlineWithPreviousLeg":false,"tripBlockId":"4408","headsign":"Grandi","agencyId":"1","tripId":"1:308544","serviceDate":"20171020","from":{"name":"Hrafnista","stopId":"1:90000249","stopCode":"AUSTUR5","lon":-21.867253,"lat":64.146758,"arrival":1508511959000,"departure":1508511960000,"stopIndex":18,"stopSequence":19,"vertexType":"TRANSIT"},"to":{"name":"Hátún","stopId":"1:90000049","stopCode":"LAUGAV2","lon":-21.898187,"lat":64.141195,"arrival":1508512380000,"departure":1508512380000,"stopIndex":22,"stopSequence":23,"vertexType":"TRANSIT"},"legGeometry":{"points":"}sofKn}mdCIbACr@ItBA\\CjA?jC?|@@|@?b@@|B?fB@zC@lC@~A?XAd@?v@AhAC?A@CBADCD?FAF?F@D?D@B@D@B@B@@@@B?@?Bp@@p@@hA@`@@~CDpH@|EAfA?RChA?n@LtH@lA@pC@vB@lA@bE@pC?dA@p@@tC?j@@lA@zBDlC@RBdBDdBD`B?FHxDFdDBx@lAQXIbAUx@Qf@KVA~@@`CTP@??zEb@ZBb@D`AHtBPxAXv@?n@`@PVJXFj@Bb@e@nFK~@Gp@Gf@Eb@OjA[|BS~A]jC","length":101},"routeShortName":"14","rentedBike":false,"transitLeg":true,"duration":420,"steps":[]},{"startTime":1508512380000,"endTime":1508512466000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":110.928,"pathway":false,"mode":"WALK","route":"","agencyTimeZoneOffset":0,"interlineWithPreviousLeg":false,"from":{"name":"Hátún","stopId":"1:90000049","stopCode":"LAUGAV2","lon":-21.898187,"lat":64.141195,"arrival":1508512380000,"departure":1508512380000,"stopIndex":22,"stopSequence":23,"vertexType":"TRANSIT"},"to":{"name":"Gamla sjónvarpshúsið","stopId":"1:90000031","stopCode":"LAUGAV1","lon":-21.896676,"lat":64.140661,"arrival":1508512466000,"departure":1508512620000,"stopIndex":7,"stopSequence":8,"vertexType":"TRANSIT"},"legGeometry":{"points":"mqnfKt~sdC?CJ{@DODSBMBOBOFFLLHHf@yD","length":12},"rentedBike":false,"transitLeg":false,"duration":86,"steps":[{"distance":110.928,"relativeDirection":"DEPART","streetName":"Hátún => Gamla sjónvarpshúsið","absoluteDirection":"SOUTHEAST","stayOn":false,"area":false,"bogusName":false,"lon":-21.898187,"lat":64.141195,"elevation":[]}]},{"startTime":1508512620000,"endTime":1508513640000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":5733.490338898779,"pathway":false,"mode":"BUS","route":"5","agencyName":"Strætó bs.","agencyUrl":"http://straeto.is/","agencyTimeZoneOffset":0,"routeType":3,"routeId":"1:5.17301.ST","interlineWithPreviousLeg":false,"tripBlockId":"4179","headsign":"Norðlingaholt","agencyId":"1","tripId":"1:306550","serviceDate":"20171020","from":{"name":"Gamla sjónvarpshúsið","stopId":"1:90000031","stopCode":"LAUGAV1","lon":-21.896676,"lat":64.140661,"arrival":1508512466000,"departure":1508512620000,"stopIndex":7,"stopSequence":8,"vertexType":"TRANSIT"},"to":{"name":"Rofabær / Hábær","stopId":"1:90000400","stopCode":"ROFABÆ1","lon":-21.801618,"lat":64.11686,"arrival":1508513640000,"departure":1508513641000,"stopIndex":17,"stopSequence":18,"vertexType":"TRANSIT"},"legGeometry":{"points":"innfK~tsdCD_@Hq@NiAH{@@?ZqCHm@V{BJgAHoAFq@BoA?e@@aACsAK}CUqHCyAAgA?kB??AiB?gE?}A@mA@}ABcADoAD_ABi@BQB_@HeAN}ARgBRqAN}@P_AXmA@EP{@^yAj@mBV{@JY^mAVs@FOn@cB^{@bBsDdD}GBGlAgCpAkCPa@x@aBFf@GTFUGg@@CvCeGJUh@iAl@oAP]nAiCpBeE|@mBf@cAz@iB`@{@Vg@`@}@^_Ab@gAx@}B^mAl@qBfAcEFSBIBEPUBBDBB?DADABEBEBGPCTH`@T`@J\\H@???TB\\@R@dDSLH|BQ@?@A`@CDAJA\\@LDLLJPDFDPFPBRBVBR?V?X?XAb@C\\C\\I`@ERGPGLGFMFK@KAKGIIIOGUCWCUAU@w@ToFBY@YBm@h@sFjCyXRsBvBcUbAoKnAyNBc@HaAn@yIb@eHLaCPsDX}GX}H?IJiEHyCDoBDeDD}CFuEBqF@aG?cEAeJEsLK{WAo@AwDC_G??AaEEkNJwMHeFDaDJyCDkBBg@D[JYV]b@G\\E^Ad@Ab@Ab@?h@?n@Dl@Ff@J^J`@Lb@PLk@HeAHy@Fu@ZeDj@gGRyBTgCj@`@x@l@??XRB@fBlA^Vb@Zd@\\z@j@d@\\TPNoBJsAP{B@KHeAJuATuCL}A^aFT{CT{CDk@XcDHiA","length":237},"routeShortName":"5","rentedBike":false,"transitLeg":true,"duration":1020,"steps":[]},{"startTime":1508513641000,"endTime":1508513753000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":138.71099999999998,"pathway":false,"mode":"WALK","route":"","agencyTimeZoneOffset":0,"interlineWithPreviousLeg":false,"from":{"name":"Rofabær / Hábær","stopId":"1:90000400","stopCode":"ROFABÆ1","lon":-21.801618,"lat":64.11686,"arrival":1508513640000,"departure":1508513641000,"stopIndex":17,"stopSequence":18,"vertexType":"TRANSIT"},"to":{"name":"Áfangastað","lon":-21.7996805,"lat":64.1163028,"arrival":1508513753000,"orig":"","vertexType":"NORMAL"},"legGeometry":{"points":"kyifKbcadCBa@JqA\\kELiBJFPLTP","length":8},"rentedBike":false,"transitLeg":false,"duration":112,"steps":[{"distance":108.53999999999999,"relativeDirection":"DEPART","streetName":"Rofabær","absoluteDirection":"EAST","stayOn":false,"area":false,"bogusName":false,"lon":-21.801611916972195,"lat":64.11686796826201,"elevation":[]},{"distance":30.171,"relativeDirection":"RIGHT","streetName":"road","absoluteDirection":"SOUTH","stayOn":false,"area":false,"bogusName":true,"lon":-21.7994893,"lat":64.116561,"elevation":[]}]}],"tooSloped":false},{"duration":1580,"startTime":1508513180000,"endTime":1508514760000,"walkTime":618,"transitTime":960,"waitingTime":2,"walkDistance":731.9999699122933,"walkLimitExceeded":false,"elevationLost":0,"elevationGained":0,"transfers":0,"legs":[{"startTime":1508513180000,"endTime":1508513639000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":548.675,"pathway":false,"mode":"WALK","route":"","agencyTimeZoneOffset":0,"interlineWithPreviousLeg":false,"from":{"name":"Upphafstaður","lon":-21.8666037,"lat":64.1456203,"departure":1508513180000,"orig":"","vertexType":"NORMAL"},"to":{"name":"Hrafnista","stopId":"1:90000188","stopCode":"HRAFNI1","lon":-21.867406,"lat":64.149018,"arrival":1508513639000,"departure":1508513640000,"stopIndex":9,"stopSequence":10,"vertexType":"TRANSIT"},"legGeometry":{"points":"omofKfymdC@s@?W?E?AW???A?????A?????AA????A??????AA?????A??A??A????A??A??A??A??A?????AA??A??AA?????AA??A???A??IUiAuAYtBM`ACRANEXARCXGGIGGx@AJEn@Cb@I`B?HAb@Af@??{CyAYGOCUIKSMPOPKNMHG@E???A@?@?@A??@?@?@?@EFEFQUOUG[GUOWYIQKHk@?A","length":101},"rentedBike":false,"transitLeg":false,"duration":459,"steps":[{"distance":276.106,"relativeDirection":"DEPART","streetName":"göngustígur","absoluteDirection":"EAST","stayOn":false,"area":false,"bogusName":false,"lon":-21.866599417045258,"lat":64.14568240233562,"elevation":[]},{"distance":250.251,"relativeDirection":"RIGHT","streetName":"Ã¾jónustu vegur","absoluteDirection":"NORTH","stayOn":false,"area":false,"bogusName":true,"lon":-21.8685879,"lat":64.1468886,"elevation":[]},{"distance":9.701,"relativeDirection":"CONTINUE","streetName":"Kleppsvegur","absoluteDirection":"NORTH","stayOn":false,"area":false,"bogusName":false,"lon":-21.867757400000002,"lat":64.1489395,"elevation":[]},{"distance":12.617,"relativeDirection":"RIGHT","streetName":"göngustígur","absoluteDirection":"SOUTHEAST","stayOn":false,"area":false,"bogusName":true,"lon":-21.867695700000002,"lat":64.1490225,"elevation":[]}]},{"startTime":1508513640000,"endTime":1508514600000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":6526.983823317477,"pathway":false,"mode":"BUS","route":"16","agencyName":"Strætó bs.","agencyUrl":"http://straeto.is/","agencyTimeZoneOffset":0,"routeType":3,"routeId":"1:16.17301.ST","interlineWithPreviousLeg":false,"tripBlockId":"4416","headsign":"Árbær/Hraunsás","agencyId":"1","tripId":"1:306944","serviceDate":"20171020","from":{"name":"Hrafnista","stopId":"1:90000188","stopCode":"HRAFNI1","lon":-21.867406,"lat":64.149018,"arrival":1508513639000,"departure":1508513640000,"stopIndex":9,"stopSequence":10,"vertexType":"TRANSIT"},"to":{"name":"Bæjarbraut","stopId":"1:90000732","stopCode":"BÆJARB8","lon":-21.799352,"lat":64.117652,"arrival":1508514600000,"departure":1508514601000,"stopIndex":22,"stopSequence":23,"vertexType":"TRANSIT"},"legGeometry":{"points":"ubpfKz}mdCZ{B`@sC^{BPcAPgARaANu@XoANq@Ry@T}@XeA\\mAl@mBd@uAf@yAd@qA\\cAZy@zDaLjEiMfBkFhA{C^aA`@{@b@w@JQ^k@j@{@h@m@v@u@n@e@bAi@|@[d@Kb@G\\Ax@Cn@E|@EzDMpDMhFQtDMnEObCIRArACb@CdFUdIc@pEUbG[p@G|AMvC]zCa@jAWj@M\\Ih@KVGb@K^IlBa@JNZCVC\\@THVb@Pf@Fh@@p@E`AQbAUr@[j@WZ_@J]H[?c@Ba@EYUQ_@Ms@E}@@aADwCBc@HaAn@yIb@eHLaCPsDX}GX}H?IJiEHyCDoBP_CTcDFw@Hu@BUDKHYFMFIHGFC@?J?HBHDHHFJFPBLDTBVBf@?dB@fE?dE?rC@`@WLu@h@y@h@u@\\G?WDA?O@??MA]C_@I?A???A???A???A???A???A???A???A???A???A???A???AA??A?????A???A???A???A??AA?????A???A???AA????A?????A??AA?????A?????AA????A????A??A???????AA??????A??A??????A??A???????A??A????????FwFFmED{B@mA@iA?}@@i@?_A?g@?u@A{BAgHAY?iB?s@AgBAaCCyCA}@?mAGwCG_BCi@UeCO_BIi@Q_B[aCSwCKsBC}@fCK\\CJ?DAj@?X?L?LA@?@?H@??l@A|@ABxB@lA@nC@vA??@^?bA@v@@Z@VF`@BPBL@D@@HXHNFHDBFFFDF@RD?A@?@@hARFAF?BABAFEBE@ADIJKDABAZFt@JN@B@HEJWFa@@q@FqDD_BAu@I_AAS_@mDCo@@aAJ}FTiKNcI@q@FcEA{@?m@?IBiADuBBaBBaC?oA?{B???[?Y??@}A?_BDaBLk@HeAHy@Fu@ZeDj@gGRyBTgCUOi@_@}AcAWQ[SKEQGKCy@MSC??u@Mi@ES?{@FwCFCgE?u@G{K?k@???{A?S?YEeD?}@CkHAcGCiDHkBFeA\\\\d@LX???D@h@CfAExBGr@C\\A`@?N@L?H?J@J@F@NDXFHDJBHDLFPH\\TDB|@l@b@Zb@Z??n@d@vA`AAF?F?J@H@H@HBDBDB@B?B?BABABEBI@K@ClBnAFj@RSf@^f@\\","length":443},"routeShortName":"16","rentedBike":false,"transitLeg":true,"duration":960,"steps":[]},{"startTime":1508514601000,"endTime":1508514760000,"departureDelay":0,"arrivalDelay":0,"realTime":false,"distance":182.93699999999998,"pathway":false,"mode":"WALK","route":"","agencyTimeZoneOffset":0,"interlineWithPreviousLeg":false,"from":{"name":"Bæjarbraut","stopId":"1:90000732","stopCode":"BÆJARB8","lon":-21.799352,"lat":64.117652,"arrival":1508514600000,"departure":1508514601000,"stopIndex":22,"stopSequence":23,"vertexType":"TRANSIT"},"to":{"name":"Áfangastað","lon":-21.7996805,"lat":64.1163028,"arrival":1508514760000,"orig":"","vertexType":"NORMAL"},"legGeometry":{"points":"k~ifKlu`dCRNx@j@hBnA@O@QPJLiBJFPLTP","length":11},"rentedBike":false,"transitLeg":false,"duration":159,"steps":[{"distance":116.30599999999998,"relativeDirection":"DEPART","streetName":"göngustígur","absoluteDirection":"SOUTH","stayOn":false,"area":false,"bogusName":true,"lon":-21.79942940354801,"lat":64.1176631216134,"elevation":[]},{"distance":9.644,"relativeDirection":"RIGHT","streetName":"Bæjarbraut","absoluteDirection":"SOUTH","stayOn":false,"area":false,"bogusName":false,"lon":-21.799952400000002,"lat":64.1167214,"elevation":[]},{"distance":26.816,"relativeDirection":"LEFT","streetName":"Rofabær","absoluteDirection":"EAST","stayOn":false,"area":false,"bogusName":false,"lon":-21.800012300000002,"lat":64.11663870000001,"elevation":[]},{"distance":30.171,"relativeDirection":"RIGHT","streetName":"road","absoluteDirection":"SOUTH","stayOn":false,"area":false,"bogusName":true,"lon":-21.7994893,"lat":64.116561,"elevation":[]}]}],"tooSloped":false}]},"debugOutput":{"precalculationTime":66,"pathCalculationTime":63,"pathTimes":[26,18,19],"renderingTime":1,"totalTime":130,"timedOut":false}}
 
 /***/ }),
 
-/***/ 205:
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
@@ -876,7 +876,7 @@ class Autocomplete extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.PureCom
 
 /***/ }),
 
-/***/ 206:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -888,7 +888,7 @@ class Autocomplete extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.PureCom
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_countdown_now___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__OpeningHours_scss__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__OpeningHours_scss__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__OpeningHours_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__OpeningHours_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -942,11 +942,11 @@ class OpeningHours extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] 
 
 /***/ }),
 
-/***/ 207:
+/***/ 208:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(208);
+    var content = __webpack_require__(209);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -978,7 +978,7 @@ class OpeningHours extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] 
 
 /***/ }),
 
-/***/ 208:
+/***/ 209:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -995,14 +995,14 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /***/ (function(module, exports) {
 
 module.exports = "/assets/5314b16f.svg";
 
 /***/ }),
 
-/***/ 77:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1010,7 +1010,7 @@ module.exports = "/assets/5314b16f.svg";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(81);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -1085,17 +1085,17 @@ Link.protoTypes = {
 
 /***/ }),
 
-/***/ 78:
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Container__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Container__ = __webpack_require__(80);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Container__["a"]; });
 
 
 /***/ }),
 
-/***/ 79:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1103,7 +1103,7 @@ Link.protoTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Container_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1119,7 +1119,7 @@ const Container = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 80:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1142,7 +1142,7 @@ const Container = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 81:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1150,12 +1150,12 @@ const Container = ({ children }) => _jsx('div', {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Layout_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Footer__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Container__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Footer__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Container__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1234,11 +1234,11 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 /***/ }),
 
-/***/ 82:
+/***/ 83:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(83);
+    var content = __webpack_require__(84);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1270,7 +1270,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 /***/ }),
 
-/***/ 83:
+/***/ 84:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1293,7 +1293,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 84:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1303,12 +1303,12 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Container__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Countdown__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Container__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Countdown__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Header_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1427,11 +1427,11 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 85:
+/***/ 86:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(86);
+    var content = __webpack_require__(87);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1463,7 +1463,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 86:
+/***/ 87:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1480,7 +1480,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 87:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1490,7 +1490,7 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_countdown_now__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_countdown_now___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Countdown_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1521,11 +1521,11 @@ const Countdown = () => _jsx(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now___d
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(89);
+    var content = __webpack_require__(90);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1557,7 +1557,7 @@ const Countdown = () => _jsx(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now___d
 
 /***/ }),
 
-/***/ 89:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1572,11 +1572,11 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ 90:
+/***/ 91:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(91);
+    var content = __webpack_require__(92);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1608,7 +1608,7 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1640,17 +1640,17 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 92:
+/***/ 93:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Footer__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Footer__ = __webpack_require__(94);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Footer__["a"]; });
 
 
 /***/ }),
 
-/***/ 93:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1658,11 +1658,11 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Footer_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Container_Container__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Container_Container__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1701,11 +1701,11 @@ const Footer = () => _jsx('footer', {
 
 /***/ }),
 
-/***/ 94:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(95);
+    var content = __webpack_require__(96);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1737,7 +1737,7 @@ const Footer = () => _jsx('footer', {
 
 /***/ }),
 
-/***/ 95:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);

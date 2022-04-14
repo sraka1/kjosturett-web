@@ -2,17 +2,17 @@ require("source-map-support").install();
 exports.ids = [8];
 exports.modules = {
 
-/***/ 163:
+/***/ 164:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Party__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Party__ = __webpack_require__(165);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Party__["a"]; });
 
 
 /***/ }),
 
-/***/ 164:
+/***/ 165:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22,12 +22,15 @@ exports.modules = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Party_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Party_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_tooltip__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_tooltip___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_tooltip__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
+
 
 
 
@@ -45,39 +48,54 @@ const Container = ({
   letter,
   name,
   leader,
-  leaderShort
+  leaderShort,
+  isDisabled,
+  disabledMessage
 }) => {
+  let partyRef;
+  console.log('useState', __WEBPACK_IMPORTED_MODULE_0_react__["useState"]);
+  // const [isDisabledMessageShown, setIsDisabledMessageShown] = useState(false);
   const Wrap = href ? __WEBPACK_IMPORTED_MODULE_5__Link__["a" /* default */] : 'button';
-  return _jsx(Wrap, {
-    href: href,
-    onClick: onClick,
-    className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(__WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.party, isSelected && __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.isSelected, isFaded && __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.isFaded)
-  }, void 0, _jsx('span', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.imgWrap
-  }, void 0, _jsx('img', {
-    src: Object(__WEBPACK_IMPORTED_MODULE_4__utils__["getAssetUrl"])(false, 'party-icons', url),
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.image,
-    alt: `${name}'s logo`
-  })), _jsx('span', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.info
-  }, void 0, _jsx('h3', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.name
-  }, void 0, name), _jsx('p', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.leader
-  }, void 0, leaderShort ? leaderShort : leader), _jsx('span', {
-    className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.letter
-  }, void 0, letter)));
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    Wrap,
+    {
+      href: href,
+      onClick: !isDisabled ? onClick : () => {
+        __WEBPACK_IMPORTED_MODULE_6_react_tooltip___default.a.show(partyRef);
+      }
+      // onMouseOver={isDisabled ? () => { console.log('onMouse') } : undefined}
+      , className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(__WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.party, isSelected && __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.isSelected, isFaded && __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.isFaded, isDisabled && __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.isDisabled),
+      'data-tip': isDisabled ? disabledMessage : undefined,
+      ref: ref => partyRef = ref
+    },
+    _jsx('span', {
+      className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.imgWrap
+    }, void 0, _jsx('img', {
+      src: Object(__WEBPACK_IMPORTED_MODULE_4__utils__["getAssetUrl"])(false, 'party-icons', url),
+      className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.image,
+      alt: `${name}'s logo`
+    })),
+    _jsx('span', {
+      className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.info
+    }, void 0, _jsx('h3', {
+      className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.name
+    }, void 0, name), _jsx('p', {
+      className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.leader
+    }, void 0, leaderShort ? leaderShort : leader), _jsx('span', {
+      className: __WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a.letter
+    }, void 0, letter))
+  );
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default()(__WEBPACK_IMPORTED_MODULE_3__Party_scss___default.a)(Container));
 
 /***/ }),
 
-/***/ 165:
+/***/ 166:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(166);
+    var content = __webpack_require__(167);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -109,7 +127,7 @@ const Container = ({
 
 /***/ }),
 
-/***/ 166:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -117,13 +135,14 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "._2n2ob{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0 solid #efefef;border-top-width:1px;background:#fff;color:#555;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:16px;font-size:1rem;height:65px;line-height:1;padding:0;position:relative;text-align:left;text-decoration:none;-webkit-transition:-webkit-filter .4s;transition:-webkit-filter .4s;-o-transition:filter .4s;transition:filter .4s;transition:filter .4s,-webkit-filter .4s;width:100%}._2n2ob:hover{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns=\"http://www.w3.org/2000/svg\"><filter id=\"filter\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"4\" /><feOffset dx=\"1\" dy=\"5\" result=\"offsetblur\" /><feFlood flood-color=\"rgba(0,0,0,0.1)\" /><feComposite in2=\"offsetblur\" operator=\"in\" /><feMerge><feMergeNode /><feMergeNode in=\"SourceGraphic\" /></feMerge></filter></svg>#filter');-webkit-filter:drop-shadow(0 4px 4px rgba(0,0,0,.1));filter:drop-shadow(0 4px 4px rgba(0,0,0,.1));-webkit-transition-duration:.25s;-o-transition-duration:.25s;transition-duration:.25s}._2n2ob._2qT6O{border-color:#0a2645}._2n2ob.BCIPi{opacity:.6}@media(min-width:600px){._2n2ob{border-width:1px;height:200px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}._1nDyJ{border:1px solid #efefef;border-right:0;border-top:0;color:#aaa;font-size:16px;font-size:1rem;padding:10px 12px;position:absolute;right:0;top:0}._1nDyJ span{font-size:19.2px;font-size:1.2rem}@media(max-width:599px){._1nDyJ{display:none}}._3yvZg{font-size:16px;font-size:1rem;margin-top:0!important;margin-bottom:.2em}._1fpd4{color:#777;font-size:.8em}._2Jno1{margin-right:8px;margin-right:.5rem;width:32px;width:2rem}.TPyW2{height:auto;max-height:70px;max-width:30px}@media(min-width:600px){._3iGan{line-height:1.2;padding-right:.5rem;width:60%}._2Jno1{margin-left:.5rem;text-align:center;width:calc(40% - .5rem)}.TPyW2{height:auto;max-height:70px;max-width:100px}}", ""]);
+exports.push([module.i, "._2n2ob{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0 solid #efefef;border-top-width:1px;background:#fff;color:#555;cursor:pointer;display:-webkit-box;display:-ms-flexbox;display:flex;font-size:16px;font-size:1rem;height:65px;line-height:1;padding:0;position:relative;text-align:left;text-decoration:none;-webkit-transition:-webkit-filter .4s;transition:-webkit-filter .4s;-o-transition:filter .4s;transition:filter .4s;transition:filter .4s,-webkit-filter .4s;width:100%}._2n2ob:hover{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns=\"http://www.w3.org/2000/svg\"><filter id=\"filter\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"4\" /><feOffset dx=\"1\" dy=\"5\" result=\"offsetblur\" /><feFlood flood-color=\"rgba(0,0,0,0.1)\" /><feComposite in2=\"offsetblur\" operator=\"in\" /><feMerge><feMergeNode /><feMergeNode in=\"SourceGraphic\" /></feMerge></filter></svg>#filter');-webkit-filter:drop-shadow(0 4px 4px rgba(0,0,0,.1));filter:drop-shadow(0 4px 4px rgba(0,0,0,.1));-webkit-transition-duration:.25s;-o-transition-duration:.25s;transition-duration:.25s}._2n2ob._2qT6O{border-color:#0a2645}._2n2ob.BCIPi{opacity:.8}._2n2ob._1E1Aq{opacity:.25}@media(min-width:600px){._2n2ob{border-width:1px;height:200px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}._1nDyJ{border:1px solid #efefef;border-right:0;border-top:0;color:#aaa;font-size:16px;font-size:1rem;padding:10px 12px;position:absolute;right:0;top:0}._1nDyJ span{font-size:19.2px;font-size:1.2rem}@media(max-width:599px){._1nDyJ{display:none}}._3yvZg{font-size:16px;font-size:1rem;margin-top:0!important;margin-bottom:.2em}._1fpd4{color:#777;font-size:.8em}._2Jno1{margin-right:8px;margin-right:.5rem;width:32px;width:2rem}.TPyW2{height:auto;max-height:70px;max-width:30px}@media(min-width:600px){._3iGan{line-height:1.2;padding-right:.5rem;width:60%}._2Jno1{margin-left:.5rem;text-align:center;width:calc(40% - .5rem)}.TPyW2{height:auto;max-height:70px;max-width:100px}}", ""]);
 
 // exports
 exports.locals = {
 	"party": "_2n2ob",
 	"isSelected": "_2qT6O",
 	"isFaded": "BCIPi",
+	"isDisabled": "_1E1Aq",
 	"letter": "_1nDyJ",
 	"name": "_3yvZg",
 	"leader": "_1fpd4",
@@ -134,17 +153,17 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 167:
+/***/ 168:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PartyGrid__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PartyGrid__ = __webpack_require__(169);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__PartyGrid__["a"]; });
 
 
 /***/ }),
 
-/***/ 168:
+/***/ 169:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -152,7 +171,7 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__PartyGrid_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -168,11 +187,11 @@ const PartyGrid = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 169:
+/***/ 170:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(170);
+    var content = __webpack_require__(171);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -204,7 +223,7 @@ const PartyGrid = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 170:
+/***/ 171:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -221,7 +240,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 179:
+/***/ 180:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -229,13 +248,13 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_build_parties_json__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_build_parties_json__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_build_parties_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__data_build_parties_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Frontpage_scss__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Frontpage_scss__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Frontpage_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Frontpage_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Party__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_PartyGrid__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Party__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_PartyGrid__ = __webpack_require__(168);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
@@ -284,11 +303,11 @@ class FrontPage extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 180:
+/***/ 181:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(181);
+    var content = __webpack_require__(182);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -320,7 +339,7 @@ class FrontPage extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 181:
+/***/ 182:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -340,15 +359,15 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 62:
+/***/ 63:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Frontpage__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Frontpage__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(82);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
 
@@ -369,14 +388,14 @@ var _ref = _jsx(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default 
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /***/ (function(module, exports) {
 
 module.exports = "/assets/5314b16f.svg";
 
 /***/ }),
 
-/***/ 77:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -384,7 +403,7 @@ module.exports = "/assets/5314b16f.svg";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(81);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -459,17 +478,17 @@ Link.protoTypes = {
 
 /***/ }),
 
-/***/ 78:
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Container__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Container__ = __webpack_require__(80);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Container__["a"]; });
 
 
 /***/ }),
 
-/***/ 79:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -477,7 +496,7 @@ Link.protoTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Container_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -493,7 +512,7 @@ const Container = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 80:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -516,7 +535,7 @@ const Container = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 81:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -524,12 +543,12 @@ const Container = ({ children }) => _jsx('div', {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Layout_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Footer__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Container__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Footer__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Container__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -608,11 +627,11 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 /***/ }),
 
-/***/ 82:
+/***/ 83:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(83);
+    var content = __webpack_require__(84);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -644,7 +663,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 /***/ }),
 
-/***/ 83:
+/***/ 84:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -667,7 +686,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 84:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -677,12 +696,12 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Container__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Countdown__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Container__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Countdown__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Header_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -801,11 +820,11 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 85:
+/***/ 86:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(86);
+    var content = __webpack_require__(87);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -837,7 +856,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 86:
+/***/ 87:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -854,7 +873,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 87:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -864,7 +883,7 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_countdown_now__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_countdown_now___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Countdown_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -895,11 +914,11 @@ const Countdown = () => _jsx(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now___d
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(89);
+    var content = __webpack_require__(90);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -931,7 +950,7 @@ const Countdown = () => _jsx(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now___d
 
 /***/ }),
 
-/***/ 89:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -946,11 +965,11 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ 90:
+/***/ 91:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(91);
+    var content = __webpack_require__(92);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -982,7 +1001,7 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1014,17 +1033,17 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 92:
+/***/ 93:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Footer__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Footer__ = __webpack_require__(94);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Footer__["a"]; });
 
 
 /***/ }),
 
-/***/ 93:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1032,11 +1051,11 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Footer_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Container_Container__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Container_Container__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1075,11 +1094,11 @@ const Footer = () => _jsx('footer', {
 
 /***/ }),
 
-/***/ 94:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(95);
+    var content = __webpack_require__(96);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1111,7 +1130,7 @@ const Footer = () => _jsx('footer', {
 
 /***/ }),
 
-/***/ 95:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1132,7 +1151,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 96:
+/***/ 97:
 /***/ (function(module, exports) {
 
 
@@ -1171,10 +1190,10 @@ exports.decodeAnswersToken = token => {
 
 /***/ }),
 
-/***/ 97:
+/***/ 98:
 /***/ (function(module, exports) {
 
-module.exports = [{"letter":"DOM","url":"dom","name":"Domovinska liga","nameDeflected":"Domovinske lige","website":"https://domovinskaliga.si","leader":"mag. Bernard Brščič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF"},{"letter":"DeSUS","url":"desus","name":"Demokratska Stranka Upokojencev Slovenije","nameDeflected":"DeSUS","website":"https://desus.si/","leader":"Ljubo Jasnič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#A0C539","textColor":"#FFFFFF"},{"letter":"GS","url":"gibanje-svoboda","name":"Gibanje Svoboda","nameDeflected":"Gibanja Svoboda","website":"https://gibanjesvoboda.si/","leader":"Robert Golob","leaderTitle":"Predsednik","reply":"5355535544453315353443514455451555135455","color":"#005EA4"},{"letter":"L","url":"levica","name":"Levica","nameDeflected":"Levice","website":"https://www.levica.si","leader":"Luka Mesec","leaderTitle":"Koordinator","reply":"5155514445355114445555515455151552341155","color":"#E82C26","textColor":"#FFFFFF"},{"letter":"LBP","url":"lbp","name":"Lista Borisa Popoviča - Digitalizirajmo Slovenijo","nameDeflected":"Liste Borisa Popoviča - Digitalizirajmo Slovenijo","website":"","leader":"Boris Popovič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#005AAB","textColor":"#FFFFFF"},{"letter":"LL","url":"ljudska-lista","name":"Ljudska lista gibanja Zdrava družba","nameDeflected":"Ljudske liste gibanja Zdrava družba","website":"https://www.ljudskalista.si/","leader":"Karel Lipič","leaderTitle":"Vodja volilnega štaba","reply":"6666666666666666666666666666666666666666","color":"#005EA4"},{"letter":"LMŠ","url":"lms","name":"Lista Marjana Šarca","nameDeflected":"Liste Marjana Šarca","website":"https://www.strankalms.si","leader":"Marjan Šarec","leaderTitle":"Predsednik","reply":"5244444535554515535454544455151455544545","color":"#005AAB","textColor":"#FFFFFF"},{"letter":"ND","url":"nasa-dezela","name":"Naša Dežela","nameDeflected":"stranke Naša Dežela","website":"https://nasadezela.si/","leader":"Aleksandra Pivec","leaderTitle":"Predsednica","reply":"5453525525554455545544452445152445444425","color":"#65B32E","textColor":"#FFFFFF"},{"letter":"NP-DD","url":"nasa-prihodnost-dobra-drzava","name":"Naša prihodnost in Dobra država","nameDeflected":"Naše prihodnosti in Dobre države","website":"https://nasaprihodnost.si/","websiteTwo":"https://www.dobradrzava.si/","leader":"Ivan Gale (Naša prihodnost) in Smiljan Mekicar (Dobra država)","leaderTitle":"Predsednika","reply":"6666666666666666666666666666666666666666","color":"#00699A","textColor":"#FFFFFF"},{"letter":"NSi","url":"nsi","name":"Nova Slovenija - Krščanski demokrati","nameDeflected":"stranke Nova Slovenija","website":"https://nsi.si","leader":"Matej Tonin","leaderTitle":"Predsednik","reply":"5452552415554545455113451445131425115515","color":"#009AC7","textColor":"#FFFFFF"},{"letter":"P","url":"piratska-stranka","name":"Piratska Stranka","nameDeflected":"Piratske Stranke","website":"https://piratskastranka.si","leader":"Boštjan Tavčar","leaderTitle":"Predsednik","reply":"5255555555555314555554554554531455553545","color":"#000000"},{"letter":"PoS","url":"povezimo-slovenijo","name":"Povežimo Slovenijo (Konkretno, Zeleni, SLS, NLS, NS)","nameDeflected":"gibanja Povežimo Slovenijo","website":"https://povezimoslovenijo.si/","leader":"Nada Pavšer","leaderTitle":"Koordinatorka","reply":"5453454415554544545623451455352445335525","color":"#002C70","textColor":"#FFFFFF"},{"letter":"R","url":"resnica","name":"Resni.ca","nameDeflected":"stranke Resni.ca","website":"https://stranka-resnica.si","leader":"Zoran Stevanović","leaderTitle":"Predsednik","reply":"5451225525554225545542551555541544225115","color":"#0054A6","textColor":"#FFFFFF"},{"letter":"SAB","url":"sab","name":"Stranka Alenke Bratušek","nameDeflected":"Stranke Alenke Bratušek","website":"https://sab.si","leader":"Alenka Bratušek","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#ED1941","textColor":"#FFFFFF"},{"letter":"SD","url":"sd","name":"Socialni Demokrati","nameDeflected":"Socialnih Demokratov","website":"https://socialnidemokrati.si/","leader":"Tanja Fajon","leaderTitle":"Predsednica","reply":"5155544415455315455553515555151555154435","color":"#E13439","textColor":"#FFFFFF"},{"letter":"SDS","url":"sds","name":"Slovenska Demokratska Stranka","nameDeflected":"Slovenske Demokratske Stranke","website":"https://www.sds.si","leader":"Ivan Janez Janša","leaderTitle":"Predsednik","reply":"5552544415554455455425451555151445315515","color":"#FFE800","textColor":"#313131"},{"letter":"SNS","url":"sns","name":"Slovenska Nacionalna Stranka","nameDeflected":"Slovenske Nacionalne Stranke","website":"http://sns.si/","leader":"Zmago Jelinčič Plemeniti","leaderTitle":"Predsednik","reply":"5331234415552113413533433455342334113533","color":"#FEE520","textColor":"#313131"},{"letter":"VESNA","url":"vesna","name":"VESNA - zelena stranka","nameDeflected":"stranke VESNA - zelene stranke","website":"https://www.vesnazelenastranka.si","leader":"Uroš Macerl in Urša Zgojznik","leaderTitle":"Sopredsednika","reply":"5155555555555115555555415555151555515155","color":"#03A65E","textColor":"#FFFFFF"},{"letter":"ZLS","url":"zls","name":"Za ljudstvo Slovenije","nameDeflected":"Za ljudstvo Slovenije","website":"https://www.zaljudstvoslovenije.si","leader":"Anica Bidar","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF"},{"letter":"ZOS","url":"zos","name":"Zavezništvo Osvobodimo Slovenijo","nameDeflected":"Zavezništva Osvobodimo Slovenijo","website":"https://osvobodimo.si","leader":"Andrej Šiško (Gibanje zedinjena Slovenija), Ludvik Poljanec (Stara pravda stranka prava), Aleksander Kamenik (Stranka Aleksandra Kamenika), Janko Veber (Sloga), Miha Majc (Stranka Slovenskega naroda) in Klemen Piber (Slovenska praanarhistična stranka)","leaderShort":"Andrej Šiško, Ludvik Poljanec, Aleksander Kamenik, Janko Veber, Miha Majc, Klemen Piber","leaderTitle":"Predsedniki združenih strank","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF"}]
+module.exports = [{"letter":"DOM","url":"dom","name":"Domovinska liga","nameDeflected":"Domovinske lige","website":"https://domovinskaliga.si","leader":"mag. Bernard Brščič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF","hasSubmittedPollReplies":false,"hasSubmittedTopicReplies":false},{"letter":"DeSUS","url":"desus","name":"Demokratska Stranka Upokojencev Slovenije","nameDeflected":"DeSUS","website":"https://desus.si/","leader":"Ljubo Jasnič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#A0C539","textColor":"#FFFFFF","hasSubmittedPollReplies":false,"hasSubmittedTopicReplies":false},{"letter":"GS","url":"gibanje-svoboda","name":"Gibanje Svoboda","nameDeflected":"Gibanja Svoboda","website":"https://gibanjesvoboda.si/","leader":"Robert Golob","leaderTitle":"Predsednik","reply":"5355535544453315353443514455451555135455","color":"#005EA4","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":false},{"letter":"L","url":"levica","name":"Levica","nameDeflected":"Levice","website":"https://www.levica.si","leader":"Luka Mesec","leaderTitle":"Koordinator","reply":"5155514445355114445555515455151552341155","color":"#E82C26","textColor":"#FFFFFF","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":false},{"letter":"LBP","url":"lbp","name":"Lista Borisa Popoviča - Digitalizirajmo Slovenijo","nameDeflected":"Liste Borisa Popoviča - Digitalizirajmo Slovenijo","website":"","leader":"Boris Popovič","leaderTitle":"Predsednik","reply":"6666666666666666666666666666666666666666","color":"#005AAB","textColor":"#FFFFFF","hasSubmittedPollReplies":false,"hasSubmittedTopicReplies":false},{"letter":"LL","url":"ljudska-lista","name":"Ljudska lista gibanja Zdrava družba","nameDeflected":"Ljudske liste gibanja Zdrava družba","website":"https://www.ljudskalista.si/","leader":"Karel Lipič","leaderTitle":"Vodja volilnega štaba","reply":"6666666666666666666666666666666666666666","color":"#005EA4","hasSubmittedPollReplies":false,"hasSubmittedTopicReplies":false},{"letter":"LMŠ","url":"lms","name":"Lista Marjana Šarca","nameDeflected":"Liste Marjana Šarca","website":"https://www.strankalms.si","leader":"Marjan Šarec","leaderTitle":"Predsednik","reply":"5244444535554515535454544455151455544545","color":"#005AAB","textColor":"#FFFFFF","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":true},{"letter":"ND","url":"nasa-dezela","name":"Naša Dežela","nameDeflected":"stranke Naša Dežela","website":"https://nasadezela.si/","leader":"Aleksandra Pivec","leaderTitle":"Predsednica","reply":"5453525525554455545544452445152445444425","color":"#65B32E","textColor":"#FFFFFF","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":true},{"letter":"NP-DD","url":"nasa-prihodnost-dobra-drzava","name":"Naša prihodnost in Dobra država","nameDeflected":"Naše prihodnosti in Dobre države","website":"https://nasaprihodnost.si/","websiteTwo":"https://www.dobradrzava.si/","leader":"Ivan Gale (Naša prihodnost) in Smiljan Mekicar (Dobra država)","leaderTitle":"Predsednika","reply":"6666666666666666666666666666666666666666","color":"#00699A","textColor":"#FFFFFF","hasSubmittedPollReplies":false,"hasSubmittedTopicReplies":false},{"letter":"NSi","url":"nsi","name":"Nova Slovenija - Krščanski demokrati","nameDeflected":"stranke Nova Slovenija","website":"https://nsi.si","leader":"Matej Tonin","leaderTitle":"Predsednik","reply":"5452552415554545455113451445131425115515","color":"#009AC7","textColor":"#FFFFFF","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":true},{"letter":"P","url":"piratska-stranka","name":"Piratska Stranka","nameDeflected":"Piratske Stranke","website":"https://piratskastranka.si","leader":"Boštjan Tavčar","leaderTitle":"Predsednik","reply":"5255555555555314555554554554531455553545","color":"#000000","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":true},{"letter":"PoS","url":"povezimo-slovenijo","name":"Povežimo Slovenijo (Konkretno, Zeleni, SLS, NLS, NS)","nameDeflected":"gibanja Povežimo Slovenijo","website":"https://povezimoslovenijo.si/","leader":"Nada Pavšer","leaderTitle":"Koordinatorka","reply":"5453454415554544545623451455352445335525","color":"#002C70","textColor":"#FFFFFF","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":false},{"letter":"R","url":"resnica","name":"Resni.ca","nameDeflected":"stranke Resni.ca","website":"https://stranka-resnica.si","leader":"Zoran Stevanović","leaderTitle":"Predsednik","reply":"5451225525554225545542551555541544225115","color":"#0054A6","textColor":"#FFFFFF","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":true},{"letter":"SAB","url":"sab","name":"Stranka Alenke Bratušek","nameDeflected":"Stranke Alenke Bratušek","website":"https://sab.si","leader":"Alenka Bratušek","leaderTitle":"Predsednica","reply":"5154514555254515555454444555151255555445","color":"#ED1941","textColor":"#FFFFFF","hasSubmittedPollReplies":false,"hasSubmittedTopicReplies":false},{"letter":"SD","url":"sd","name":"Socialni Demokrati","nameDeflected":"Socialnih Demokratov","website":"https://socialnidemokrati.si/","leader":"Tanja Fajon","leaderTitle":"Predsednica","reply":"5155544415455315455553515555151555154435","color":"#E13439","textColor":"#FFFFFF","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":true},{"letter":"SDS","url":"sds","name":"Slovenska Demokratska Stranka","nameDeflected":"Slovenske Demokratske Stranke","website":"https://www.sds.si","leader":"Ivan Janez Janša","leaderTitle":"Predsednik","reply":"5552544415554455455425451555151445315515","color":"#FFE800","textColor":"#313131","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":true},{"letter":"SNS","url":"sns","name":"Slovenska Nacionalna Stranka","nameDeflected":"Slovenske Nacionalne Stranke","website":"http://sns.si/","leader":"Zmago Jelinčič Plemeniti","leaderTitle":"Predsednik","reply":"5331234415552113413533433455342334113533","color":"#FEE520","textColor":"#313131","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":false},{"letter":"VESNA","url":"vesna","name":"VESNA - zelena stranka","nameDeflected":"stranke VESNA - zelene stranke","website":"https://www.vesnazelenastranka.si","leader":"Uroš Macerl in Urša Zgojznik","leaderTitle":"Sopredsednika","reply":"5155555555555115555555415555151555515155","color":"#03A65E","textColor":"#FFFFFF","hasSubmittedPollReplies":true,"hasSubmittedTopicReplies":true},{"letter":"ZLS","url":"zls","name":"Za ljudstvo Slovenije","nameDeflected":"Za ljudstvo Slovenije","website":"https://www.zaljudstvoslovenije.si","leader":"Anica Bidar","leaderTitle":"Predsednica","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF","hasSubmittedPollReplies":false,"hasSubmittedTopicReplies":false},{"letter":"ZOS","url":"zos","name":"Zavezništvo Osvobodimo Slovenijo","nameDeflected":"Zavezništva Osvobodimo Slovenijo","website":"https://osvobodimo.si","leader":"Andrej Šiško (Gibanje zedinjena Slovenija), Ludvik Poljanec (Stara pravda stranka prava), Aleksander Kamenik (Stranka Aleksandra Kamenika), Janko Veber (Sloga), Miha Majc (Stranka Slovenskega naroda) in Klemen Piber (Slovenska praanarhistična stranka)","leaderShort":"Andrej Šiško, Ludvik Poljanec, Aleksander Kamenik, Janko Veber, Miha Majc, Klemen Piber","leaderTitle":"Predsedniki združenih strank","reply":"6666666666666666666666666666666666666666","color":"#03A65E","textColor":"#FFFFFF","hasSubmittedPollReplies":false,"hasSubmittedTopicReplies":false}]
 
 /***/ })
 

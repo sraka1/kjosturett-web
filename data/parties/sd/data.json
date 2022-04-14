@@ -8,5 +8,7 @@
   "leaderTitle": "Predsednica",
   "reply": "5155544415455315455553515555151555154435",
   "color": "#E13439",
-  "textColor": "#FFFFFF"
+  "textColor": "#FFFFFF",
+  "hasSubmittedPollReplies": true,
+  "hasSubmittedTopicReplies": true
 }

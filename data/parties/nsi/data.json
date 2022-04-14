@@ -8,5 +8,7 @@
   "leaderTitle": "Predsednik",
   "reply": "5452552415554545455113451445131425115515",
   "color": "#009AC7",
-  "textColor": "#FFFFFF"
+  "textColor": "#FFFFFF",
+  "hasSubmittedPollReplies": true,
+  "hasSubmittedTopicReplies": true
 }

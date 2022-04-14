@@ -8,5 +8,7 @@
   "leaderTitle": "Koordinator",
   "reply": "5155514445355114445555515455151552341155",
   "color": "#E82C26",
-  "textColor": "#FFFFFF"
+  "textColor": "#FFFFFF",
+  "hasSubmittedPollReplies": true,
+  "hasSubmittedTopicReplies": false
 }

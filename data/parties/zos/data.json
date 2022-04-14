@@ -9,5 +9,7 @@
   "leaderTitle": "Predsedniki združenih strank",
   "reply": "6666666666666666666666666666666666666666",
   "color": "#03A65E",
-  "textColor": "#FFFFFF"
+  "textColor": "#FFFFFF",
+  "hasSubmittedPollReplies": false,
+  "hasSubmittedTopicReplies": false
 }

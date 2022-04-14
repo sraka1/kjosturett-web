@@ -7,6 +7,7 @@ import answers from '../../../data/poll/answers.json';
 import Link from '../../Link';
 import Party from '../../components/Party';
 import PartyGrid from '../../components/PartyGrid';
+import ReactTooltip from 'react-tooltip';
 
 const distanceValueMap = {
   '0': 0,
@@ -41,6 +42,11 @@ class CompareParties extends PureComponent {
           </h1>
           <div className={s.chooseContainer}>
             <PartyGrid>
+              <ReactTooltip
+                // place={'top'}
+                // offset={{top: 10, left: 10}}
+                delayShow={100}
+              />
               {parties.map(party => {
                 const isSelected = this.state.selected.includes(party.letter);
                 return (
@@ -49,6 +55,8 @@ class CompareParties extends PureComponent {
                     key={party.letter}
                     isSelected={isSelected}
                     isFaded={this.state.selected.length && !isSelected}
+                    isDisabled={!party.hasSubmittedPollReplies}
+                    disabledMessage={'Stranka še ni izpolnila vprašalnika.'}
                     onClick={() => {
                       this.setState(({ selected }) => {
                         if (selected.includes(party.letter)) {

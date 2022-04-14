@@ -7,5 +7,7 @@
   "leader": "Boštjan Tavčar",
   "leaderTitle": "Predsednik",
   "reply": "5255555555555314555554554554531455553545",
-  "color": "#000000"
+  "color": "#000000",
+  "hasSubmittedPollReplies": true,
+  "hasSubmittedTopicReplies": true
 }

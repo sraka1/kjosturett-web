@@ -2,7 +2,14 @@ require("source-map-support").install();
 exports.ids = [4];
 exports.modules = {
 
-/***/ 182:
+/***/ 100:
+/***/ (function(module, exports) {
+
+module.exports = {"default":"6","textMap":{"1":"Se ne strinjam","2":"Se deloma ne strinjam","3":"Nevtralno","4":"Se deloma strinjam","5":"Se strinjam","6":"Brez odgovora"}}
+
+/***/ }),
+
+/***/ 183:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,13 +17,13 @@ exports.modules = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_query_string__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_query_string__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_query_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_query_string__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__utils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__KosningaProf_scss__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__KosningaProf_scss__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__KosningaProf_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__KosningaProf_scss__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -200,11 +207,11 @@ Kosningaprof.contextTypes = {
 
 /***/ }),
 
-/***/ 183:
+/***/ 184:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(184);
+    var content = __webpack_require__(185);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -236,7 +243,7 @@ Kosningaprof.contextTypes = {
 
 /***/ }),
 
-/***/ 184:
+/***/ 185:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -259,14 +266,14 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /***/ (function(module, exports) {
 
 module.exports = "/assets/5314b16f.svg";
 
 /***/ }),
 
-/***/ 77:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -274,7 +281,7 @@ module.exports = "/assets/5314b16f.svg";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history__ = __webpack_require__(81);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -349,17 +356,17 @@ Link.protoTypes = {
 
 /***/ }),
 
-/***/ 78:
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Container__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Container__ = __webpack_require__(80);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Container__["a"]; });
 
 
 /***/ }),
 
-/***/ 79:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -367,7 +374,7 @@ Link.protoTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss__ = __webpack_require__(86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Container_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Container_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -383,7 +390,7 @@ const Container = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 80:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -406,7 +413,7 @@ const Container = ({ children }) => _jsx('div', {
 
 /***/ }),
 
-/***/ 81:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -414,12 +421,12 @@ const Container = ({ children }) => _jsx('div', {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Layout_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Layout_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Footer__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Container__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Header__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Footer__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Container__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -498,11 +505,11 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 /***/ }),
 
-/***/ 82:
+/***/ 83:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(83);
+    var content = __webpack_require__(84);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -534,7 +541,7 @@ class Layout extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 /***/ }),
 
-/***/ 83:
+/***/ 84:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -557,7 +564,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 84:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -567,12 +574,12 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Container__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Countdown__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Container__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Countdown__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Link__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Header_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Header_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -691,11 +698,11 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 85:
+/***/ 86:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(86);
+    var content = __webpack_require__(87);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -727,7 +734,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"] {
 
 /***/ }),
 
-/***/ 86:
+/***/ 87:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -744,7 +751,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 87:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -754,7 +761,7 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_countdown_now__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_countdown_now___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Countdown_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Countdown_scss__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -785,11 +792,11 @@ const Countdown = () => _jsx(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now___d
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(89);
+    var content = __webpack_require__(90);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -821,21 +828,6 @@ const Countdown = () => _jsx(__WEBPACK_IMPORTED_MODULE_2_react_countdown_now___d
 
 /***/ }),
 
-/***/ 89:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(6)(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ 9:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -843,11 +835,11 @@ exports.push([module.i, "", ""]);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__KosningaProf__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__KosningaProf__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__data_poll_questions_json__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_poll_answers_json__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_poll_answers_json__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__data_poll_answers_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__data_poll_answers_json__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -882,8 +874,23 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 /***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(6)(false);
+// imports
 
-    var content = __webpack_require__(91);
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 91:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+    var content = __webpack_require__(92);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -915,7 +922,7 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -947,17 +954,17 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 92:
+/***/ 93:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Footer__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Footer__ = __webpack_require__(94);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Footer__["a"]; });
 
 
 /***/ }),
 
-/***/ 93:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -965,11 +972,11 @@ exports.locals = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_isomorphic_style_loader_lib_withStyles__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Footer_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Footer_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Container_Container__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Container_Container__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__logo_svg__);
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -1008,11 +1015,11 @@ const Footer = () => _jsx('footer', {
 
 /***/ }),
 
-/***/ 94:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    var content = __webpack_require__(95);
+    var content = __webpack_require__(96);
     var insertCss = __webpack_require__(7);
 
     if (typeof content === 'string') {
@@ -1044,7 +1051,7 @@ const Footer = () => _jsx('footer', {
 
 /***/ }),
 
-/***/ 95:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(6)(false);
@@ -1065,7 +1072,7 @@ exports.locals = {
 
 /***/ }),
 
-/***/ 96:
+/***/ 97:
 /***/ (function(module, exports) {
 
 
@@ -1104,17 +1111,10 @@ exports.decodeAnswersToken = token => {
 
 /***/ }),
 
-/***/ 98:
-/***/ (function(module, exports) {
-
-module.exports = [{"id":1,"question":"Vsi prebivalci Slovenije bi morali imeti dostop do primarnega zdravstva v domačem kraju oz. bližnji okolici."},{"id":2,"question":"Dopustiti je treba povečano zasebno delovanje v zdravstvenem sistemu."},{"id":3,"question":"Širitev javnega potniškega prometa bistveno pripomore k povezljivosti Slovenije in se mora izvesti prioritetno."},{"id":4,"question":"Slovenija naj v sodelovanju z mednarodnimi organizacijami sprejme več prosilcev za mednarodno zaščito."},{"id":5,"question":"Štipendiranje študentov naj bo v višjih zneskih in dostopnejše vsem študentom."},{"id":6,"question":"Drugi in tretji pokojninski steber (dodatno pokojninsko zavarovanje in zasebni pokojninski skladi) bi morala imeti vidnejšo vlogo v pokojninskem sistemu."},{"id":7,"question":"Prejemke za invalidsko pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":8,"question":"Prejemke za starostno pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":9,"question":"Država naj uvede univerzalni temeljni dohodek (UTD)."},{"id":10,"question":"Država naj stori več glede decentralizacije Slovenije."},{"id":11,"question":"Pokrajine naj se uvedejo do konca prihajajočega mandata."},{"id":12,"question":"Nadzor in sankcije na področju koruptivnih dejanj je treba povečati."},{"id":13,"question":"Povečati je treba prispevek Slovenije k razvojnemu sodelovanju in dejavnostim pomoči v revnejših državah sveta."},{"id":14,"question":"Zveza NATO naj ima vidno vlogo pri zagotavljanju teritorialne celovitosti Slovenije."},{"id":15,"question":"Vlada mora varovati položaj verskih ustanov v slovenski družbi s pomočjo javnega financiranja."},{"id":16,"question":"Kazni za spolno in družinsko nasilje bi bilo treba povečati."},{"id":17,"question":"Za vlado naj bo pomembno, da s finančnimi spodbudami reši težave slovenskih kmetovalcev."},{"id":18,"question":"Slovenija naj podpre globlje in tesnejše povezovanje v sklopu Evropske Unije."},{"id":19,"question":"Država naj stori več za spodbujanje vseživljenjskega izobraževanja."},{"id":20,"question":"V prihajajočem volilnem mandatu je treba legalizirati uporabo konoplje."},{"id":21,"question":"Vlada bi morala globlje poseči v stanovanjski trg z namenom regulacije rasti cen nepremičnin."},{"id":22,"question":"Naložbe v infrastrukturo (npr. v promet, telekomunikacije in zdravstveni sistem) naj imajo prednost pred odplačilom dolga državne blagajne."},{"id":23,"question":"Država naj ohrani lastništvo v sistemsko pomembnih bančnih ustanovah."},{"id":24,"question":"Znižati je treba prispevke na plače, ki jih podjetja plačujejo državi."},{"id":25,"question":"Davke na visoke dohodke je treba dvigniti."},{"id":26,"question":"Država naj poenostavi postopke za zaposlitev visoko-kvalificirane delovne sile iz tretjih držav."},{"id":27,"question":"Država naj ohrani deleže v gospodarskih subjektih, ki so vitalnega državnega pomena."},{"id":28,"question":"Slovenija naj bo prehrambeno samooskrbna."},{"id":29,"question":"Država naj odpravi omejitve delovnega časa ob nedeljah."},{"id":30,"question":"Država si naj prizadeva za izboljšanje zmogljivosti in dostopa do turističnih znamenitosti v njeni lasti ali upravljanju."},{"id":31,"question":"Država naj proda svoj delež v energetskih podjetjih."},{"id":32,"question":"Interesi varovanja narave bi morali prevladati nad finančnimi interesi pri odločanju vlade glede ustvarjanja novih delovnih mest."},{"id":33,"question":"Vlada bi morala upoštevati priporočila epidemiološke stroke glede nalezljivih bolezni, tudi kadar ta negativno vplivajo na gospodarstvo."},{"id":34,"question":"Slovenija naj poveča investicije v digitalno preobrazbo družbe in države ter obenem skuša privabiti tehnološka podjetja."},{"id":35,"question":"Pravica do dostopa do interneta naj bo zapisana v ustavi."},{"id":36,"question":"Država naj ustanovi državnega letalskega prevoznika."},{"id":37,"question":"Država naj poenostavi in pohitri postopke prostorskega umeščanja za ključne državne projekte."},{"id":38,"question":"Država naj nadaljuje z vlaganjem v izgradnjo 2. bloka jedrske elektrarne Krško."},{"id":39,"question":"Država naj pospeši časovnico za prepoved prve registracije vozil z notranjim izgorevanjem."},{"id":40,"question":"Država naj aktivno spodbuja krožno gospodarstvo z namenom zmanjšanja količine odpadkov in ogljičnega odtisa Slovenije."}]
-
-/***/ }),
-
 /***/ 99:
 /***/ (function(module, exports) {
 
-module.exports = {"default":"6","textMap":{"1":"Se ne strinjam","2":"Se deloma ne strinjam","3":"Nevtralno","4":"Se deloma strinjam","5":"Se strinjam","6":"Brez odgovora"}}
+module.exports = [{"id":1,"question":"Vsi prebivalci Slovenije bi morali imeti dostop do primarnega zdravstva v domačem kraju oz. bližnji okolici."},{"id":2,"question":"Dopustiti je treba povečano zasebno delovanje v zdravstvenem sistemu."},{"id":3,"question":"Širitev javnega potniškega prometa bistveno pripomore k povezljivosti Slovenije in se mora izvesti prioritetno."},{"id":4,"question":"Slovenija naj v sodelovanju z mednarodnimi organizacijami sprejme več prosilcev za mednarodno zaščito."},{"id":5,"question":"Štipendiranje študentov naj bo v višjih zneskih in dostopnejše vsem študentom."},{"id":6,"question":"Drugi in tretji pokojninski steber (dodatno pokojninsko zavarovanje in zasebni pokojninski skladi) bi morala imeti vidnejšo vlogo v pokojninskem sistemu."},{"id":7,"question":"Prejemke za invalidsko pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":8,"question":"Prejemke za starostno pokojnino je treba povečati tako, da bodo v vsakem trenutku ustrezali vsaj minimalni plači."},{"id":9,"question":"Država naj uvede univerzalni temeljni dohodek (UTD)."},{"id":10,"question":"Država naj stori več glede decentralizacije Slovenije."},{"id":11,"question":"Pokrajine naj se uvedejo do konca prihajajočega mandata."},{"id":12,"question":"Nadzor in sankcije na področju koruptivnih dejanj je treba povečati."},{"id":13,"question":"Povečati je treba prispevek Slovenije k razvojnemu sodelovanju in dejavnostim pomoči v revnejših državah sveta."},{"id":14,"question":"Zveza NATO naj ima vidno vlogo pri zagotavljanju teritorialne celovitosti Slovenije."},{"id":15,"question":"Vlada mora varovati položaj verskih ustanov v slovenski družbi s pomočjo javnega financiranja."},{"id":16,"question":"Kazni za spolno in družinsko nasilje bi bilo treba povečati."},{"id":17,"question":"Za vlado naj bo pomembno, da s finančnimi spodbudami reši težave slovenskih kmetovalcev."},{"id":18,"question":"Slovenija naj podpre globlje in tesnejše povezovanje v sklopu Evropske Unije."},{"id":19,"question":"Država naj stori več za spodbujanje vseživljenjskega izobraževanja."},{"id":20,"question":"V prihajajočem volilnem mandatu je treba legalizirati uporabo konoplje."},{"id":21,"question":"Vlada bi morala globlje poseči v stanovanjski trg z namenom regulacije rasti cen nepremičnin."},{"id":22,"question":"Naložbe v infrastrukturo (npr. v promet, telekomunikacije in zdravstveni sistem) naj imajo prednost pred odplačilom dolga državne blagajne."},{"id":23,"question":"Država naj ohrani lastništvo v sistemsko pomembnih bančnih ustanovah."},{"id":24,"question":"Znižati je treba prispevke na plače, ki jih podjetja plačujejo državi."},{"id":25,"question":"Davke na visoke dohodke je treba dvigniti."},{"id":26,"question":"Država naj poenostavi postopke za zaposlitev visoko-kvalificirane delovne sile iz tretjih držav."},{"id":27,"question":"Država naj ohrani deleže v gospodarskih subjektih, ki so vitalnega državnega pomena."},{"id":28,"question":"Slovenija naj bo prehrambeno samooskrbna."},{"id":29,"question":"Država naj odpravi omejitve delovnega časa ob nedeljah."},{"id":30,"question":"Država si naj prizadeva za izboljšanje zmogljivosti in dostopa do turističnih znamenitosti v njeni lasti ali upravljanju."},{"id":31,"question":"Država naj proda svoj delež v energetskih podjetjih."},{"id":32,"question":"Interesi varovanja narave bi morali prevladati nad finančnimi interesi pri odločanju vlade glede ustvarjanja novih delovnih mest."},{"id":33,"question":"Vlada bi morala upoštevati priporočila epidemiološke stroke glede nalezljivih bolezni, tudi kadar ta negativno vplivajo na gospodarstvo."},{"id":34,"question":"Slovenija naj poveča investicije v digitalno preobrazbo družbe in države ter obenem skuša privabiti tehnološka podjetja."},{"id":35,"question":"Pravica do dostopa do interneta naj bo zapisana v ustavi."},{"id":36,"question":"Država naj ustanovi državnega letalskega prevoznika."},{"id":37,"question":"Država naj poenostavi in pohitri postopke prostorskega umeščanja za ključne državne projekte."},{"id":38,"question":"Država naj nadaljuje z vlaganjem v izgradnjo 2. bloka jedrske elektrarne Krško."},{"id":39,"question":"Država naj pospeši časovnico za prepoved prve registracije vozil z notranjim izgorevanjem."},{"id":40,"question":"Država naj aktivno spodbuja krožno gospodarstvo z namenom zmanjšanja količine odpadkov in ogljičnega odtisa Slovenije."}]
 
 /***/ })
 

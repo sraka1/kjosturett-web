@@ -7,5 +7,7 @@
   "leader": "Karel Lipič",
   "leaderTitle": "Vodja volilnega štaba",
   "reply": "6666666666666666666666666666666666666666",
-  "color": "#005EA4"
+  "color": "#005EA4",
+  "hasSubmittedPollReplies": false,
+  "hasSubmittedTopicReplies": false
 }

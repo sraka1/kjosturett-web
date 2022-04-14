@@ -8,5 +8,7 @@
   "leaderTitle": "Koordinatorka",
   "reply": "5453454415554544545623451455352445335525",
   "color": "#002C70",
-  "textColor": "#FFFFFF"
+  "textColor": "#FFFFFF",
+  "hasSubmittedPollReplies": true,
+  "hasSubmittedTopicReplies": false
 }

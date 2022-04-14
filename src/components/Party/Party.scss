@@ -30,7 +30,11 @@
   }
 
   &.isFaded {
-    opacity: 0.6;
+    opacity: 0.8;
+  }
+
+  &.isDisabled {
+    opacity: 0.25;
   }
 
   @media (min-width: 600px) {
