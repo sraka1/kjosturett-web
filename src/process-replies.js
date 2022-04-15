@@ -14,7 +14,9 @@ function mapToValues(answers) {
   return answers.map(value => valueMap[value]);
 }
 
-export function match(answers, matchersAnswers) {
+// minMax === false => minimal possible score
+// minMax === true => maximal possible score
+export function match(answers, matchersAnswers, minMax) {
   if (!matchersAnswers) {
     return 0;
   }
@@ -28,6 +30,12 @@ export function match(answers, matchersAnswers) {
     if (my != null && them != null) {
       distance += Math.abs(my - them);
       ranks += 1;
+    } else if (my != null && minMax === false) {
+      distance += Math.max(Math.abs(my - -1), Math.abs(my - 1));
+      ranks += 1;
+    } else if (my != null && minMax === true) {
+      distance += Math.min(Math.abs(my - -1), Math.abs(my - 1));
+      ranks += 1;
     }
   });
 
@@ -40,7 +48,9 @@ export default function getResultsByScore(answers, dataset) {
   const answerValues = mapToValues(answers);
   const data = dataset.map(data => ({
     ...data,
-    score: match(answerValues, data.reply && mapToValues(data.reply.split(''))),
+    score: match(answerValues, data.reply && mapToValues(data.reply.split('')), null),
+    minScore: match(answerValues, data.reply && mapToValues(data.reply.split('')), false),
+    maxScore: match(answerValues, data.reply && mapToValues(data.reply.split('')), true),
   }));
   // Ignore NaN scores
   const filteredData = _.filter(data, 'score');
