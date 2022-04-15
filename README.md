@@ -1,4 +1,4 @@
-# Voliprav.si / Vote Correctly - A one-stop for Parliament elections in Iceland
+# Voliprav.si / Vote Correctly - A one-stop for Parliament elections in Slovenia
 
 _Citizens have the right to non-biased information to cast an informed vote. We, the people of Slovenia, inspired by the people of Iceland, built this project to solve this problem for local elections._
 
