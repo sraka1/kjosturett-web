@@ -1,0 +1,1 @@
+V najkrajšem času je potrebno zgraditi tretjo razvojno os in sicer v segmentih smeri od celjskega do slovenj graškega območja ter celjskega in metliškega območja. Obnova kompletne železniške strukture v Sloveniji je prepotrebna zato bi bilo najbolje graditi s podjetji, ki zagotavljajo hitrost, zanesljivost in finančno ustreznost projektov.

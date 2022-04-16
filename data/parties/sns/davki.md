@@ -1,0 +1,1 @@
+V Sloveniji je nujna temeljita davčna reforma in prevetritev davčnih stopenj. Davke je potrebno znižati in v Sloveniji ustanoviti specifično davčno oazo. Znižati je treba tudi DDV, ter ga določiti v različnih višinah za različne proizvode oz. storitve.

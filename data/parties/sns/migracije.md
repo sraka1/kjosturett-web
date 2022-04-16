@@ -1,0 +1,1 @@
+Migranti v Sloveniji praviloma nimajo kaj početi zato jih nočemo sprejemati. Izjema so zgolj specialistični kadri, ki pa v Slovenijo ne prihajajo. V kolikor kakšen specialist v Slovenijo pride ima že v naprej zagotovljeno zaposlitev v svojem okviru dejavnosti. Migracije z denarjem opremljenih borcev islama v Sloveniji niso dobrodošle.

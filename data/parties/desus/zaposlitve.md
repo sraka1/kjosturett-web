@@ -1,0 +1,3 @@
+Zagotoviti obveznost zaposlitve mladih po principu enoletnega pripravništva z mentorstvom starejšega zaposlenega, ki ima pogoje za upokojitev. . Podjetja stimulirati po številu tako zaposlenih Â»parovÂ« (mlad zaposleni + mentor). Delavcu, ki izpolnjuje upokojitvene pogoje in je še v rednem delovnem razmerju zaradi potreb delodajalca, razpoloviti prispevke iz in na delo.
+- Bistveno zmanjšanje, če že ne odprava prekarnega dela in s tem povečanje možnosti zaposlitve
+- Zagotavljanje take štipendijske politike, da ne bo silila študente v delo, ki podaljšuje čas študija. Zakonodajo je treba urediti tako, da bo vsak dolžan vrniti stroške šolanja pred morebitnim odhodom v drugo državo. Sedaj šola

@@ -1,0 +1,1 @@
+Evropske integracije je vedno manj in še zdaleč ni takšna kot je bila zamišljena. Imamo Evropo dveh oz. treh hitrosti, kjer najmočnejše države znotraj EU razmišljajo najprej o sebi, po tem šele o komerkoli drugem. Širitve Evropske unije ne bo, EU je v stadiju razpadanja in Slovenija mora misliti nase.

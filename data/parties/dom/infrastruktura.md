@@ -1,0 +1,3 @@
+- Dokončen obseg širitve koprskega pristanišča z določitvijo pretovornih kapacitet, prevoz katerih mora imeti prednost na državni infrastrukturi, preostanek kapacitet se porabi za tranzitni promet, od katerega je treba pobrati čim več dobička, ne da zgolj onesnažuje okolje, povzroča zastoje in uničuje državne ceste, kot se dogaja danes.
+- Rekonstuirati in modernizirati je treba velik del državnega cestnega omrežja, da bo do vsake regije in kraja vodila urejena in varna pot.
+- Železniško omrežje mora z modernizacijo postati nosilna hrbtenica učinkovitega, hitrega in poceni javnega potniškega prometa, daljnoročno pa je nujna gradnja moderne železnice na glavnem prometnem križu

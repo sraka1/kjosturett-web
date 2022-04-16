@@ -1,0 +1,1 @@
+Na vseh razpisih za stanovanja v Sloveniji so na prednostnih listah sami tujci iz tretjih držav, še posebej tujci iz nekdanjega jugoslovanskega prostora. Slovenske družine in prosilci so postavljeni na dno liste, tako da stanovanja praktično nikoli ne dobijo. Tio niti ni čudno saj župan določenega mesta najprej poskrbi za svoje »zemljake«.

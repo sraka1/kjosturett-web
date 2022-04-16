@@ -1,0 +1,1 @@
+Enakopravnost spolov je bila v Sloveniji dosežena pred cca. 70 leti, kmalu po drugi svetovni vojni. Zaradi tega ne podlegamo nobenim feminističnim floskulam, ki jih trobijo razni NVO. Imamo dva spola, ki nikakor nista enaka, sta pa enakopravna.

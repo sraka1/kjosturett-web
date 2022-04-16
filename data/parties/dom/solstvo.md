@@ -1,0 +1,5 @@
+- Reformo šolstva s poudarkom na reformi kurikulov s področij, v katerih se je obdržalo kup neznanstvenih in mitoloških vsebin.
+- Reformo domovinske vzgoje s poudarkom na državljanski vzgoji, pomenu slovenstva in naroda glede samoodločbe in vzpostavitve države Slovenije
+- Reformo načina izvajanja pouka v smislu večjega poudarka na pomenu kreativnih rešitev, odgovornosti posameznega učenca-dijaka, večnivojskem pouku in pridobivanju znanj na neformalne načine v samostojnem projektnem del
+- vzpodbujanje vpisa v poklicne šole, zviševanje pomena in standardov znanj ter spretnosti v poklicnih usmeritvah
+- ustanovitev Učiteljske zbornice in reforma sistema potrjevanja programov

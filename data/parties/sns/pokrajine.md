@@ -1,0 +1,1 @@
+Slovenija sme biti razdeljena na pet pokrajin, od katerih bi Štajerska, Koroška, Krajnska in Primorska nadaljevali svoje večstoletne državno pravne korenine, peta Pomurska pa bi zajemala področje, ki je bilo po prvi svetovni vojni vrnjeno v slovenski okvir.
