@@ -198,6 +198,14 @@ class KosningaprofResults extends PureComponent {
                 <div className={s.partyName}>{party.name}</div>
                 <div className={s.partyPercentage}>
                   {Math.ceil(party.score)}%
+                  {(Math.ceil(party.score) != Math.ceil(party.minScore) || Math.ceil(party.score) != Math.ceil(party.maxScore)) ?
+                      ' (' +
+                        Math.ceil(party.minScore) + '-' +
+                        Math.ceil(party.maxScore) + '%' +
+                      ')'
+                    :
+                      ''
+                  }
                 </div>
               </div>
               <Collapse
